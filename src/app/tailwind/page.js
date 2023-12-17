@@ -4,9 +4,10 @@ import { redirect } from "next/navigation";
 import { authOptions } from "../utils/auth";
 import Image from "next/image";
 import { signIn, signOut, useSession } from "next-auth/react";
+import prisma from "../utils/db";
 
 const TailwindPage = async () => {
-  const session = await getServerSession();
+  const session = await getServerSession(authOptions);
 
   const users = await prisma.user.findMany({
     select: {
