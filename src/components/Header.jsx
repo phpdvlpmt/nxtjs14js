@@ -79,8 +79,8 @@ const Header = () => {
               <Link
                 className={
                   pathname === link.link
-                    ? "font-bold text-blue-800 text-sm"
-                    : "font-medium  text-sm"
+                    ? "font-bold text-blue-800 text-base"
+                    : "font-medium  text-base"
                 }
                 href={link.link}
               >
@@ -142,7 +142,7 @@ const Header = () => {
             <SheetHeader>
               <SheetTitle>Menu</SheetTitle>
               <SheetDescription>
-                <div className="flex flex-col items-center justify-center text-3xl font-semibold ">
+                <div className="flex flex-col items-center justify-center text-base font-medium">
                   <ul className="list-none flex flex-col  gap-8">
                     {Links.map((link, index) => (
                       <li key={index} onClick={() => setOpen(false)}>
@@ -150,7 +150,7 @@ const Header = () => {
                           className={
                             pathname === link.link
                               ? "font-bold text-blue-800"
-                              : ""
+                              : "font-normal dark:text-white text-foreground"
                           }
                           href={link.link}
                         >

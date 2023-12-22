@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="flex flex-col space-y-5 w-full relative">
       <div>
-        Proměnná <span className="text-primary font-bold text-xl">{text}</span>
+       <span className="font-medium">Proměnná</span>  <span className="text-primary font-bold text-xl">{text}</span>
       </div>
       <Input
         type="text"

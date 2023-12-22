@@ -39,6 +39,36 @@ const ShadcnPage = async () => {
           </DialogHeader>
         </DialogContent>
       </Dialog>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+        <div className="bg-background text-foreground h-20 flex flex-col items-center justify-center border">
+          <h3>bg-background</h3>
+          <h3>text-foreground</h3>
+        </div>
+        <div className="bg-foreground h-20 flex flex-col items-center justify-center text-background border">
+          <h3>Foreground</h3>
+          <h3>text-background</h3>
+        </div>
+        <div className="bg-card h-20 flex flex-col  items-center justify-center text-foreground border">
+          <h3>bg-card</h3>
+          <h3>text-foreground</h3>
+        </div>
+        <div className="bg-primary h-20 flex flex-col items-center justify-center text-background border">
+          <h3>bg-primary</h3>
+          <h3>text-background</h3>
+        </div>
+        <div className="bg-secondary h-20 flex flex-col items-center justify-center text-foreground border">
+          <h3>bg-secondary</h3>
+          <h3>text-foreground</h3>
+        </div>
+        <div className="bg-muted h-20 flex flex-col items-center justify-center text-foreground border">
+          <h3>bg-muted</h3>
+          <h3>text-foreground</h3>
+        </div>
+        <div className="bg-destructive h-20 flex flex-col items-center justify-center text-background border">
+          <h3>bg-destructive</h3>
+          <h3>text-background</h3>
+        </div>
+      </div>
     </div>
   );
 };
