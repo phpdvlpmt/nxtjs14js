@@ -21,7 +21,8 @@ export const createPost = async ( FormData) => {
       },
     });
 
-    revalidatePath("/playground");
+    //revalidatePath("/playground");
+  
   }
   export async function deleteItem(FormData) {
     "use server";
