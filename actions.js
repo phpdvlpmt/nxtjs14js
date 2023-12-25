@@ -9,7 +9,7 @@ import { authOptions } from "@/app/utils/auth";
 export const createPost = async ( FormData) => {
   
   const session = await getServerSession(authOptions) 
-    'use server'
+    
     const title = FormData.get("title") ;
     const content = FormData.get("content") ;
     //const authorId = FormData.get("authorId") ;
@@ -21,7 +21,7 @@ export const createPost = async ( FormData) => {
       },
     });
 
-    //revalidatePath("/playground");
+    revalidatePath("/playground");
   
   }
   export async function deleteItem(FormData) {
