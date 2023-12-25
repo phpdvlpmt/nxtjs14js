@@ -61,6 +61,10 @@ const Links = [
     name: "Design",
     link: "/design",
   },
+  {
+    name: "Playground",
+    link: "/playground",
+  },
 ];
 
 const Header = () => {
