@@ -4,6 +4,7 @@ import { Input } from './ui/input'
 import { Button } from './ui/button'
 import { createPost } from "../../actions"
 import { useRef } from "react";
+import { Textarea } from './ui/textarea'
 
 
 
@@ -18,7 +19,8 @@ const Form = () => {
     }} ref={ref}>
     <div className="flex flex-col space-y-5 max-w-sm">
       <Input type="text" name="title" placeholder="title" required/>
-      <Input type="text" name="content" placeholder="content" required />
+     
+      <Textarea type="text" name="content" placeholder="content" required />
 
       <Button type="submit">Submit</Button>
     </div>

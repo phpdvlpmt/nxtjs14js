@@ -31,7 +31,7 @@ const TailwindPage = async () => {
   if (!session || !session.user) {
     //redirect("/api/auth/signin");
 
-    redirect("/api/auth/signin?callbackUrl=/tailwind");
+    redirect("/api/auth/signin");
   }
   return (
     <div className="flex gap-4 items-center">

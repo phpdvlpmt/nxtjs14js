@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -10,9 +9,18 @@ import { authOptions } from "../utils/auth";
 import { redirect } from "next/navigation";
 import Form from "@/components/form";
 import { Trash2Icon } from "lucide-react";
+import ButtonIp from "@/components/buttonIp";
+import Image from "next/image";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
-
-async function getData() {
+const getData = async () => {
   const data = await prisma.post.findMany({
     include: {
       author: true,
@@ -23,10 +31,10 @@ async function getData() {
   });
 
   return data;
-}
-
+  
+};
+export const revalidate = 5
 const Playground = async () => {
- 
   const session = await getServerSession(authOptions);
   if (!session || !session.user) {
     //redirect("/api/auth/signin");
@@ -36,21 +44,40 @@ const Playground = async () => {
   const data = await getData();
 
   return (
-    <div>
+    <div className="fle flex-col space-y-4">
       <Form />
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-full">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-full py-10">
         {data.map((post) => (
-          <div key={post.id}>
-            <h1 className="font-bold">{post.title}</h1>
-            <p>{post.content}</p>
-            <p>{post.author.email}</p>
-            <form action={deleteItem}>
-              <input type="hidden" name="inputId" value={post.id}/>
-            <button type="submit"><Trash2Icon/></button>
-            </form>
-          </div>
+          <Card key={post.id}>
+            <CardHeader>
+              <CardTitle>
+                <p className="font-bold">{post.title}</p>
+              </CardTitle>
+              <CardDescription>Card Description</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="line-clamp-2">{post.content}</p>
+            </CardContent>
+            <CardFooter className="flex flex-col space-y-3">
+              <div className="flex items-center gap-4">
+              <Image src={post.author.image} alt="Author" width="30" height="30" className="rounded-full"/>
+              <p>{post.author.email}</p>
+              
+              </div>
+              <div className="flex gap-4 justify-between items-center">
+                <form action={deleteItem}>
+                  <input type="hidden" name="inputId" value={post.id} />
+                  <button type="submit">
+                    <Trash2Icon />
+                  </button>
+                </form>
+                <ButtonIp id={post.id} />
+              </div>
+            </CardFooter>
+          </Card>
         ))}
+       
       </div>
     </div>
   );

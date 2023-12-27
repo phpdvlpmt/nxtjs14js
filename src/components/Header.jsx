@@ -65,6 +65,10 @@ const Links = [
     name: "Playground",
     link: "/playground",
   },
+  {
+    name: "Carousel",
+    link: "/mycarousel",
+  },
 ];
 
 const Header = () => {
@@ -129,9 +133,7 @@ const Header = () => {
           <div>
             <button
               onClick={() =>
-                signIn("github", {
-                  callbackUrl: "/tailwind",
-                })
+                signIn("github")
               }
             >
               Sign in
