@@ -11,6 +11,7 @@ import Form from "@/components/form";
 import { Trash2Icon } from "lucide-react";
 import ButtonIp from "@/components/buttonIp";
 import Image from "next/image";
+
 import {
   Card,
   CardContent,
@@ -19,6 +20,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import ModalAdd from "@/components/ModalAdd";
 
 const getData = async () => {
   const data = await prisma.post.findMany({
@@ -45,9 +47,10 @@ const Playground = async () => {
 
   return (
     <div className="fle flex-col space-y-4">
+      <ModalAdd/>
       <Form />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-full py-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-5 w-full py-10">
         {data.map((post) => (
           <Card key={post.id}>
             <CardHeader>

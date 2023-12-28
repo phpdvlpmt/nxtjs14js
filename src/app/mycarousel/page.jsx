@@ -15,6 +15,7 @@ const MyCarousel = () => {
     Autoplay({ delay: 2000, stopOnInteraction: true })
   )
   return (
+    <div className='flex justify-center w-full'>
     <Carousel
       opts={{
         align: "start",
@@ -25,13 +26,13 @@ const MyCarousel = () => {
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
-      <CarouselContent>
-        {Array.from({ length: 10 }).map((_, index) => (
-          <CarouselItem key={index} >
+      <CarouselContent className="-ml-1">
+        {Array.from({ length: 20 }).map((_, index) => (
+          <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
             <div className="p-1">
               <Card>
                 <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-3xl font-semibold">{index + 1}</span>
+                  <span className="text-2xl font-semibold">{index + 1}</span>
                 </CardContent>
               </Card>
             </div>
@@ -41,6 +42,7 @@ const MyCarousel = () => {
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>
+    </div>
   )
 }
 
