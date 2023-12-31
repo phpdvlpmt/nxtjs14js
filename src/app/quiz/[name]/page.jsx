@@ -10,7 +10,7 @@ const Q = async ({params}) => {
   const file = await fs.readFile(process.cwd() + '/' + params.name + '.json', 'utf8');
   const data = JSON.parse(file);
     
-  const {quiz2 }= await import ("../../../../data2")
+  //const {quiz2 }= await import ("../../../../data2")
     
   return (
     <>
