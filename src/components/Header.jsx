@@ -69,6 +69,10 @@ const Links = [
     name: "Carousel",
     link: "/mycarousel",
   },
+  {
+    name: "Quiz",
+    link: "/quiz",
+  },
 ];
 
 const Header = () => {
