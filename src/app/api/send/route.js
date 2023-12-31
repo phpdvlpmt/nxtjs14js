@@ -10,7 +10,7 @@ export async function POST(req) {
       from: 'Acme <onboarding@resend.dev>',
       to: ['phpdvlpmt@gmail.com'],
       subject: 'Výsledky testu',
-      react: EmailTemplate({ score: res.score, correctAnswers: res.correctAnswers }),
+      react: EmailTemplate({name:res.name, score: res.score, correctAnswers: res.correctAnswers }),
     });
 
     return Response.json(data);

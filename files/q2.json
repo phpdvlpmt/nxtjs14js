@@ -10,7 +10,7 @@
       {
         "id": 2,
         "question": "Hlavní město Slovenska?",
-        "answers": ["Praha'", "Bratislava", "Madrid", "Varšava"],
+        "answers": ["Praha", "Bratislava", "Madrid", "Varšava"],
         "correctAnswer": "Bratislava"
       }
           

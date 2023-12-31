@@ -8,8 +8,6 @@ import gettestdata, { getData } from './gettestdata';
 
 const Quizcomp =  ( {quiz}) => {
   
- 
-  
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState('');
   const [checked, setChecked] = useState(false);
@@ -24,8 +22,14 @@ const Quizcomp =  ( {quiz}) => {
   const { questions } = quiz;
   const { question, answers, correctAnswer } = questions[activeQuestion];
   const [ disabled, setDisabled] = useState(false)
+  const [ showForm, setShowForm] = useState(true)
+  const [ name, setName] = useState("")
    //   Select and check answer
+   if (showResult  ) {
+    sendEmail()
+  }
    const onAnswerSelected = (answer, idx) => {
+    
     setDisabled(true)
     setChecked(true);
     setSelectedAnswerIndex(idx);
@@ -40,6 +44,7 @@ const Quizcomp =  ( {quiz}) => {
 
   // Calculate score and increment to next question
   const nextQuestion = () => {
+    
     setDisabled(false)
     setSelectedAnswerIndex(null);
     setResult((prev) =>
@@ -56,15 +61,16 @@ const Quizcomp =  ( {quiz}) => {
     );
     if (activeQuestion !== questions.length - 1) {
       setActiveQuestion((prev) => prev + 1);
+      
+      
+      
     } else {
       
       setActiveQuestion(0);
       setShowResult(true);
       console.log("tady to pošli")
      
-      if (showResult){
-        console.log("ok")
-      }
+     
       //sendEmail()
       
     }
@@ -82,7 +88,7 @@ const Quizcomp =  ( {quiz}) => {
     })
   }
   
-  async function sendEmail( data = {"score": result.score, "correctAnswers": result.correctAnswers}) {
+  async function sendEmail( data = {"name": name, "score": result.score, "correctAnswers": result.correctAnswers}) {
     
     const response = await fetch('/api/send', {
         method: 'POST',
@@ -94,21 +100,44 @@ const Quizcomp =  ( {quiz}) => {
     const json = await response.json();
     return json
  }
+
+ const onSubmit = (e) => {
+  e.preventDefault();
+  const name = e.target.name.value
+  setName(name)
+  
+  setShowForm(false)
+
+ }
  /******************************/ 
 
   return (
     <div className='container'>
+      {showForm &&(
+      <div className='flex flex-col w-1/3'>
+        <form className='flex flex-col gap-4' onSubmit={onSubmit}>
+        <input className='py-3 px-3 border' type="text" name="name" placeholder='Jméno'/>
+        <button  className='px-3 py-2 bg-gray-900 text-white'>Pihlásit k testu</button>
+        </form>
+      </div>)}
+      <div className={`${showForm  ? 'hidden' : 'flex'}  flex-col `}>
       <h1 className='text-2xl font-semibold'>Kvíz</h1>
       <div>
       {!showResult &&(
+        <div>
+          <h2 className='text-xl font-medium'>Jméno: {name}</h2>
         <h2 className='text-xl font-medium'>
+          
           Otázka: {activeQuestion + 1}
           <span>/{questions.length}</span>
-        </h2>)}
+        </h2>
+        </div>
+        )}
       </div>
       <div>
-        {!showResult ? (
-          <div className='w-1/3 flex flex-col gap-3'>
+        {!showResult  ? (
+          <div className= 'flex  w-1/ 3  flex-col gap-3'>
+            <h3 className='font-bold'>AQ{activeQuestion}</h3>
             <h3 className='font-bold'>{question}</h3>
             {answers.map((answer, idx) => (
               <button
@@ -126,12 +155,12 @@ const Quizcomp =  ( {quiz}) => {
             ))}
             {checked ? (
               <button onClick={nextQuestion} className='bg-gray-800 text-white w-fit px-3 py-2 cursor-pointer text-xl font-semibold'>
-                {activeQuestion === question.length - 1 ? 'Finish' : 'Next'}
+                {activeQuestion === question.length -1 ? 'Finish' : 'Next'}
               </button>
             ) : (
               <button onClick={nextQuestion} disabled className='bg-gray-100 text-gray-800 w-fit px-3 py-2 cursor-not-allowed text-xl font-semibold'>
                 {' '}
-                {activeQuestion === question.length - 1 ? 'Finish' : 'Next'}
+                {activeQuestion === question.length -1 ? 'Finish' : 'Next'}
               </button>
             )}
           </div>
@@ -158,6 +187,7 @@ const Quizcomp =  ( {quiz}) => {
       {/* {data.questions.map((q, idx )=> (
         <div key={idx}>{q}</div>
       ))} */}
+      </div>
     </div>
   )
 }
