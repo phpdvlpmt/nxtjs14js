@@ -1,6 +1,6 @@
 [functions]
   # Sets a custom directory for Netlify Functions
- # directory = "myfunctions/"
+ directory = "functions/"
 
   # Specifies `esbuild` for functions bundling
   node_bundler = "esbuild"
@@ -9,7 +9,7 @@
   external_node_modules = ["package-1"]
 
   # Includes all Markdown files inside the "files/" directory.
-  included_files = ["files/*.md"]
+  included_files = ["files/*.json"]
 
 [functions."api_*"]
   # Flags "package-2" as an external node module for functions
