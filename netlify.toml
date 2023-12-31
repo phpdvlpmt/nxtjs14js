@@ -1,6 +1,6 @@
 [functions]
   # Sets a custom directory for Netlify Functions
-  directory = "myfunctions/"
+ # directory = "myfunctions/"
 
   # Specifies `esbuild` for functions bundling
   node_bundler = "esbuild"
