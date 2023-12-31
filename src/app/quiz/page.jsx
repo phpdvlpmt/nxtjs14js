@@ -7,7 +7,7 @@ const Quiz = () => {
     <div className="flex flex-col gap-5 text-xl font-bold">
    <Link href="/quiz/q1">Quiz 1</Link>
    <Link href="/quiz/q2">Quiz 2</Link>
-   12
+   123
     </div>
   )
 }
