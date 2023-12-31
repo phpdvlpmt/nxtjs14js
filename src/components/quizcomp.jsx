@@ -116,7 +116,7 @@ const Quizcomp =  ( {quiz}) => {
       {showForm &&(
       <div className='flex flex-col w-1/3'>
         <form className='flex flex-col gap-4' onSubmit={onSubmit}>
-        <input className='py-3 px-3 border' type="text" name="name" placeholder='Jméno'/>
+        <input className='py-3 px-3 border' type="text" name="name" placeholder='Jméno' required/>
         <button  className='px-3 py-2 bg-gray-900 text-white'>Pihlásit k testu</button>
         </form>
       </div>)}
