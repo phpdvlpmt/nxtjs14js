@@ -1,0 +1,19 @@
+{
+    "totalQuestions": 10,
+    "questions": [
+      {
+        "id": 1,
+        "question": "Hlavní město Norska?",
+        "answers": ["Oslo", "Paříž", "Řím", "Berlín"],
+        "correctAnswer": "Oslo"
+      },
+      {
+        "id": 2,
+        "question": "Hlavní město Slovenska?",
+        "answers": ["Praha'", "Bratislava", "Madrid", "Varšava"],
+        "correctAnswer": "Bratislava"
+      }
+          
+    ]
+}
+  
