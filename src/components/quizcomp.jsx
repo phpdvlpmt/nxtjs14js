@@ -68,7 +68,7 @@ const Quizcomp =  ( {quiz}) => {
       
       setActiveQuestion(0);
       setShowResult(true);
-      console.log("tady to pošli")
+      
      
      
       //sendEmail()
@@ -137,7 +137,7 @@ const Quizcomp =  ( {quiz}) => {
       <div>
         {!showResult  ? (
           <div className= 'flex  w-1/ 3  flex-col gap-3'>
-            <h3 className='font-bold'>AQ{activeQuestion}</h3>
+            
             <h3 className='font-bold'>{question}</h3>
             {answers.map((answer, idx) => (
               <button
