@@ -1,44 +1,79 @@
 {
-    "totalQuestions": 10,
+    "totalQuestions": 12,
+    "title": "Naše vlast",
     "questions": [
       {
         "id": 1,
-        "question": "Hlavní město Rakouska?",
-        "answers": ["Berlín", "Řím", "Londýn","Vídeň"],
-        "correctAnswer": "Vídeň"
+        "question": "Česká republika leží uprostřed:",
+        "answers": ["Asie", "Evropy", "Ameriky"],
+        "correctAnswer": "Evropy"
       },
       {
         "id": 2,
-        "question": "Hlavní město Německa?",
-        "answers": ["Berlín", "Bratislava", "Madrid", "Varšava"],
-        "correctAnswer": "Berlín"
-      }
-      ,
+        "question": "Česká republika je stát:",
+        "answers": ["vnitrozemský", "přímořský", "ostrovní"],
+        "correctAnswer": "vnitrozemský"
+      },
       {
         "id": 3,
-        "question": "Hlavní město Slovenska?",
-        "answers": ["Praha", "Bratislava", "Madrid", "Varšava"],
-        "correctAnswer": "Bratislava"
+        "question": "Česká republika sousedí se:",
+        "answers": ["třemi státy", "čtyřmi státy", "pěti státy"],
+        "correctAnswer": "čtyřmi státy"
       },
       {
         "id": 4,
-        "question": "Hlavní město Maďarska?",
-        "answers": ["Madrid", "Budapešť", "Praha", "Vídeň"],
-        "correctAnswer": "Budapešť"
+        "question": "Česká republika nesousedí se státem:",
+        "answers": ["Německo", "Maďarsko", "Polsko"],
+        "correctAnswer": "Maďarsko"
       },
       {
         "id": 5,
-        "question": "Hlavní město Dánska?",
-        "answers": ["Kodaň", "Budapešť", "Praha", "Vídeň"],
-        "correctAnswer": "Kodaň"
+        "question": "Přirozenou hranici tvoří:",
+        "answers": ["např. řeky, jezera, pohoří", "hraniční kameny", "drátěný plot"],
+        "correctAnswer": "např. řeky, jezera, pohoří"
       },
       {
-        "id": 5,
-        "question": "Hlavní město Rumunska?",
-        "answers": ["Madrid", "Bukurešť", "Praha", "Vídeň"],
-        "correctAnswer": "Bukurešť"
+        "id": 6,
+        "question": "Mezi státní symboly České republiky nepatří:",
+        "answers": ["malý státní znak", "kroj", "státní hymna"],
+        "correctAnswer": "kroj"
+      },
+      {
+        "id": 7,
+        "question": "Hymnou České republiky je první sloka písně s názvem:",
+        "answers": ["Kde domov můj", "Kde domov tvůj", "Kde domov náš"],
+        "correctAnswer": "Kde domov můj"
+      },
+      {
+        "id": 8,
+        "question": "Na našem území se rozprostíraly tyto historické země:",
+        "answers": ["Čechy, Morava, Slovensko", "Čechy, Morava, Polsko", "Čechy, Morava, Slezsko"],
+        "correctAnswer": "Čechy, Morava, Slezsko"
+      },
+      {
+        "id": 9,
+        "question": "Významné události našich dějin nám připomínají:",
+        "answers": ["státní svátky", "velké svátky", "významné svátky"],
+        "correctAnswer": "státní svátky"
+      },
+      {
+        "id": 10,
+        "question": "Státní zřízení našeho státu se nazývá:",
+        "answers": ["monarchie", "revoluce", "republika"],
+        "correctAnswer": "republika"
+      },
+      {
+        "id": 11,
+        "question": "Lidé v demokratických volbách volí své:",
+        "answers": ["nástupce", "zástupce", "předky"],
+        "correctAnswer": "zástupce"
+      },
+      {
+        "id": 12,
+        "question": "Území našeho státu je rozděleno na:",
+        "answers": ["13 krajů", "14 krajů", "15 krajů"],
+        "correctAnswer": "14 krajů"
       }
-      
           
     ]
 }

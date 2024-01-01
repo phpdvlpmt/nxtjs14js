@@ -1,0 +1,68 @@
+{
+    "totalQuestions": 10,
+    "title": "Zemědělství",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Rostliny získávají živiny:",
+        "answers": ["ze vzduchu", "z půdy", "z ovoce"],
+        "correctAnswer": "z půdy"
+      },
+      {
+        "id": 2,
+        "question": "Nejúrodnější složka půdy se nazývá:",
+        "answers": ["jíl", "humus", "rašelina"],
+        "correctAnswer": "humus"
+      },
+      {
+        "id": 3,
+        "question": "Zemědělství dělíme na živočišnou výrobu a:",
+        "answers": ["výrobu potravin", "lesnictví", "rostlinnou výrobu"],
+        "correctAnswer": "rostlinnou výrobu"
+      },
+      {
+        "id": 4,
+        "question": "Nejúrodnější oblasti jsou:",
+        "answers": ["nížiny", "vysočiny", "hornatiny"],
+        "correctAnswer": "nížiny"
+      },
+      {
+        "id": 5,
+        "question": "Místo, kde se pěstuje réva vinná, se nazývá:",
+        "answers": ["viniště", "réviště", "vinice"],
+        "correctAnswer": "vinice"
+      },
+      {
+        "id": 6,
+        "question": "Brambory se pěstují:",
+        "answers": ["na vysočinách", "v nížinách", "v horských oblastech"],
+        "correctAnswer": "na vysočinách"
+      },
+      {
+        "id": 7,
+        "question": "Rozlišujeme tyto druhy orné půdy:",
+        "answers": ["pole, sady, pastviny", "pole, sady, vinice", "pole, vinice, louky"],
+        "correctAnswer": "pole, sady, vinice"
+      },
+      {
+        "id": 8,
+        "question": "Zemědělství je závislé na:",
+        "answers": ["počasí a podnebí", "kvalitě půdy a vzduchu", "podnebí a kvalitě půdy"],
+        "correctAnswer": "podnebí a kvalitě půdy"
+      },
+      {
+        "id": 9,
+        "question": "Dřevo se využívá k výrobě:",
+        "answers": ["piva", "papíru", "oceli"],
+        "correctAnswer": "papíru"
+      },
+      {
+        "id": 10,
+        "question": "Na našem území převažují lesy:",
+        "answers": ["jehličnaté a smíšené", "jehličnaté a bukové", "listnaté a sméšené"],
+        "correctAnswer": "jehličnaté a smíšené"
+      }
+          
+    ]
+}
+  

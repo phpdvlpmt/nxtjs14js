@@ -1,0 +1,68 @@
+{
+    "totalQuestions": 10,
+    "title": "Povrch, vodstvo, počasí a podnebí",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Česká republika je téměř ze všech stran obklopena:",
+        "answers": ["nížinami", "řekami", "pohořími"],
+        "correctAnswer": "pohořími"
+      },
+      {
+        "id": 2,
+        "question": "Pohoří Krkonoše tvoří část hranice s:",
+        "answers": ["Polskem", "Německem", "Slovenskem"],
+        "correctAnswer": "Polskem"
+      },
+      {
+        "id": 3,
+        "question": "Nejvyšší hora České republiky se nazývá:",
+        "answers": ["Sněžnice", "Sněžka", "Sněhule"],
+        "correctAnswer": "Sněžka"
+      },
+      {
+        "id": 4,
+        "question": "Nížina je krajina, kde nadmořská výška nepřesahuje:",
+        "answers": ["300 metrů", "400 metrů", "100 metrů"],
+        "correctAnswer": "300 metrů"
+      },
+      {
+        "id": 5,
+        "question": "Slovo úval označuje:",
+        "answers": ["úrodnou nížinu", "průchod mezi horami", "vrchol hory"],
+        "correctAnswer": "úrodnou nížinu"
+      },
+      {
+        "id": 6,
+        "question": "Plochá, málo členitá krajina se nazývá:",
+        "answers": ["rovina", "pahorkatina", "hornatina"],
+        "correctAnswer": "rovina"
+      },
+      {
+        "id": 7,
+        "question": "Vodu na území České republiky můžeme rozdělit na povrchovou a:",
+        "answers": ["hlubinnou", "podpovrchovou", "slanou"],
+        "correctAnswer": "podpovrchovou"
+      },
+      {
+        "id": 8,
+        "question": "Mezi umělé vodní nádrže patří:",
+        "answers": ["přehrada", "jezero", "soutok"],
+        "correctAnswer": "přehrada"
+      },
+      {
+        "id": 9,
+        "question": "Naší nejdelší řekou je:",
+        "answers": ["Otava", "Sázava", "Vltava"],
+        "correctAnswer": "Vltava"
+      },
+      {
+        "id": 10,
+        "question": "Řeky na našem území odvádějí vodu do:",
+        "answers": ["čtyř moří", "tří moří", "dvou moří"],
+        "correctAnswer": "tří moří"
+      }
+          
+    ]
+}
+  

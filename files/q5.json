@@ -1,0 +1,68 @@
+{
+    "totalQuestions": 10,
+    "title": "Nerostné suroviny, průmysl",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Nerostné suroviny získáváme:",
+        "answers": ["rostlinnou výrobou", "těžbou ze země", "výrobou v továrně"],
+        "correctAnswer": "těžbou ze země"
+      },
+      {
+        "id": 2,
+        "question": "Černé uhlí se těží v:",
+        "answers": ["lomech", "dolech", "řekách"],
+        "correctAnswer": "dolech"
+      },
+      {
+        "id": 3,
+        "question": "Poblíž města Karviná se těží:",
+        "answers": ["hnědé uhlí", "žula", "černé uhlí"],
+        "correctAnswer": "černé uhlí"
+      },
+      {
+        "id": 4,
+        "question": "Kaolin je surovina potřebná k výrobě:",
+        "answers": ["skla", "porcelánu", "plastů"],
+        "correctAnswer": "porcelánu"
+      },
+      {
+        "id": 5,
+        "question": "Tepelné elektrárny vužívají jako zdroj energie:",
+        "answers": ["hnědé uhlí", "vítr", "sluneční záření"],
+        "correctAnswer": "hnědé uhlí"
+      },
+      {
+        "id": 6,
+        "question": "Hutní průmysl vyrábí železo a ocel z:",
+        "answers": ["černého uhlí", "ropy", "železné rudy"],
+        "correctAnswer": "železné rudy"
+      },
+      {
+        "id": 7,
+        "question": "Nejvýznamnější odvětví českého průmyslu je:",
+        "answers": ["keramický průmysl", "dřevozpracující průmysl", "strojírenský průmysl"],
+        "correctAnswer": "strojírenský průmysl"
+      },
+      {
+        "id": 8,
+        "question": "Chemický průmysl často zpracovává:",
+        "answers": ["uhlí", "ropu", "dřevo"],
+        "correctAnswer": "ropu"
+      },
+      {
+        "id": 9,
+        "question": "Výroba aut patří k průmyslu:",
+        "answers": ["strojírenskému", "hutnímu", "chemickému"],
+        "correctAnswer": "strojírenskému"
+      },
+      {
+        "id": 10,
+        "question": "Průmyslové výrobky se předvádějí na:",
+        "answers": ["veletrzích", "tržištích", "letištích"],
+        "correctAnswer": "veletrzích"
+      }
+          
+    ]
+}
+  

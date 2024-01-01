@@ -1,5 +1,5 @@
 
-import Quizcomp from "@/components/quizcomp"
+import Quizcmp from '@/components/Quizcmp';
 import { promises as fs } from 'fs';
 
 //import  {quiz as q1}  from '../../../../data';
@@ -14,7 +14,7 @@ const Q = async ({params}) => {
     
   return (
     <>
-    <Quizcomp quiz={data}/>
+    <Quizcmp quiz={data}/>
     
     </>
 

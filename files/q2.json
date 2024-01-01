@@ -1,17 +1,66 @@
 {
     "totalQuestions": 10,
+    "title": "Mapy",
     "questions": [
       {
         "id": 1,
-        "question": "Hlavní město Norska?",
-        "answers": ["Oslo", "Paříž", "Řím", "Berlín"],
-        "correctAnswer": "Oslo"
+        "question": "Mapa je nakreslena tak, jako bychom se na dané území dívali:",
+        "answers": ["z levé strany", "z pravé strany", "z výšky"],
+        "correctAnswer": "z výšky"
       },
       {
         "id": 2,
-        "question": "Hlavní město Slovenska?",
-        "answers": ["Praha", "Bratislava", "Madrid", "Varšava"],
-        "correctAnswer": "Bratislava"
+        "question": "Na mapě je krajina zakreslena:",
+        "answers": ["přibližně", "jak to vyjde", "přesně podle skutečnosti"],
+        "correctAnswer": "přesně podle skutečnosti"
+      },
+      {
+        "id": 3,
+        "question": "Legenda mapy je:",
+        "answers": ["pohádka o mapě", "seznam použitých značek", "legrační obrázek"],
+        "correctAnswer": "seznam použitých značek"
+      },
+      {
+        "id": 4,
+        "question": "Nížiny jsou zakresleny barvou:",
+        "answers": ["hnědou", "zelenou", "žlutou"],
+        "correctAnswer": "zelenou"
+      },
+      {
+        "id": 5,
+        "question": "Modrá barva v mapě označuje:",
+        "answers": ["řeky, rybníky, jezera", "města a vesnice", "hory a pohoří"],
+        "correctAnswer": "řeky, rybníky, jezera"
+      },
+      {
+        "id": 6,
+        "question": "Měřítko mapy vyjadřuje, kolikrát je mapa oproti skutečnosti:",
+        "answers": ["zmenšená", "zvětšená", "zakulacená"],
+        "correctAnswer": "zmenšená"
+      },
+      {
+        "id": 7,
+        "question": "Směrová růžice určuje na mapě:",
+        "answers": ["nejčastější směr větru", "světové strany", "místo, kde kvetou růže"],
+        "correctAnswer": "světové strany"
+      },
+      {
+        "id": 8,
+        "question": "Hvězda Polárka v noci svítí ve směru ukazujícím na:",
+        "answers": ["východ", "jih", "sever"],
+        "correctAnswer": "sever"
+      },
+      {
+        "id": 9,
+        "question": "Střelka buzoly ukazuje:",
+        "answers": ["přesnou polohu", "sever", "východ"],
+        "correctAnswer": "sever"
+      },
+      {
+        "id": 10,
+        "question": "GPS navigace je moderní způsob určení:",
+        "answers": ["přesné polohy určitého bodu", "počasí", "severu"],
+        "correctAnswer": "přesné polohy určitého bodu"
       }
           
     ]
