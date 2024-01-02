@@ -7,19 +7,22 @@ export async function POST(req) {
     const username = rs.username ;
     const title = rs.title ;
     const total = rs.total; 
-    const score = rs.score ;
+    const correctAnswers = rs.correctAnswers;
+    const wrongAnswers = rs.wrongAnswers;
     const average = rs.average
     const grade = rs.grade
    
     
   try {
     
+    
       await prisma.resume.create({
         data: {
             username: username,
             title: title,
             total: parseInt(total),
-            score: parseInt(score),
+            correctAnswers: parseInt(correctAnswers),
+            wrongAnswers: parseInt(wrongAnswers),
             average: parseInt(average),
             grade: parseInt(grade),  
         },

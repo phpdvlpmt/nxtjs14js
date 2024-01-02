@@ -13,7 +13,7 @@ const Quizcomp = ({ quiz }) => {
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
   const [showResult, setShowResult] = useState(false);
   const [result, setResult] = useState({
-    score: 0,
+    
     correctAnswers: 0,
     wrongAnswers: 0,
   });
@@ -50,7 +50,7 @@ const Quizcomp = ({ quiz }) => {
       selectedAnswer
         ? {
             ...prev,
-            score: prev.score + 1,
+            
             correctAnswers: prev.correctAnswers + 1,
           }
         : {
@@ -74,7 +74,7 @@ const Quizcomp = ({ quiz }) => {
     setActiveQuestion(0);
     setShowResult(false);
     setResult({
-      score: 0,
+      
       correctAnswers: 0,
       wrongAnswers: 0,
     });
@@ -83,7 +83,7 @@ const Quizcomp = ({ quiz }) => {
   async function sendEmail(
     data = {
       name: name,
-      score: result.score,
+      
       correctAnswers: result.correctAnswers,
     }
   ) {
@@ -107,7 +107,7 @@ const Quizcomp = ({ quiz }) => {
   };
   
   const avrg = () => {
-    const ar = ((result.score / questions.length) * 100).toFixed()
+    const ar = ((result.correctAnswers / questions.length) * 100).toFixed()
     return ar
   }
 
@@ -138,8 +138,8 @@ const Quizcomp = ({ quiz }) => {
   const endTest = async ( data = {
     title: quiz.title,
     username: name,
-    score: result.score,
     correctAnswers: result.correctAnswers,
+    wrongAnswers: result.wrongAnswers,
     total: quiz.totalQuestions,
     average: avrg(),
     grade: grade()
@@ -262,9 +262,6 @@ const Quizcomp = ({ quiz }) => {
               </h3>
               <p className="text-lg font-semibold">
                 Počet otázek: <span>{questions.length}</span>
-              </p>
-              <p className="text-lg font-semibold">
-                Celkové skóre: <span>{result.score}</span>
               </p>
               <p className="text-lg font-semibold text-green-600">
                 Správné odpovědi: <span>{result.correctAnswers}</span>

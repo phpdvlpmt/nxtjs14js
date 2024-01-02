@@ -32,6 +32,7 @@ const Results = async () => {
       <TableHead  className="font-bold">Název testu</TableHead>
       <TableHead className="font-bold">Počet otázek</TableHead>
       <TableHead className="font-bold">Počet správných odpovědí</TableHead>
+      <TableHead className="font-bold">Počet špatných odpovědí</TableHead>
       <TableHead className="font-bold">Průměr</TableHead>
       <TableHead className="font-bold">Známka</TableHead>  
     </TableRow>
@@ -42,7 +43,8 @@ const Results = async () => {
       <TableCell className="font-bold">{item.username}</TableCell>
       <TableCell className="font-medium">{item.title}</TableCell>
       <TableCell>{item.total}</TableCell>
-      <TableCell >{item.score}</TableCell>
+      <TableCell >{item.correctAnswers}</TableCell>
+      <TableCell className="text-red-500">{item.wrongAnswers}</TableCell>
       <TableCell >{item.average}</TableCell>
       <TableCell >{item.grade}</TableCell>
       <TableCell >
