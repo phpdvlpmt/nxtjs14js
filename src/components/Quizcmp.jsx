@@ -148,7 +148,7 @@ const Quizcomp = ({ quiz }) => {
               required
             />
             <button className="px-3 py-2 bg-gray-900 text-white">
-              Pihlásit k testu
+              Přihlásit k testu
             </button>
           </form>
         </div>
