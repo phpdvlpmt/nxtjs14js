@@ -1,10 +1,8 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { Progress } from "@/components/ui/progress"
+import { Progress } from "@/components/ui/progress";
 import { createResult } from "../../actions";
-
-
 
 const Quizcomp = ({ quiz }) => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -13,7 +11,6 @@ const Quizcomp = ({ quiz }) => {
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
   const [showResult, setShowResult] = useState(false);
   const [result, setResult] = useState({
-    
     correctAnswers: 0,
     wrongAnswers: 0,
   });
@@ -23,8 +20,8 @@ const Quizcomp = ({ quiz }) => {
   const [disabled, setDisabled] = useState(false);
   const [showForm, setShowForm] = useState(true);
   const [name, setName] = useState("");
-  const [end, setEnd] = useState()
-  
+  const [end, setEnd] = useState();
+
   //   Select and check answer
   /* if (showResult) {
     sendEmail()
@@ -50,7 +47,7 @@ const Quizcomp = ({ quiz }) => {
       selectedAnswer
         ? {
             ...prev,
-            
+
             correctAnswers: prev.correctAnswers + 1,
           }
         : {
@@ -58,13 +55,13 @@ const Quizcomp = ({ quiz }) => {
             wrongAnswers: prev.wrongAnswers + 1,
           }
     );
-    if (activeQuestion !== questions.length -1 ) {
+    if (activeQuestion !== questions.length - 1) {
       setActiveQuestion((prev) => prev + 1);
     } else {
       setActiveQuestion(0);
       //setShowResult(true);
-      setEnd(true)
-      
+      setEnd(true);
+
       //sendEmail()
     }
 
@@ -74,7 +71,6 @@ const Quizcomp = ({ quiz }) => {
     setActiveQuestion(0);
     setShowResult(false);
     setResult({
-      
       correctAnswers: 0,
       wrongAnswers: 0,
     });
@@ -83,7 +79,7 @@ const Quizcomp = ({ quiz }) => {
   async function sendEmail(
     data = {
       name: name,
-      
+
       correctAnswers: result.correctAnswers,
     }
   ) {
@@ -105,66 +101,65 @@ const Quizcomp = ({ quiz }) => {
 
     setShowForm(false);
   };
-  
+
   const avrg = () => {
-    const ar = ((result.correctAnswers / questions.length) * 100).toFixed()
-    return ar
-  }
+    const ar = ((result.correctAnswers / questions.length) * 100).toFixed();
+    return ar;
+  };
 
   const grade = () => {
-    let avr = avrg()
-   
-    switch(true) {
-        case (avr > 88 ):
-          return "1"// code block
-          break;
-        case (avr <88 && avr >=63  ):
-            return "2"// code block
-          break;
-        case (avr <63 && avr >=38  ):
-            return "3"// code block
+    let avr = avrg();
+
+    switch (true) {
+      case avr > 88:
+        return "1"; // code block
         break;
-        case (avr <38 && avr >=13  ):
-            return "4"// code block
-            break;
-        case (avr<13   ):
-            return "5"// code block
-            break;
-        default:
-         return "???" // code block
-
-      }
-  }
-  const endTest = async ( data = {
-    title: quiz.title,
-    username: name,
-    correctAnswers: result.correctAnswers,
-    wrongAnswers: result.wrongAnswers,
-    total: quiz.totalQuestions,
-    average: avrg(),
-    grade: grade()
-  }) => {
+      case avr < 88 && avr >= 63:
+        return "2"; // code block
+        break;
+      case avr < 63 && avr >= 38:
+        return "3"; // code block
+        break;
+      case avr < 38 && avr >= 13:
+        return "4"; // code block
+        break;
+      case avr < 13:
+        return "5"; // code block
+        break;
+      default:
+        return "???"; // code block
+    }
+  };
+  const endTest = async (
+    data = {
+      title: quiz.title,
+      username: name,
+      correctAnswers: result.correctAnswers,
+      wrongAnswers: result.wrongAnswers,
+      total: quiz.totalQuestions,
+      average: avrg(),
+      grade: grade(),
+    }
+  ) => {
     //setShowResult(true);
-    //await 
-   // createResult({title: quiz.title, username: name, total: quiz.totalQustions, score: result.score})
-   const response = await fetch("/api/quiz", {
-    method: "POST",
-    mode: "cors",
+    //await
+    // createResult({title: quiz.title, username: name, total: quiz.totalQustions, score: result.score})
+    const response = await fetch("/api/quiz", {
+      method: "POST",
+      mode: "cors",
 
-    body: JSON.stringify(data),
-  });
+      body: JSON.stringify(data),
+    });
 
-  const json = await response.json();
-  return json;
-   
-  }
-  if(end){
-    console.log("už jsem na tlačítku")
-      //sendEmail()
-      endTest()
-      setEnd(false)
-      setShowResult(true)
-      
+    const json = await response.json();
+    return json;
+  };
+  if (end) {
+    console.log("už jsem na tlačítku");
+    //sendEmail()
+    endTest();
+    setEnd(false);
+    setShowResult(true);
   }
   /******************************/
 
@@ -172,7 +167,9 @@ const Quizcomp = ({ quiz }) => {
     <div className="">
       {showForm && (
         <div className="flex flex-col w-1/3 gap-3">
-           <h2 className="text-lg font-semibold">Přihlášení k testu - {quiz.title}</h2> 
+          <h2 className="text-lg font-semibold">
+            Přihlášení k testu - {quiz.title}
+          </h2>
           <form className="flex flex-col gap-4" onSubmit={onSubmit}>
             <input
               className="py-3 px-3 border"
@@ -188,8 +185,12 @@ const Quizcomp = ({ quiz }) => {
         </div>
       )}
       <div className={`${showForm ? "hidden" : "flex"}  flex-col gap-3`}>
-        <div className="pb-12"><Progress value={activeQuestion / (questions.length  ) * 100} className=""/>
-</div>
+        <div className="pb-12">
+          <Progress
+            value={(activeQuestion / questions.length) * 100}
+            className=""
+          />
+        </div>
         <h1 className="text-xl font-semibold">Kvíz - {quiz.title}</h1>
         <div>
           {!showResult && (
@@ -212,7 +213,9 @@ const Quizcomp = ({ quiz }) => {
                   key={idx}
                   onClick={() => onAnswerSelected(answer, idx)}
                   className={`text-left p-3 w-full text-lg font-semibold  cursor-pointer ${
-                    selectedAnswerIndex === idx ? " " : " hover bg-gray-100 dark:text-gray-900"
+                    selectedAnswerIndex === idx
+                      ? " "
+                      : " hover bg-gray-100 dark:text-gray-900"
                   } ${
                     selectedAnswer &&
                     selectedAnswerIndex === idx &&
@@ -235,10 +238,15 @@ const Quizcomp = ({ quiz }) => {
               ))}
               {checked ? (
                 <button
-                  onClick={() => { nextQuestion(); activeQuestion === questions.length - 1 && "endTest()"}}
+                  onClick={() => {
+                    nextQuestion();
+                    activeQuestion === questions.length - 1 && "endTest()";
+                  }}
                   className="bg-gray-800 text-white w-fit px-4 py-2 cursor-pointer text-xl font-semibold"
                 >
-                  {activeQuestion === questions.length - 1? "Dokončit" : "Další"}
+                  {activeQuestion === questions.length - 1
+                    ? "Dokončit"
+                    : "Další"}
                 </button>
               ) : (
                 <button
@@ -254,12 +262,10 @@ const Quizcomp = ({ quiz }) => {
           ) : (
             <div className="flex flex-col gap-5">
               <h3 className="text-xl font-bold">Výsledky</h3>
-             {/*  <h3 className="text-lg font-semibold">
+              {/*  <h3 className="text-lg font-semibold">
                 Průměr {((result.score / questions.length) * 100).toFixed(2)}%
               </h3> */}
-              <h3 className="text-lg font-semibold">
-                Průměr {avrg()}%
-              </h3>
+              <h3 className="text-lg font-semibold">Průměr {avrg()}%</h3>
               <p className="text-lg font-semibold">
                 Počet otázek: <span>{questions.length}</span>
               </p>
@@ -271,13 +277,18 @@ const Quizcomp = ({ quiz }) => {
               </p>
               <p className="text-lg font-semibold">Známka: {grade()}</p>
               <div className="flex gap-3">
-              <button
-                className="bg-gray-800 text-white w-fit px-3 py-2 cursor-pointer text-xl font-semibold"
-                onClick={() => restart()}
-              >
-                Restart
-              </button>
-              <Link href="/" className="bg-orange-700 text-white w-fit px-3 py-2 cursor-pointer text-xl font-semibold">Vybrat jiný test</Link>
+                <button
+                  className="bg-gray-800 text-white w-fit px-3 py-2 cursor-pointer text-xl font-semibold"
+                  onClick={() => restart()}
+                >
+                  Restart
+                </button>
+                <Link
+                  href="/"
+                  className="bg-orange-700 text-white w-fit px-3 py-2 cursor-pointer text-xl font-semibold"
+                >
+                  Vybrat jiný test
+                </Link>
               </div>
             </div>
           )}
