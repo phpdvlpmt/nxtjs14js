@@ -153,8 +153,8 @@ const Quizcomp = ({ quiz }) => {
           </form>
         </div>
       )}
-      <div className={`${showForm ? "hidden" : "flex"}  flex-col gap-2`}>
-        <div><Progress value={avrg()} />
+      <div className={`${showForm ? "hidden" : "flex"}  flex-col gap-3`}>
+        <div className="pb-12"><Progress value={avrg()} className=""/>
 </div>
         <h1 className="text-xl font-semibold">Kvíz - {quiz.title}</h1>
         <div>
@@ -178,7 +178,7 @@ const Quizcomp = ({ quiz }) => {
                   key={idx}
                   onClick={() => onAnswerSelected(answer, idx)}
                   className={`text-left p-3 w-full text-lg font-semibold  cursor-pointer ${
-                    selectedAnswerIndex === idx ? " " : " hover bg-gray-100"
+                    selectedAnswerIndex === idx ? " " : " hover bg-gray-100 dark:text-gray-900"
                   } ${
                     selectedAnswer &&
                     selectedAnswerIndex === idx &&
@@ -246,7 +246,7 @@ const Quizcomp = ({ quiz }) => {
               >
                 Restart
               </button>
-              <Link href="/quiz" className="bg-orange-700 text-white w-fit px-3 py-2 cursor-pointer text-xl font-semibold">Vybrat jiný test</Link>
+              <Link href="/" className="bg-orange-700 text-white w-fit px-3 py-2 cursor-pointer text-xl font-semibold">Vybrat jiný test</Link>
               </div>
             </div>
           )}

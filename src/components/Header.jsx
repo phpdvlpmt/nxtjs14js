@@ -46,10 +46,10 @@ function AuthButton() {
 }
 const Links = [
   {
-    name: "Home",
+    name: "Domů",
     link: "/",
   },
-  {
+ /*  {
     name: "Shadcn",
     link: "/shadcn",
   },
@@ -72,7 +72,7 @@ const Links = [
   {
     name: "Quiz",
     link: "/quiz",
-  },
+  }, */
 ];
 
 const Header = () => {
@@ -82,7 +82,8 @@ const Header = () => {
   return (
     <header className="flex justify-between items-center py-3 border-b border-slate-50 dark:border-slate-800 mb-4">
       <div>
-        <Camera className="text-destructive" />
+        <Link className="cursor-pointer" href="/">
+        <Camera className="text-destructive" /></Link>
       </div>
       <nav className="hidden sm:flex">
         <ul className="flex gap-x-4">
