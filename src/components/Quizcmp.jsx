@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Progress } from "@/components/ui/progress"
+import { createResult } from "../../actions";
 
 
 
@@ -22,11 +23,12 @@ const Quizcomp = ({ quiz }) => {
   const [disabled, setDisabled] = useState(false);
   const [showForm, setShowForm] = useState(true);
   const [name, setName] = useState("");
+  const [end, setEnd] = useState()
   
   //   Select and check answer
-  if (showResult) {
+  /* if (showResult) {
     sendEmail()
-  }
+  } */
   const onAnswerSelected = (answer, idx) => {
     setDisabled(true);
     setChecked(true);
@@ -56,12 +58,13 @@ const Quizcomp = ({ quiz }) => {
             wrongAnswers: prev.wrongAnswers + 1,
           }
     );
-    if (activeQuestion !== questions.length - 1) {
+    if (activeQuestion !== questions.length -1 ) {
       setActiveQuestion((prev) => prev + 1);
     } else {
       setActiveQuestion(0);
-      setShowResult(true);
-
+      //setShowResult(true);
+      setEnd(true)
+      
       //sendEmail()
     }
 
@@ -132,6 +135,37 @@ const Quizcomp = ({ quiz }) => {
 
       }
   }
+  const endTest = async ( data = {
+    title: quiz.title,
+    username: name,
+    score: result.score,
+    correctAnswers: result.correctAnswers,
+    total: quiz.totalQuestions,
+    average: avrg(),
+    grade: grade()
+  }) => {
+    //setShowResult(true);
+    //await 
+   // createResult({title: quiz.title, username: name, total: quiz.totalQustions, score: result.score})
+   const response = await fetch("/api/quiz", {
+    method: "POST",
+    mode: "cors",
+
+    body: JSON.stringify(data),
+  });
+
+  const json = await response.json();
+  return json;
+   
+  }
+  if(end){
+    console.log("už jsem na tlačítku")
+      //sendEmail()
+      endTest()
+      setEnd(false)
+      setShowResult(true)
+      
+  }
   /******************************/
 
   return (
@@ -148,7 +182,7 @@ const Quizcomp = ({ quiz }) => {
               required
             />
             <button className="px-3 py-2 bg-gray-900 text-white">
-              Přihlásit k testu
+              Pihlásit k testu
             </button>
           </form>
         </div>
@@ -201,7 +235,7 @@ const Quizcomp = ({ quiz }) => {
               ))}
               {checked ? (
                 <button
-                  onClick={nextQuestion}
+                  onClick={() => { nextQuestion(); activeQuestion === questions.length - 1 && "endTest()"}}
                   className="bg-gray-800 text-white w-fit px-4 py-2 cursor-pointer text-xl font-semibold"
                 >
                   {activeQuestion === questions.length - 1? "Dokončit" : "Další"}

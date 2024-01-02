@@ -37,3 +37,21 @@ export const createPost = async ( FormData) => {
   
     revalidatePath("/playground");
   }
+  export async function deleteResult(FormData) {
+    "use server";
+  
+    const inputId = FormData.get("inputId");
+  
+    await prisma.resume.delete({
+      where: {
+        id: inputId,
+      },
+    });
+  
+    revalidatePath("/results");
+  }
+
+  
+
+
+ 

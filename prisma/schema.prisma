@@ -76,3 +76,17 @@ model Category {
 
   @@unique([name])
 }
+
+model Resume{
+  id    String    @id @default(cuid())
+  username  String @db.VarChar(50)
+  title  String @db.VarChar(50)
+  total Int @db.Integer
+  score Int @db.Integer
+  average Int @db.Integer
+  grade Int @db.Integer
+  
+  createdAt              DateTime            @default(now())
+  updatedAt              DateTime            @updatedAt
+
+}
