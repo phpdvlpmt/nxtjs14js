@@ -28,7 +28,7 @@
       },
       {
         "id": 5,
-        "question": "Tepelné elektrárny vužívají jako zdroj energie:",
+        "question": "Tepelné elektrárny využívají jako zdroj energie:",
         "answers": ["hnědé uhlí", "vítr", "sluneční záření"],
         "correctAnswer": "hnědé uhlí"
       },
