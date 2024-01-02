@@ -8,6 +8,7 @@ const Quiz = () => {
       <Link href="/quiz/q3">Povrch, vodstvo, počasí a podnebí</Link>
       <Link href="/quiz/q4">Zemědělství</Link>
       <Link href="/quiz/q5">Nerostné suroviny, průmysl</Link>
+      <Link href="/quiz/q6">Evropa - jeden ze světadílů</Link>
     </div>
   );
 };

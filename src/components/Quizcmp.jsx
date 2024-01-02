@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { Progress } from "@/components/ui/progress"
+
 
 
 const Quizcomp = ({ quiz }) => {
@@ -102,7 +104,7 @@ const Quizcomp = ({ quiz }) => {
   };
   
   const avrg = () => {
-    const ar = ((result.score / questions.length) * 100).toFixed(2)
+    const ar = ((result.score / questions.length) * 100).toFixed()
     return ar
   }
 
@@ -152,6 +154,8 @@ const Quizcomp = ({ quiz }) => {
         </div>
       )}
       <div className={`${showForm ? "hidden" : "flex"}  flex-col gap-2`}>
+        <div><Progress value={avrg()} />
+</div>
         <h1 className="text-xl font-semibold">Kvíz - {quiz.title}</h1>
         <div>
           {!showResult && (
