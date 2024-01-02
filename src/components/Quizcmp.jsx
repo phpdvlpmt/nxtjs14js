@@ -25,7 +25,7 @@ const Quizcomp = ({ quiz }) => {
   
   //   Select and check answer
   if (showResult) {
-    sendEmail()
+    //sendEmail()
   }
   const onAnswerSelected = (answer, idx) => {
     setDisabled(true);
@@ -154,7 +154,7 @@ const Quizcomp = ({ quiz }) => {
         </div>
       )}
       <div className={`${showForm ? "hidden" : "flex"}  flex-col gap-3`}>
-        <div className="pb-12"><Progress value={avrg()} className=""/>
+        <div className="pb-12"><Progress value={activeQuestion / (questions.length  ) * 100} className=""/>
 </div>
         <h1 className="text-xl font-semibold">Kvíz - {quiz.title}</h1>
         <div>
