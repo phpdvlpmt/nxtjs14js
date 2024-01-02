@@ -1,28 +1,16 @@
-"use client";
-import React, { useState } from "react";
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
-import { Input } from "@/components/ui/input";
-
-const Home = () => {
-  const [text, setText] = useState("");
+const Quiz = () => {
   return (
-    <div className="flex flex-col space-y-5 w-full relative">
-      <div>
-       <span className="font-medium">Proměnná</span>  <span className="text-primary font-bold text-xl">{text}</span>
-      </div>
-      <Input
-        type="text"
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-        placeholder="Nová proměnná"
-      />
-      <Button onClick={() => setText("nová")} variant="destructive">
-        Nastav proměnnou
-      </Button>
-      <div className="mt-8"></div>
+    <div className="flex flex-col gap-5 text-xl font-bold">
+      <Link href="/q1">Naše vlast</Link>
+      <Link href="/q2">Mapy</Link>
+      <Link href="/q3">Povrch, vodstvo, počasí a podnebí</Link>
+      <Link href="/q4">Zemědělství</Link>
+      <Link href="/q5">Nerostné suroviny, průmysl</Link>
+      <Link href="/q6">Evropa - jeden ze světadílů</Link>
     </div>
   );
 };
 
-export default Home;
+export default Quiz;
