@@ -25,7 +25,7 @@ const Quizcomp = ({ quiz }) => {
   
   //   Select and check answer
   if (showResult) {
-    //sendEmail()
+    sendEmail()
   }
   const onAnswerSelected = (answer, idx) => {
     setDisabled(true);
