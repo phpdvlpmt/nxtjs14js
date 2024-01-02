@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/table"
 import { Trash2Icon } from "lucide-react";
 import { deleteResult } from '../../../actions';
+import { format } from "date-fns";
 
 const getData = async () => {
   const data = await prisma.resume.findMany({
@@ -34,7 +35,8 @@ const Results = async () => {
       <TableHead className="font-bold">Počet správných odpovědí</TableHead>
       <TableHead className="font-bold">Počet špatných odpovědí</TableHead>
       <TableHead className="font-bold">Průměr</TableHead>
-      <TableHead className="font-bold">Známka</TableHead>  
+      <TableHead className="font-bold">Známka</TableHead> 
+      <TableHead className="font-bold">Datum</TableHead> 
     </TableRow>
   </TableHeader>
   <TableBody>
@@ -47,6 +49,7 @@ const Results = async () => {
       <TableCell className="text-red-500">{item.wrongAnswers}</TableCell>
       <TableCell >{item.average}</TableCell>
       <TableCell >{item.grade}</TableCell>
+      <TableCell >{format(item.createdAt, "d. M .yyyy HH:mm")}</TableCell>
       <TableCell >
       <form action={deleteResult}>
         <input type="hidden" name="inputId" value={item.id} />
