@@ -10,6 +10,8 @@ const Quiz = () => {
       <Link href="/q4">Zemědělství</Link>
       <Link href="/q5">Nerostné suroviny, průmysl</Link>
       <Link href="/q6">Evropa - jeden ze světadílů</Link>
+      <Link href="/q7">Oceány a světadíly; Evropa</Link>
+      <Link href="/q8">Sousední státy České republiky</Link>
     </div></>
   );
 };

@@ -1,0 +1,74 @@
+{
+    "totalQuestions": 11,
+    "title": "Oceány a světadíly; Evropa",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Na Zemi se rozkládá:",
+        "answers": ["5 světadílů", "7 světadílů", "10 světadílů"],
+        "correctAnswer": "7 světadílů"
+      },
+      {
+        "id": 2,
+        "question": "Největší vodní plochou na Zemi je:",
+        "answers": ["Atlantský oceán", "Tichý oceán", "Indický oceán"],
+        "correctAnswer": "Tichý oceán"
+      },
+      {
+        "id": 3,
+        "question": "Evropa je pevninou spojena s:",
+        "answers": ["Afrikou", "Austrálií", "Asií"],
+        "correctAnswer": "Asií"
+      },
+      {
+        "id": 4,
+        "question": "Mezi světadíly nepatří:",
+        "answers": ["Austrálie a Oceánie", "Arktida", "Severní Amerika"],
+        "correctAnswer": "Arktida"
+      },
+      {
+        "id": 5,
+        "question": "Největším evropským ostrovem je/jsou:",
+        "answers": ["Kréta", "Korsika", "Britské ostrovy"],
+        "correctAnswer": "Britské ostrovy"
+      },
+      {
+        "id": 6,
+        "question": "Většinu povrchu Evropy pokrývají:",
+        "answers": ["nížiny", "vysočiny", "vodní plochy"],
+        "correctAnswer": "nížiny"
+      },
+      {
+        "id": 7,
+        "question": "Nejvyšším evropským pohořím jsou:",
+        "answers": ["Alpy", "Krkonoše", "Karpaty"],
+        "correctAnswer": "Alpy"
+      },
+      {
+        "id": 8,
+        "question": "Střídání čtyř ročních období je typické pro podnebný pás:",
+        "answers": ["tropický", "mírný", "polární"],
+        "correctAnswer": "mírný"
+      },
+      {
+        "id": 9,
+        "question": "Většina evropských vod odtéká do:",
+        "answers": ["Atlantského oceánu", "Indického oceánu", "Tichého oceánu"],
+        "correctAnswer": "Atlantského oceánu"
+      },
+      {
+        "id": 10,
+        "question": "K dopravě patří:",
+        "answers": ["doly", "námořní přístavy", "nákupní zóna"],
+        "correctAnswer": "námořní přístavy"
+      },
+      {
+        "id": 11,
+        "question": "Zdravotnictví je součástí:",
+        "answers": ["zemědělství", "průmyslu", "služeb"],
+        "correctAnswer": "služeb"
+      }
+          
+    ]
+}
+  

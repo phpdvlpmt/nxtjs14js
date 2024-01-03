@@ -1,0 +1,80 @@
+{
+    "totalQuestions": 12,
+    "title": "Sousední státy České republiky:",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Hlavní městem Německa je:",
+        "answers": ["Mnichov", "Berlín", "Hamburk", "Kolín nad Rýnem"],
+        "correctAnswer": "Berlín"
+      },
+      {
+        "id": 2,
+        "question": "Hlavním městem Rakouska je:",
+        "answers": ["Vídeň", "Graz", "Innsbruck", "Salcburk"],
+        "correctAnswer": "Vídeň"
+      },
+      {
+        "id": 3,
+        "question": "Hlavním městem Slovenska je:",
+        "answers": ["Varšava", "Žilina", "Bratislava", "Nitra"],
+        "correctAnswer": "Bratislava"
+      },
+      {
+        "id": 4,
+        "question": "Hlavním městem Polska je:",
+        "answers": ["Krakov", "Vratislav", "Varšava", "Gdaňsk"],
+        "correctAnswer": "Varšava"
+      },
+      {
+        "id": 5,
+        "question": "Kterým státem neprotéká řeka Dunaj:",
+        "answers": ["Rakouskem", "Německem", "Slovenskem", "Polskem"],
+        "correctAnswer": "Polskem"
+      },
+      {
+        "id": 6,
+        "question": "Který z uvedených států je nejlidnatější:",
+        "answers": ["Rakousko", "Německo", "Slovensko", "Polsko"],
+        "correctAnswer": "Německo"
+      },
+      {
+        "id": 7,
+        "question": "Který stát má nejmenší počet obyvatel:",
+        "answers": ["Rakousko", "Německo", "Slovensko", "Polsko"],
+        "correctAnswer": "Slovensko"
+      },
+      {
+        "id": 8,
+        "question": "Který stát je proslulý svým automobilovým průmyslem:",
+        "answers": ["Rakousko", "Německo", "Slovensko", "Polsko"],
+        "correctAnswer": "Německo"
+      },
+      {
+        "id": 9,
+        "question": "Který stát vznikl stejně jako naše republika 1. 1. 1993:",
+        "answers": ["Rakousko", "Německo", "Slovensko", "Polsko"],
+        "correctAnswer": "Slovensko"
+      },
+      {
+        "id": 10,
+        "question": "Vyberte stát, jehož pobřeží leží u Severního moře:",
+        "answers": ["Rakousko", "Německo", "Slovensko", "Polsko"],
+        "correctAnswer": "Německo"
+      },
+      {
+        "id": 11,
+        "question": "Který z uvedených států je hospodářsky nejsilnější zemí Evropy:",
+        "answers": ["Rakousko", "Německo", "Slovensko", "Polsko"],
+        "correctAnswer": "Německo"
+      },
+      {
+        "id": 12,
+        "question": "Všechny naše sousední státy mají státní zřízení:",
+        "answers": ["království", "císařství", "republiku", "knížectví"],
+        "correctAnswer": "republiku"
+      }
+          
+    ]
+}
+  
