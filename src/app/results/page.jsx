@@ -45,11 +45,11 @@ const Results = async () => {
       <TableCell className="font-bold">{item.username}</TableCell>
       <TableCell className="font-medium">{item.title}</TableCell>
       <TableCell>{item.total}</TableCell>
-      <TableCell >{item.correctAnswers}</TableCell>
+      <TableCell className="text-green-500">{item.correctAnswers}</TableCell>
       <TableCell className="text-red-500">{item.wrongAnswers}</TableCell>
-      <TableCell >{item.average}</TableCell>
+      <TableCell >{item.average}%</TableCell>
       <TableCell >{item.grade}</TableCell>
-      <TableCell >{format(item.createdAt, "d. M .yyyy HH:mm")}</TableCell>
+      <TableCell >{format(item.createdAt, "d. M. yyyy H:mm")}</TableCell>
       <TableCell >
       <form action={deleteResult}>
         <input type="hidden" name="inputId" value={item.id} />

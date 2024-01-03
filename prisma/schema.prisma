@@ -81,13 +81,13 @@ model Resume{
   id    String    @id @default(cuid())
   username  String @db.VarChar(50)
   title  String @db.VarChar(50)
-  total Int @db.Integer
-  correctAnswers Int @db.Integer
-  wrongAnswers Int @db.Integer
-  average Int @db.Integer
-  grade Int @db.Integer
+  total Int 
+  correctAnswers Int 
+  wrongAnswers Int 
+  average Int 
+  grade Int 
   
   createdAt              DateTime            @default(now())
-  updatedAt              DateTime            @updatedAt
+  
 
 }
