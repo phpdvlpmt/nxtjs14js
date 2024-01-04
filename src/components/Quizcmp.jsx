@@ -21,6 +21,7 @@ const Quizcomp = ({ quiz }) => {
   const [name, setName] = useState("");
   const [end, setEnd] = useState();
   const [q, setQ] = useState(0);
+  const [prg, setPrg] = useState(false);
 
   //   Select and check answer
   /* if (showResult) {
@@ -60,6 +61,7 @@ const Quizcomp = ({ quiz }) => {
       setQ((prev) => prev + 1);
     } else {
       setQ((prev) => prev + 1);
+      setDisabled(true);
       //setActiveQuestion(0);
       //setShowResult(true);
       //setEnd(true);
@@ -71,6 +73,8 @@ const Quizcomp = ({ quiz }) => {
   };
   const restart = () => {
     setActiveQuestion(0);
+    setPrg(true);
+    setDisabled(false);
     setShowResult(false);
     setResult({
       correctAnswers: 0,
@@ -100,6 +104,7 @@ const Quizcomp = ({ quiz }) => {
     e.preventDefault();
     const name = e.target.name.value;
     setName(name);
+    setPrg(true);
 
     setShowForm(false);
   };
@@ -165,6 +170,7 @@ const Quizcomp = ({ quiz }) => {
   const finish = () => {
     setActiveQuestion(0);
     setQ(0);
+    setPrg(false);
     setShowResult(true);
 
     setEnd(true);
@@ -174,7 +180,7 @@ const Quizcomp = ({ quiz }) => {
   return (
     <div className="">
       {showForm && (
-        <div className="flex flex-col w-1/3 gap-3">
+        <div className="flex flex-col sm:w-1/3 gap-3">
           <h2 className="text-lg font-semibold">
             Přihlášení k testu - {quiz.title}
           </h2>
@@ -193,8 +199,10 @@ const Quizcomp = ({ quiz }) => {
         </div>
       )}
       <div className={`${showForm ? "hidden" : "flex"}  flex-col gap-3`}>
-        <div className="pb-12">
-          <Progress value={(q / questions.length) * 100} className="" />
+        <div>
+          {prg && (
+            <Progress value={(q / questions.length) * 100} className="" />
+          )}
         </div>
         <h1 className="text-xl font-semibold">Kvíz - {quiz.title}</h1>
         <div>
