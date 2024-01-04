@@ -12,7 +12,7 @@ import {
 import { Trash2Icon } from "lucide-react";
 import { deleteResult } from '../../../actions';
 import { format } from "date-fns";
-
+//import { format } from 'date-fns-tz';
 const getData = async () => {
   const data = await prisma.resume.findMany({
     
@@ -22,6 +22,7 @@ const getData = async () => {
   
 };
 const Results = async () => {
+  
   const data = await getData();
   return (
     <div>
@@ -49,7 +50,7 @@ const Results = async () => {
       <TableCell className="text-red-500">{item.wrongAnswers}</TableCell>
       <TableCell >{item.average}%</TableCell>
       <TableCell >{item.grade}</TableCell>
-      <TableCell >{format(item.createdAt, "d. M. yyyy H:mm")}</TableCell>
+      <TableCell >{format(item.createdAt, "d. M. yyyy H:mm", { timeZone: "Europe/Prague" })}</TableCell>
       <TableCell >
       <form action={deleteResult}>
         <input type="hidden" name="inputId" value={item.id} />
