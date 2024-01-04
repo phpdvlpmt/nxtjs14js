@@ -2,7 +2,6 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Progress } from "@/components/ui/progress";
-import { createResult } from "../../actions";
 
 const Quizcomp = ({ quiz }) => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -21,6 +20,7 @@ const Quizcomp = ({ quiz }) => {
   const [showForm, setShowForm] = useState(true);
   const [name, setName] = useState("");
   const [end, setEnd] = useState();
+  const [q, setQ] = useState(0);
 
   //   Select and check answer
   /* if (showResult) {
@@ -57,10 +57,12 @@ const Quizcomp = ({ quiz }) => {
     );
     if (activeQuestion !== questions.length - 1) {
       setActiveQuestion((prev) => prev + 1);
+      setQ((prev) => prev + 1);
     } else {
-      setActiveQuestion(0);
+      setQ((prev) => prev + 1);
+      //setActiveQuestion(0);
       //setShowResult(true);
-      setEnd(true);
+      //setEnd(true);
 
       //sendEmail()
     }
@@ -155,12 +157,18 @@ const Quizcomp = ({ quiz }) => {
     return json;
   };
   if (end) {
-    console.log("už jsem na tlačítku");
     //sendEmail()
     endTest();
     setEnd(false);
     setShowResult(true);
   }
+  const finish = () => {
+    setActiveQuestion(0);
+    setQ(0);
+    setShowResult(true);
+
+    setEnd(true);
+  };
   /******************************/
 
   return (
@@ -186,10 +194,7 @@ const Quizcomp = ({ quiz }) => {
       )}
       <div className={`${showForm ? "hidden" : "flex"}  flex-col gap-3`}>
         <div className="pb-12">
-          <Progress
-            value={(activeQuestion / questions.length) * 100}
-            className=""
-          />
+          <Progress value={(q / questions.length) * 100} className="" />
         </div>
         <h1 className="text-xl font-semibold">Kvíz - {quiz.title}</h1>
         <div>
@@ -240,22 +245,23 @@ const Quizcomp = ({ quiz }) => {
                 <button
                   onClick={() => {
                     nextQuestion();
-                    activeQuestion === questions.length - 1 && "endTest()";
+                    q === questions.length - 1;
                   }}
                   className="bg-gray-800 text-white w-fit px-4 py-2 cursor-pointer text-xl font-semibold"
                 >
-                  {activeQuestion === questions.length - 1
-                    ? "Dokončit"
-                    : "Další"}
+                  {activeQuestion === questions.length - 1 ? "Další" : "Další"}
                 </button>
               ) : (
                 <button
-                  onClick={nextQuestion}
-                  disabled
-                  className="bg-gray-200 text-gray-800 w-fit px-4 py-2 cursor-not-allowed text-xl font-semibold"
+                  onClick={nextQuestion && (() => finish())}
+                  disabled={q !== questions.length}
+                  className={`${
+                    q !== questions.length
+                      ? "bg-gray-200 text-gray-800 w-fit px-4 py-2 cursor-not-allowed"
+                      : "px-4 py-2 bg-gray-800 text-white cursor-pointer w-fit text-xl font-semibold"
+                  }`}
                 >
-                  {" "}
-                  {"Další"}
+                  {q === questions.length ? "Dokončit" : "Další"}
                 </button>
               )}
             </div>

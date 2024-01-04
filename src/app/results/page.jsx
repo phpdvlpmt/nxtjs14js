@@ -32,8 +32,8 @@ const Results = async () => {
       <TableHead className="font-bold">Jméno žáka</TableHead>
       <TableHead  className="font-bold">Název testu</TableHead>
       <TableHead className="font-bold">Počet otázek</TableHead>
-      <TableHead className="font-bold">Počet správných odpovědí</TableHead>
-      <TableHead className="font-bold">Počet špatných odpovědí</TableHead>
+      <TableHead className="font-bold">Správně</TableHead>
+      <TableHead className="font-bold">Špatně</TableHead>
       <TableHead className="font-bold">Průměr</TableHead>
       <TableHead className="font-bold">Známka</TableHead> 
       <TableHead className="font-bold">Datum</TableHead> 
