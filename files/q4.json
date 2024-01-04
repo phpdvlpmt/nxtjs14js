@@ -59,7 +59,7 @@
       {
         "id": 10,
         "question": "Na našem území převažují lesy:",
-        "answers": ["jehličnaté a smíšené", "jehličnaté a bukové", "listnaté a sméšené"],
+        "answers": ["jehličnaté a smíšené", "jehličnaté a bukové", "listnaté a smíšené"],
         "correctAnswer": "jehličnaté a smíšené"
       }
           
