@@ -17,9 +17,9 @@ const TailwindPage = async () => {
       image: true,
     },
   });
-  console.log(session)
-  
- /*  const Posts = await prisma.post.create({
+  console.log(session);
+
+  /*  const Posts = await prisma.post.create({
     data: {
      
         title: 'Prisma ',
@@ -29,8 +29,6 @@ const TailwindPage = async () => {
   }) */
 
   if (!session || !session.user) {
-    //redirect("/api/auth/signin");
-
     redirect("/api/auth/signin");
   }
   return (

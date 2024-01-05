@@ -83,11 +83,11 @@ const Quiz = () => {
         <Link href="/q7">Oceány a světadíly; Evropa</Link>
         <Link href="/q8">Sousední státy České republiky</Link>
       </div> */}
-      <div className="grid grid-cols-1 sm:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5">
         {tests.map((test, index) => (
           <div key={index}>
             <Link href={test.link}>
-              <Card>
+              <Card className="h-full">
                 <CardHeader>
                   <CardTitle>{test.title}</CardTitle>
                   <CardDescription>{test.class}. ročník</CardDescription>

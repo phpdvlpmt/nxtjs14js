@@ -1,4 +1,3 @@
-
 import prisma from "@/app/utils/db";
 
 
@@ -14,7 +13,6 @@ export async function POST(req) {
    
     
   try {
-    
     
       await prisma.resume.create({
         data: {
