@@ -83,7 +83,7 @@ const Header = () => {
     <header className="flex justify-between items-center py-3 border-b border-slate-50 dark:border-slate-800 mb-4">
       <div>
         <Link className="cursor-pointer" href="/">
-          <BookOpenText className="text-destructive" />
+          <BookOpenText  />
         </Link>
       </div>
       <nav className="hidden sm:flex">
@@ -144,8 +144,8 @@ const Header = () => {
                 <div className="flex flex-col items-center justify-center text-base font-medium">
                   <ul className="list-none flex flex-col  gap-4">
                     <li onClick={() => setOpen(false)}>
-                      <Link className="cursor-pointer" href="/">
-                        <BookOpenText className="text-destructive" />
+                      <Link className="font-normal dark:text-white text-foreground" href="/">
+                        <BookOpenText />
                       </Link>
                     </li>
                     {Links.map((link, index) => (
