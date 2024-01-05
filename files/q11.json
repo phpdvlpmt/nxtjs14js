@@ -1,0 +1,92 @@
+{
+    "totalQuestions": 14,
+    "title": "Opakování č. 3",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Na území České republiky s nachází pouze voda:",
+        "answers": ["pevninská", "oceánská", "ledovcová"],
+        "correctAnswer": "pevninská"
+      },
+      {
+        "id": 2,
+        "question": "Naše nejznámější jezera se nacházejí:",
+        "answers": ["v Krkonoších", "na Šumavě", "v jižních Čechách"],
+        "correctAnswer": "na Šumavě"
+      },
+      {
+        "id": 3,
+        "question": "Které tvrzení je pravdivé?",
+        "answers": ["Řeka je větší vodní nádrž.", "Soutok je místo, kde se stékají řeky.", "rybníky jsou zdrojem pitné vody."],
+        "correctAnswer": "Soutok je místo, kde se stékají řeky."
+      },
+      {
+        "id": 4,
+        "question": "Labe pramení:",
+        "answers": ["v Krkonoších", "na Šumavě", "pod Králickm Sněžníkem"],
+        "correctAnswer": "v Krkonoších"
+      },
+      {
+        "id": 5,
+        "question": "Do kolika moří naše řeky odvádějí vodu?",
+        "answers": ["do dvou", "do čtyř", "do tří"],
+        "correctAnswer": "do tří"
+      },
+      {
+        "id": 6,
+        "question": "Podnebí na území České republiky ovlivňuje především:",
+        "answers": ["počasí", "nadmořská výška", "oblačnost"],
+        "correctAnswer": "nadmořská výška"
+      },
+      {
+        "id": 7,
+        "question": "Nejčastějším druhem srážek je:",
+        "answers": ["rosa", "sněhové vločky", "déšť"],
+        "correctAnswer": "déšť"
+      },
+      {
+        "id": 8,
+        "question": "S rostoucí nadmořskou výškou:",
+        "answers": ["klesá teplota a přibývá srážek", "se zvyšuje teplota a ubývá srážek", "se rychleji stídají čtyři ročí období"],
+        "correctAnswer": "klesá teplota a přibývá srážek"
+      },
+      {
+        "id": 9,
+        "question": "Vyberte pravdivé tvrzení.",
+        "answers": ["Užitkové rostilny se pěstují pouze jako krmivo pro hospodářská zvířata.", "Nejúrodnější půdy obsahují nejvíce humusu.", "Půda je nejhlubší vrstva země."],
+        "correctAnswer": "Nejúrodnější půdy obsahují nejvíce humusu."
+      },
+      {
+        "id": 10,
+        "question": "V nížinách se pěstuje:",
+        "answers": ["řepka olejka a oves", "lilek brambor a pšenice", "pšenice a kukuřice"],
+        "correctAnswer": "pšenice a kukuřice"
+      },
+      {
+        "id": 11,
+        "question": "Chov ryb u nás je nejvíc rozšířen:",
+        "answers": ["Polabské nížině", "jižních Čechách", "Dyjsko-svrateckém úvalu"],
+        "correctAnswer": "jižních Čechách"
+      },
+      {
+        "id": 12,
+        "question": "Které tvrzení je nepravdivé?",
+        "answers": ["Většinu povrchu horských oblastí tvoří lesy a pastviny.", "Chmel vyžaduje teplé podnebí.", "Žito je náročné na teplo."],
+        "correctAnswer": "Žito je náročné na teplo."
+      },
+      {
+        "id": 13,
+        "question": "Na našem území je nejvíce zastoupen jehličnatý strom:",
+        "answers": ["smrk ztepilý", "modřín opadavý", "borovice vejmutovka"],
+        "correctAnswer": "smrk ztepilý"
+      },
+      {
+        "id": 14,
+        "question": "Dřevo je surovinou pro výrobu:",
+        "answers": ["vosku", "papíru", "textilu"],
+        "correctAnswer": "papíru"
+      }
+          
+    ]
+}
+  
