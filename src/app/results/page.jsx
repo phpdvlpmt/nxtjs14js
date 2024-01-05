@@ -52,7 +52,7 @@ const Results = async () => {
       <TableCell className="text-red-500">{item.wrongAnswers}</TableCell>
       <TableCell >{item.average}%</TableCell>
       <TableCell >{item.grade}</TableCell>
-      <TableCell >{moment.tz(item.createdAt,"Europe/Prague").format("D. M. YYYY HH:mm")}</TableCell>
+      <TableCell >{moment.tz(item.createdAt,"Europe/Prague").format("D. M. YYYY H:mm")}</TableCell>
       <TableCell >
       <form action={deleteResult}>
         <input type="hidden" name="inputId" value={item.id} />

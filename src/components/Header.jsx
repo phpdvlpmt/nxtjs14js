@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Camera, AlignJustify } from "lucide-react";
+import { Camera, AlignJustify, FileSymlink } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -49,6 +49,10 @@ const Links = [
     name: "Domů",
     link: "/",
   },
+  {
+    name: <FileSymlink />,
+    link: "/results",
+  }
  /*  {
     name: "Shadcn",
     link: "/shadcn",

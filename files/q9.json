@@ -1,0 +1,92 @@
+{
+    "totalQuestions": 14,
+    "title": "Opakování č. 1",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Naším jižním sousedním státem je:",
+        "answers": ["Polsko", "Slovensko", "Rakousko"],
+        "correctAnswer": "Rakousko"
+      },
+      {
+        "id": 2,
+        "question": "Hraniční kameny vyznačují:",
+        "answers": ["hranice mezi historickými zeměmi", "hranice krajů", "státní hranice"],
+        "correctAnswer": "státní hranice"
+      },
+      {
+        "id": 3,
+        "question": "Zavraždění českého knížete Václava si pipomínáme:",
+        "answers": ["8. 5.", "17. 11.", "28. 9."],
+        "correctAnswer": "28. 9."
+      },
+      {
+        "id": 4,
+        "question": "Český lev má barvu:",
+        "answers": ["červenou", "modrou", "stříbrnou"],
+        "correctAnswer": "stříbrnou"
+      },
+      {
+        "id": 5,
+        "question": "Ve které skupině se nacházejí státní symboly:",
+        "answers": ["malý státní znak, státní hymna, státní barvy", "státní pečeť, historická země Čechy, velký státní znak", "vlajka premiéra České republiky, státní vlajka, korunovační klenoty"],
+        "correctAnswer": "malý státní znak, státní hymna, státní barvy"
+      },
+      {
+        "id": 6,
+        "question": "Naše republika je stát:",
+        "answers": ["nedemokratický", "demokratický", "království"],
+        "correctAnswer": "demokratický"
+      },
+      {
+        "id": 7,
+        "question": "Které z tvrzení není pravdivé?",
+        "answers": ["Soudce je závislý na rozhodnutí prezidenta", "ministři jsou součástí vlády", "Ústava České republiky je základním zákonem našeho státu"],
+        "correctAnswer": "Soudce je závislý na rozhodnutí prezidenta"
+      },
+      {
+        "id": 8,
+        "question": "Naším nejmenším územním celkem je:",
+        "answers": ["vesnice", "samota", "obec"],
+        "correctAnswer": "obec"
+      },
+      {
+        "id": 9,
+        "question": "Mezi kraje České republiky patří:",
+        "answers": ["Hanácký kraj", "Kraj Vysočina", "Vsetínský kraj"],
+        "correctAnswer": "Kraj Vysočina"
+      },
+      {
+        "id": 10,
+        "question": "Hlavní město Praha je:",
+        "answers": ["pouze hlavní město České republiky", "hlavní město České republiky a zároveň kraj", "jen krajským městem Středočeského kraje"],
+        "correctAnswer": "hlavní město České republiky a zároveň kraj"
+      },
+      {
+        "id": 11,
+        "question": "Starosta sotjí v čele:",
+        "answers": ["krajského města", "obecního zastupitelstva", "magistrátu"],
+        "correctAnswer": "obecního zastupitelstva"
+      },
+      {
+        "id": 12,
+        "question": "Poláci žijící v České republice patří k:",
+        "answers": ["českému národu", "české národnosti", "národnostní menšině"],
+        "correctAnswer": "národnostní menšině"
+      },
+      {
+        "id": 13,
+        "question": "Pro národopisné oblasti je typický:",
+        "answers": ["lidový kroj", "malý počet obyvatel", "chov ovcí"],
+        "correctAnswer": "lidový kroj"
+      },
+      {
+        "id": 14,
+        "question": "Vyberte pravdivé tvrzení:",
+        "answers": ["Dudy jsou hanácký hudební nástroj.", "Na Valašsku lidé žijí ve skanzenech", "Chodsko leží v západních Čechách"],
+        "correctAnswer": "Chodsko leží v západních Čechách"
+      }
+          
+    ]
+}
+  
