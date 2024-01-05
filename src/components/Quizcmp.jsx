@@ -218,7 +218,7 @@ const Quizcomp = ({ quiz }) => {
         </div>
         <div>
           {!showResult ? (
-            <div className="flex  w-1/ 3  flex-col gap-3">
+            <div className="flex  w-full  flex-col gap-3">
               <h3 className="text-2xl font-bold">{question}</h3>
               {answers.map((answer, idx) => (
                 <button
@@ -265,7 +265,7 @@ const Quizcomp = ({ quiz }) => {
                   disabled={q !== questions.length}
                   className={`${
                     q !== questions.length
-                      ? "bg-gray-200 text-gray-800 w-fit px-4 py-2 cursor-not-allowed"
+                      ? "bg-gray-200 text-gray-800 w-fit px-4 py-2 text-xl font-semibold cursor-not-allowed"
                       : "px-4 py-2 bg-gray-800 text-white cursor-pointer w-fit text-xl font-semibold"
                   }`}
                 >
