@@ -1,0 +1,92 @@
+{
+    "totalQuestions": 14,
+    "title": "Opakování č. 4",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Nerostné suroviny vznikly:",
+        "answers": ["přírodními procesy před miliony let", "z půdy", "přeměnou rostli a hub"],
+        "correctAnswer": "přírodními procesy před miliony let"
+      },
+      {
+        "id": 2,
+        "question": "Na území České republiky se těží:",
+        "answers": ["černé, hnědé uhlí a sklářské písky", "kaolin, cement a ropa", "vápno, černé uhlí a žula"],
+        "correctAnswer": "černé, hnědé uhlí a sklářské písky"
+      },
+      {
+        "id": 3,
+        "question": "Hlubinná těžba se provádí v:",
+        "answers": ["lomech", "dolech", "jeskyních"],
+        "correctAnswer": "dolech"
+      },
+      {
+        "id": 4,
+        "question": "Které tvrzení je pravdivé?",
+        "answers": ["Černé uhlí se nachází v okolí měst Sokolov a Most.", "Většina elektrické energie se u nás vyrábí v tepelných elektrárnách.", "Kaolin se vyskytuje u města Hodonín."],
+        "correctAnswer": "Většina elektrické energie se u nás vyrábí v tepelných elektrárnách."
+      },
+      {
+        "id": 5,
+        "question": "Průmyslová výroba se dělí na:",
+        "answers": ["průmyslové závody", "průmyslová odvětví", "suroviny"],
+        "correctAnswer": "průmyslová odvětví"
+      },
+      {
+        "id": 6,
+        "question": "Nejvýznamnějším výrobcem osobních aut u nás je:",
+        "answers": ["Hyundai Nošovice", "Volkswagen Praha", "Škoda auto Mladá Boleslav"],
+        "correctAnswer": "Škoda auto Mladá Boleslav"
+      },
+      {
+        "id": 7,
+        "question": "K potravinářskému průmyslu patří:",
+        "answers": ["masné závody, mlýny, pekárny", "pivovary, vinice, mlékárny", "čokoládovny, vepříny a mlýny"],
+        "correctAnswer": "masné závody, mlýny, pekárny"
+      },
+      {
+        "id": 8,
+        "question": "Bižuterie vyrábí průmysl:",
+        "answers": ["keramický", "porcelánový", "sklářský"],
+        "correctAnswer": "sklářský"
+      },
+      {
+        "id": 9,
+        "question": "Které tvrzení je nepravdivé?",
+        "answers": ["Kadeřnictví patří ke službám.", "Služby jsou nevýrobní činnosti.", "Služby se vyskytují více na vesnici."],
+        "correctAnswer": "Služby se vyskytují více na vesnici."
+      },
+      {
+        "id": 10,
+        "question": "MHD je zkratka pro:",
+        "answers": ["mezinárodní hromadnou dopravu", "místní hospodářské družstvo", "městskou hromadnou dopravu"],
+        "correctAnswer": "městskou hromadnou dopravu"
+      },
+      {
+        "id": 11,
+        "question": "Přírodní vodní nádrž je:",
+        "answers": ["jezero, rybník", "řeka, potok", "jezero"],
+        "correctAnswer": "jezero"
+      },
+      {
+        "id": 12,
+        "question": "Potrubní doprava přepravuje:",
+        "answers": ["osoby", "písek", "ropu"],
+        "correctAnswer": "ropu"
+      },
+      {
+        "id": 13,
+        "question": "Národní park České Švýcarsko je ojedinělý výskytem:",
+        "answers": ["mnoha lesních porostů", "vysokohorských rostlin", "pískovcových skalních měst"],
+        "correctAnswer": "pískovcových skalních měst"
+      },
+      {
+        "id": 14,
+        "question": "Nakupujeme:",
+        "answers": ["tolik jídla, kolik sníme", "neomezené množství jídla", "tolik jídla, abychom mohli jeho část vyhodit do odpadků"],
+        "correctAnswer": "tolik jídla, kolik sníme"
+      }
+          
+    ]
+}
+  

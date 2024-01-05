@@ -62,7 +62,12 @@ const tests = [
     title: "Opakování č. 3",
     link: "/q11",
     class: "4",
-  }
+  },
+  {
+    title: "Opakování č. 4",
+    link: "/q12",
+    class: "4",
+  },
 ];
 
 const Quiz = () => {
