@@ -53,6 +53,11 @@ const tests = [
     link: "/q9",
     class: "4",
   },
+  {
+    title: "Opakování č. 2",
+    link: "/q10",
+    class: "4",
+  }
 ];
 
 const Quiz = () => {

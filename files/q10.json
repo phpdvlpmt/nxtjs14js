@@ -1,0 +1,92 @@
+{
+    "totalQuestions": 14,
+    "title": "Opakování č. 2",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Mapy slouží:",
+        "answers": ["k orientaci v terénu", "jako nástěnná ozdoba stěn", "ke stolním hrám"],
+        "correctAnswer": "k orientaci v terénu"
+      },
+      {
+        "id": 2,
+        "question": "Při pěších výletech do přírody se používají mapy:",
+        "answers": ["tematické", "vlastivědné", "turistické"],
+        "correctAnswer": "turistické"
+      },
+      {
+        "id": 3,
+        "question": "Nejvyšší pohoří jsou na mapě zakreslena barvou:",
+        "answers": ["tmavě hnědou", "světle hnědou", "tmavě zelenou"],
+        "correctAnswer": "tmavě hnědou"
+      },
+      {
+        "id": 4,
+        "question": "Které tvrzení je pravdivé?",
+        "answers": ["Měřítko mapy slouží k určení vzdálenosti mezi určitými místy.", "V legendě mapy jsou zakresleny libovolné značky.", "Směrová růžice určuje směr k hlavnímu městu."],
+        "correctAnswer": "Měřítko mapy slouží k určení vzdálenosti mezi určitými místy."
+      },
+      {
+        "id": 5,
+        "question": "Při orientaci v krajině musí horní okraj mapy směřovat na:",
+        "answers": ["západ", "východ", "sever"],
+        "correctAnswer": "sever"
+      },
+      {
+        "id": 6,
+        "question": "Sever nám vždy ukazuje:",
+        "answers": ["magnetická střelka kompasu a Polárka", "GPS navigace a večerní stín", "Polárka a stěhovaví ptáci"],
+        "correctAnswer": "magnetická střelka kompasu a Polárka"
+      },
+      {
+        "id": 7,
+        "question": "Podle nadmořské výšky rozlišujeme:",
+        "answers": ["nížiny a pahorkatiny", "nížiny a vysočiny", "roviny a hornatiny"],
+        "correctAnswer": "nížiny a vysočiny"
+      },
+      {
+        "id": 8,
+        "question": "Sníženina se nachází:",
+        "answers": ["na vrcholu hory", "mezi dvěma vyvýšeninami", "ve svahu"],
+        "correctAnswer": "mezi dvěma vyvýšeninami"
+      },
+      {
+        "id": 9,
+        "question": "Mezi hraniční pohoří naší vlasti patří:",
+        "answers": ["Bílé Karpaty", "Hornomoravský úval", "Českomoravská vysočina"],
+        "correctAnswer": "Bílé Karpaty"
+      },
+      {
+        "id": 10,
+        "question": "Mezi naše nížiny patří:",
+        "answers": ["Šumava", "Český les", "Dolnomoravský úval"],
+        "correctAnswer": "Dolnomoravský úval"
+      },
+      {
+        "id": 11,
+        "question": "Naše nejvyšší hora leží v:",
+        "answers": ["Krušných horách", "Krkonoších", "Českém lese"],
+        "correctAnswer": "Krkonoších"
+      },
+      {
+        "id": 12,
+        "question": "Nížiny se rozprostírají:",
+        "answers": ["při hranicích s Německem", "na hranici Čech a Moravy", "podél dolních a středních toků řek"],
+        "correctAnswer": "podél dolních a středních toků řek"
+      },
+      {
+        "id": 13,
+        "question": "Hornomoravský úval se rozprostírá:",
+        "answers": ["v severních Čechách", "podél řeky Moravy", "na jihu Moravy"],
+        "correctAnswer": "podél řeky Moravy"
+      },
+      {
+        "id": 14,
+        "question": "Naše nejvyšší pohoří patří mezi:",
+        "answers": ["pahorkatiny", "hornatiny", "vrchoviny"],
+        "correctAnswer": "hornatiny"
+      }
+          
+    ]
+}
+  
