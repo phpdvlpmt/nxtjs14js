@@ -46,7 +46,7 @@ const tests = [
   {
     title: "Sousední státy České republiky",
     link: "/q8",
-    class: "5",
+    class: "4",
   },
   {
     title: "Opakování č. 1",
@@ -87,10 +87,10 @@ const Quiz = () => {
         {tests.map((test, index) => (
           <div key={index}>
             <Link href={test.link}>
-              <Card className="bg-gray-50">
+              <Card>
                 <CardHeader>
                   <CardTitle>{test.title}</CardTitle>
-                  <CardDescription>{test.class}</CardDescription>
+                  <CardDescription>{test.class}. ročník</CardDescription>
                 </CardHeader>
                 {/* <CardContent>
                   <p>Card Content</p>
