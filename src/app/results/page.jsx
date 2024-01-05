@@ -30,7 +30,7 @@ const Results = async () => {
   return (
     <div>
       <Table>
-        <TableCaption>Seznam provedených testů</TableCaption>
+        <TableCaption className="pb-8">Seznam provedených testů</TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead className="font-bold">Jméno žáka</TableHead>
@@ -79,3 +79,4 @@ const Results = async () => {
 };
 
 export default Results;
+

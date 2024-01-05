@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Camera, AlignJustify, FileSymlink } from "lucide-react";
+import { BookOpenText, AlignJustify, FileSymlink } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -46,14 +46,10 @@ function AuthButton() {
 }
 const Links = [
   {
-    name: "Domů",
-    link: "/",
-  },
-  {
     name: <FileSymlink />,
     link: "/results",
-  }
- /*  {
+  },
+  /*  {
     name: "Shadcn",
     link: "/shadcn",
   },
@@ -87,20 +83,14 @@ const Header = () => {
     <header className="flex justify-between items-center py-3 border-b border-slate-50 dark:border-slate-800 mb-4">
       <div>
         <Link className="cursor-pointer" href="/">
-        <Camera className="text-destructive" /></Link>
+          <BookOpenText className="text-destructive" />
+        </Link>
       </div>
       <nav className="hidden sm:flex">
         <ul className="flex gap-x-4">
           {Links.map((link, index) => (
             <li key={index}>
-              <Link
-                className={
-                  pathname === link.link
-                    ? "font-bold text-blue-800 text-base"
-                    : "font-medium  text-base"
-                }
-                href={link.link}
-              >
+              <Link className="font-medium  text-base" href={link.link}>
                 {link.name}
               </Link>
             </li>
@@ -140,13 +130,7 @@ const Header = () => {
           </DropdownMenu>
         ) : (
           <div>
-            <button
-              onClick={() =>
-                signIn("github")
-              }
-            >
-              Sign in
-            </button>
+            <button onClick={() => signIn("github")}>Sign in</button>
           </div>
         )}
         <Sheet open={open} onOpenChange={setOpen}>
@@ -158,15 +142,16 @@ const Header = () => {
               <SheetTitle>Menu</SheetTitle>
               <SheetDescription>
                 <div className="flex flex-col items-center justify-center text-base font-medium">
-                  <ul className="list-none flex flex-col  gap-8">
+                  <ul className="list-none flex flex-col  gap-4">
+                    <li onClick={() => setOpen(false)}>
+                      <Link className="cursor-pointer" href="/">
+                        <BookOpenText className="text-destructive" />
+                      </Link>
+                    </li>
                     {Links.map((link, index) => (
                       <li key={index} onClick={() => setOpen(false)}>
                         <Link
-                          className={
-                            pathname === link.link
-                              ? "font-bold text-blue-800"
-                              : "font-normal dark:text-white text-foreground"
-                          }
+                          className="font-normal dark:text-white text-foreground"
                           href={link.link}
                         >
                           {link.name}
