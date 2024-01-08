@@ -22,7 +22,7 @@
       },
       {
         "id": 4,
-        "question": "Poslanecká sněmovna a Senát tvořří:",
+        "question": "Poslanecká sněmovna a Senát tvoří:",
         "answers": ["vládu", "parlament", "soud"],
         "correctAnswer": "parlament"
       },

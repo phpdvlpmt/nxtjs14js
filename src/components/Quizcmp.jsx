@@ -199,7 +199,7 @@ const Quizcomp = ({ quiz }) => {
         </div>
       )}
       <div className={`${showForm ? "hidden" : "flex"}  flex-col gap-3`}>
-        <div>
+        <div className="sm:pb-10">
           {prg && (
             <Progress value={(q / questions.length) * 100} className="" />
           )}
@@ -218,7 +218,7 @@ const Quizcomp = ({ quiz }) => {
         </div>
         <div>
           {!showResult ? (
-            <div className="flex  w-full  flex-col gap-3">
+            <div className="flex  w-full  flex-col gap-3 sm:gap-7 pb-5">
               <h3 className="text-2xl font-bold">{question}</h3>
               {answers.map((answer, idx) => (
                 <button
