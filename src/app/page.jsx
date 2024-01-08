@@ -77,6 +77,11 @@ const tests = [
     link: "/q12",
     class: "4",
   },
+  {
+    title: "Závěrečné opakování",
+    link: "/q13",
+    class: "4",
+  },
 ];
 
 const Quiz = () => {

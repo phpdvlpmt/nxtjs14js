@@ -1,0 +1,86 @@
+{
+    "totalQuestions": 13,
+    "title": "Závěrečné opakování",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Přístroj s magnetickou střelkou určený k orientaci v terénu je:",
+        "answers": ["buzola", "godzilla", "barila"],
+        "correctAnswer": "buzola"
+      },
+      {
+        "id": 2,
+        "question": "Česká republika je:",
+        "answers": ["přímořský stát", "ostrovní stát", "vnitrozemský stát"],
+        "correctAnswer": "vnitrozemský stát"
+      },
+      {
+        "id": 3,
+        "question": "Česká republika se dělí na:",
+        "answers": ["12 krajů", "13 krajů", "14 krajů"],
+        "correctAnswer": "14 krajů"
+      },
+      {
+        "id": 4,
+        "question": "Poslanecká sněmovna a Senát tvořří:",
+        "answers": ["vládu", "parlament", "soud"],
+        "correctAnswer": "parlament"
+      },
+      {
+        "id": 5,
+        "question": "Nadmořská výška představuje:",
+        "answers": ["výšku místa vztaženou k hladině moře", "výšku letadla nad pevninou", "přibližnou vzdálenost od moře"],
+        "correctAnswer": "výšku místa vztaženou k hladině moře"
+      },
+      {
+        "id": 6,
+        "question": "Moravskoslezské Beskydy jsou:",
+        "answers": ["tradiční moravské jídlo", "město", "pohoří"],
+        "correctAnswer": "pohoří"
+      },
+      {
+        "id": 7,
+        "question": "Řeka Vltava ústí do:",
+        "answers": ["Labe", "moře", "Moravy"],
+        "correctAnswer": "Labe"
+      },
+      {
+        "id": 8,
+        "question": "Mezi srážky zahrnujeme jeden z těchto meteorologických jevů:",
+        "answers": ["oblaka", "vítr", "sněžení"],
+        "correctAnswer": "sněžení"
+      },
+      {
+        "id": 9,
+        "question": "K orné půdě patří:",
+        "answers": ["rybníky", "vinice", "pivovary"],
+        "correctAnswer": "vinice"
+      },
+      {
+        "id": 10,
+        "question": "Z kaolinu se vyrábí:",
+        "answers": ["sklo", "plast", "porcelán"],
+        "correctAnswer": "porcelán"
+      },
+      {
+        "id": 11,
+        "question": "Hnědé uhlí se používá jako palivo v:",
+        "answers": ["jaderných elektrárnách", "tepelných elektrárnách", "solárních elektrárnách"],
+        "correctAnswer": "tepelných elektrárnách"
+      },
+      {
+        "id": 12,
+        "question": "Výroba aut (autoprůmysl) je součástí průmyslu:",
+        "answers": ["chemického", "hutnického", "strojírenského"],
+        "correctAnswer": "strojírenského"
+      },
+      {
+        "id": 13,
+        "question": "Národní park se nachází v oblasti:",
+        "answers": ["Ostravsko", "Pardubicko", "Krkonoše"],
+        "correctAnswer": "Krkonoše"
+      }
+          
+    ]
+}
+  
