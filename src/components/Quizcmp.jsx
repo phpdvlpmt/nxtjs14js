@@ -180,7 +180,7 @@ const Quizcomp = ({ quiz }) => {
   return (
     <div className="">
       {showForm && (
-        <div className="flex flex-col w-full sm:w-1/3 gap-3 py-4">
+        <div className="flex flex-col w-full sm:w-1/3 gap-3 py-2 lg:py-4 ">
           <h2 className="text-lg font-semibold">
             Přihlášení k testu - {quiz.title}
           </h2>
