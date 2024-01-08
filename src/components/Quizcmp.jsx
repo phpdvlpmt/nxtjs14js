@@ -218,7 +218,7 @@ const Quizcomp = ({ quiz }) => {
         </div>
         <div>
           {!showResult ? (
-            <div className="flex  w-full  flex-col gap-3 lg:gap-4 py-4">
+            <div className="flex  w-full  flex-col gap-3 lg:gap-4 pb-4">
               <h3 className="text-2xl font-bold">{question}</h3>
               {answers.map((answer, idx) => (
                 <button
