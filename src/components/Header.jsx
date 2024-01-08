@@ -80,7 +80,7 @@ const Header = () => {
   const [open, setOpen] = useState();
   const { data: session } = useSession();
   return (
-    <header className="flex justify-between items-center py-3 border-b border-slate-50 dark:border-slate-800 mb-4">
+    <header className="flex justify-between items-center py-3 border-b border-slate-50 dark:border-slate-800">
       <div>
         <Link className="cursor-pointer" href="/">
           <BookOpenText  />

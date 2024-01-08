@@ -180,7 +180,7 @@ const Quizcomp = ({ quiz }) => {
   return (
     <div className="">
       {showForm && (
-        <div className="flex flex-col sm:w-1/3 gap-3">
+        <div className="flex flex-col w-full sm:w-1/3 gap-3 py-4">
           <h2 className="text-lg font-semibold">
             Přihlášení k testu - {quiz.title}
           </h2>
@@ -192,20 +192,20 @@ const Quizcomp = ({ quiz }) => {
               placeholder="Jméno"
               required
             />
-            <button className="px-3 py-2 bg-gray-900 text-white">
+            <button className="px-3 py-3 bg-gray-900 text-white">
               Přihlásit k testu
             </button>
           </form>
         </div>
       )}
-      <div className={`${showForm ? "hidden" : "flex"}  flex-col gap-3`}>
-        <div className="sm:pb-10">
+      <div className={`${showForm ? "hidden" : "flex"}  flex-col gap-3 sm:gap-5`}>
+        <div>
           {prg && (
             <Progress value={(q / questions.length) * 100} className="" />
           )}
         </div>
         <h1 className="text-xl font-semibold">Kvíz - {quiz.title}</h1>
-        <div>
+        <div className="sm:py-4">
           {!showResult && (
             <div className="flex flex-col gap-2">
               <h2 className="text-xl font-medium">Jméno: {name}</h2>
@@ -218,7 +218,7 @@ const Quizcomp = ({ quiz }) => {
         </div>
         <div>
           {!showResult ? (
-            <div className="flex  w-full  flex-col gap-3 sm:gap-7 pb-5">
+            <div className="flex  w-full  flex-col gap-3 sm:gap-5">
               <h3 className="text-2xl font-bold">{question}</h3>
               {answers.map((answer, idx) => (
                 <button
