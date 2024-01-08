@@ -9,6 +9,11 @@ import {
 } from "@/components/ui/card";
 const tests = [
   {
+    title: "Krajská města",
+    link: "/q",
+    class: "4",
+  },
+  {
     title: "Naše vlast",
     link: "/q1",
     class: "4",
@@ -32,10 +37,14 @@ const tests = [
     title: "Nerostné suroviny, průmysl",
     link: "/q5",
     class: "4",
+  },{
+    title: "Služby, peníze, ochrana přírody",
+    link: "/q6",
+    class: "4",
   },
   {
     title: "Evropa - jeden ze světadílů",
-    link: "/q6",
+    link: "/q60",
     class: "5",
   },
   {

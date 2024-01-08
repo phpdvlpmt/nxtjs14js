@@ -1,0 +1,92 @@
+{
+    "totalQuestions": 14,
+    "title": "Krajská města",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Hlavní město Praha",
+        "answers": ["České Budějovice", "Plzeň", "Praha"],
+        "correctAnswer": "Praha"
+      },
+      {
+        "id": 2,
+        "question": "Středočeský kraj",
+        "answers": ["Plzeň", "Ústí nad Labem", "Praha"],
+        "correctAnswer": "Praha"  
+      },
+      {
+        "id": 3,
+        "question": "Jihočeský kraj",
+        "answers": ["Jihlava", "České Budějovice", "Brno"],
+        "correctAnswer": "České Budějovice"  
+      },
+      {
+        "id": 4,
+        "question": "Plzeňský kraj",
+        "answers": ["Zlín", "Karlovy Vary", "Plzeň"],
+        "correctAnswer": "Plzeň"  
+      },
+      {
+        "id": 5,
+        "question": "Karlovarský kraj",
+        "answers": ["Ostrava", "Karlovy Vary", "Hradec Králové"],
+        "correctAnswer": "Karlovy Vary"  
+      },
+      {
+        "id": 6,
+        "question": "Ústecký kraj",
+        "answers": ["Ústí nad Labem", "Liberec", "Olomouc"],
+        "correctAnswer": "Ústí nad Labem"  
+      },
+      {
+        "id": 7,
+        "question": "Liberecký kraj",
+        "answers": ["Pardubice", "Liberec", "Jihlava"],
+        "correctAnswer": "Liberec"  
+      },
+      {
+        "id": 8,
+        "question": "Královéhradecký kraj",
+        "answers": ["Pardubice", "Karlovy Vary", "Hradec Králové"],
+        "correctAnswer": "Hradec Králové"  
+      },
+      {
+        "id": 9,
+        "question": "Pardubický kraj",
+        "answers": ["Zlín", "Pardubice", "Ostrava"],
+        "correctAnswer": "Pardubice"  
+      },
+      {
+        "id": 10,
+        "question": "Kraj Vysočina",
+        "answers": ["Liberec", "Olomouc", "Jihlava"],
+        "correctAnswer": "Jihlava"  
+      },
+      {
+        "id": 11,
+        "question": "Jihomoravský kraj",
+        "answers": ["České Budějovice", "Brno", "Ostrava"],
+        "correctAnswer": "Brno"  
+      },
+      {
+        "id": 12,
+        "question": "Olomoucký kraj",
+        "answers": ["Brno", "Olomouc", "Zlín"],
+        "correctAnswer": "Olomouc"  
+      },
+      {
+        "id": 13,
+        "question": "Moravskoslezský kraj",
+        "answers": ["České Budějovice", "Ostrava", "Brno"],
+        "correctAnswer": "Ostrava"  
+      },
+      {
+        "id": 14,
+        "question": "Zlínský kraj",
+        "answers": ["Ústí nad Labem", "Jihlava", "Zlín"],
+        "correctAnswer": "Zlín"  
+      }
+          
+    ]
+}
+  

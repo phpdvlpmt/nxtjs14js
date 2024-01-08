@@ -1,0 +1,122 @@
+{
+    "totalQuestions": 19,
+    "title": "Evropa - jeden ze světadílů",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Povrch naší planety je tvořen:",
+        "answers": ["krátery a vodstvem", "pevninou a vodstvem", "ztuhlou vrstvou čedičové lávy a vodstvem"],
+        "correctAnswer": "pevninou a vodstvem"
+      },
+      {
+        "id": 2,
+        "question": "Vodstvo pokrývá:",
+        "answers": ["více než dvě třetiny povrchu naší planety", "polovinu povrchu naší planety", "více než tetinu povrchu naší planety"],
+        "correctAnswer": "více než dvě třetiny povrchu naší planety"
+      },
+      {
+        "id": 3,
+        "question": "Pevninskou část Země tvoří:",
+        "answers": ["5 světadílů", "6 světadílů", "7 světadílů"],
+        "correctAnswer": "7 světadílů"
+      },
+      {
+        "id": 4,
+        "question": "Světadíly podle velikosti - vyhledej správné pořadí:",
+        "answers": ["Asie, Afrika , severní Amerika, jižní Amerika, Antarktida, Evropa, Austrálie", "Asie, Afrika, Evropa, severní Amerika, jižní Amerika, Antarktida, Austrálie", "Asie, Afrika, Austrálie, Antarktida, Evropa, severní Amerika, jižní Amerika"],
+        "correctAnswer": "Asie, Afrika , severní Amerika, jižní Amerika, Antarktida, Evropa, Austrálie"
+      },
+      {
+        "id": 5,
+        "question": "Evropa je obklopena oceány:",
+        "answers": ["Tichým a Severním ledovým", "Atlantským a Indickým", "Atlantským a Severním ledovým"],
+        "correctAnswer": "Atlantským a Severním ledovým"
+      },
+      {
+        "id": 6,
+        "question": "Evropa na východě sousedí:",
+        "answers": ["s Afrikou", "s Amerikou", "s Asií"],
+        "correctAnswer": "s Asií"
+      },
+      {
+        "id": 7,
+        "question": "Území Evropy a Asie bývá někdy společně nazýváno:",
+        "answers": ["Eurasie", "Evropoasie", "Eurie"],
+        "correctAnswer": "Eurasie"
+      },
+      {
+        "id": 8,
+        "question": "Největšími evropskými ostrovy jsou:",
+        "answers": ["Island a Norfolk", "Britské ostrovy a Jamajka", "Britské ostrovy a Island"],
+        "correctAnswer": "Britské ostrovy a Island"
+      },
+      {
+        "id": 9,
+        "question": "Největšími z evropských poloostrovů jsou:",
+        "answers": ["Skandinávský, Pyrenejský, Apeninský, Azuero", "Skandinávský, Pyrenejský, Apeninský, Balkánský", "Skandinávský, Pyrenejský, Apeninský, Kamčatka"],
+        "correctAnswer": "Skandinávský, Pyrenejský, Apeninský, Balkánský"
+      },
+      {
+        "id": 10,
+        "question": "Povrch Evropy je většinou:",
+        "answers": ["hornatý", "nížinný", "tvořen velehorami"],
+        "correctAnswer": "nížinný"
+      },
+      {
+        "id": 11,
+        "question": "Východní část Evropy zaujímá převážně:",
+        "answers": ["Velká nížina", "Východoevropská rovina", "Francouzská nížina"],
+        "correctAnswer": "Východoevropská rovina"
+      },
+      {
+        "id": 12,
+        "question": "Na západě Evropy se nachází:",
+        "answers": ["Francouzská nížina", "Kaspická nížina", "Rumunská nížina"],
+        "correctAnswer": "Francouzská nížina"
+      },
+      {
+        "id": 13,
+        "question": "Nejvyšší evropské pohoří:",
+        "answers": ["Andy", "Alpy", "Altaj"],
+        "correctAnswer": "Alpy"
+      },
+      {
+        "id": 14,
+        "question": "Nejvyšší hora Evropy:",
+        "answers": ["Gerlachovský štít", "Mont Blanc", "Zugspitze"],
+        "correctAnswer": "Mont Blanc"
+      },
+      {
+        "id": 15,
+        "question": "Na nejvyšší pohoří Evropy navazuje směrem k východu rozlehlé pohoří:",
+        "answers": ["Ahaggar", "Himaláje", "Karpaty"],
+        "correctAnswer": "Karpaty"
+      },
+      {
+        "id": 16,
+        "question": "Nížina ležící mezi Alpami a Apeninami:",
+        "answers": ["Pádská nížina", "Baltská nížina", "Rumunská nížina"],
+        "correctAnswer": "Pádská nížina"
+      },
+      {
+        "id": 17,
+        "question": "Mezi Alpami, Karpaty a Balkánem leží:",
+        "answers": ["Francouzská nížina", "Podunajská nížina", "Velká uherská nížina"],
+        "correctAnswer": "Velká uherská nížina"
+      },
+      {
+        "id": 18,
+        "question": "Největší evropské jezero:",
+        "answers": ["Oněžské", "Vänern", "Ladožské"],
+        "correctAnswer": "Ladožské"
+      },
+      {
+        "id": 19,
+        "question": "Evropskými veletoky jsou:",
+        "answers": ["Volha, Dunaj, Dněpr", "Nil, Niger, Kongo", "Mississippi, Amazonka, Missouri"],
+        "correctAnswer": "Volha, Dunaj, Dněpr"
+      }
+          
+    ]
+}
+  
