@@ -1,0 +1,269 @@
+{
+  "title": "Hlavní města evropských států",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jaké je hlavní město Albánie?",
+      "answers": ["Tirana", "Pristina", "Skopje"],
+      "correctAnswer": "Tirana"
+    },
+    {
+      "id": 2,
+      "question": "Jaké je hlavní město Belgie?",
+      "answers": ["Amsterdam", "Brusel", "Paříž"],
+      "correctAnswer": "Brusel"
+    },
+    {
+      "id": 3,
+      "question": "Jaké je hlavní město Bulharska?",
+      "answers": ["Plovdiv", "Sofie", "Bukurešť"],
+      "correctAnswer": "Sofie"
+    },
+    {
+      "id": 4,
+      "question": "Jaké je hlavní město Chorvatska?",
+      "answers": ["Dubrovník", "Split", "Záhřeb"],
+      "correctAnswer": "Záhřeb"
+    },
+    {
+      "id": 5,
+      "question": "Jaké je hlavní město Kypru?",
+      "answers": ["Pafos", "Nikósie", "Limassol"],
+      "correctAnswer": "Nikósie"
+    },
+    {
+      "id": 6,
+      "question": "Jaké je hlavní město České republiky?",
+      "answers": ["Brno", "Ostrava", "Praha"],
+      "correctAnswer": "Praha"
+    },
+    {
+      "id": 7,
+      "question": "Jaké je hlavní město Dánska?",
+      "answers": ["Stockholm", "Helsinky", "Kodaň"],
+      "correctAnswer": "Kodaň"
+    },
+    {
+      "id": 8,
+      "question": "Jaké je hlavní město Estonska?",
+      "answers": ["Riga", "Tallinn", "Vilnius"],
+      "correctAnswer": "Tallinn"
+    },
+    {
+      "id": 9,
+      "question": "Jaké je hlavní město Finska?",
+      "answers": ["Stockholm", "Helsinky", "Oslo"],
+      "correctAnswer": "Helsinky"
+    },
+    {
+      "id": 10,
+      "question": "Jaké je hlavní město Francie?",
+      "answers": ["Lyon", "Marseille", "Paříž"],
+      "correctAnswer": "Paříž"
+    },
+    {
+      "id": 11,
+      "question": "Jaké je hlavní město Německa?",
+      "answers": ["Hamburk", "Mnichov", "Berlín"],
+      "correctAnswer": "Berlín"
+    },
+    {
+      "id": 12,
+      "question": "Jaké je hlavní město Řecka?",
+      "answers": ["Soluň", "Thessaloniki", "Atény"],
+      "correctAnswer": "Atény"
+    },
+    {
+      "id": 13,
+      "question": "Jaké je hlavní město Maďarska?",
+      "answers": ["Szeged", "Debrecín", "Budapešť"],
+      "correctAnswer": "Budapešť"
+    },
+    {
+      "id": 14,
+      "question": "Jaké je hlavní město Islandu?",
+      "answers": ["Akureyri", "Keflavík", "Reykjavík"],
+      "correctAnswer": "Reykjavík"
+    },
+    {
+      "id": 15,
+      "question": "Jaké je hlavní město Irska?",
+      "answers": ["Belfast", "Cork", "Dublin"],
+      "correctAnswer": "Dublin"
+    },
+    {
+      "id": 16,
+      "question": "Jaké je hlavní město Itálie?",
+      "answers": ["Milán", "Neapol", "Řím"],
+      "correctAnswer": "Řím"
+    },
+    {
+      "id": 17,
+      "question": "Jaké je hlavní město Lotyšska?",
+      "answers": ["Tallinn", "Riga", "Vilnius"],
+      "correctAnswer": "Riga"
+    },
+    {
+      "id": 18,
+      "question": "Jaké je hlavní město Litvy?",
+      "answers": ["Riga", "Vilnius", "Tallinn"],
+      "correctAnswer": "Vilnius"
+    },
+    {
+      "id": 19,
+      "question": "Jaké je hlavní město Lucemburska?",
+      "answers": ["Amsterdam", "Brusel", "Lucemburk"],
+      "correctAnswer": "Lucemburk"
+    },
+    {
+      "id": 20,
+      "question": "Jaké je hlavní město Malty?",
+      "answers": ["La Valletta", "Mdina", "Valletta"],
+      "correctAnswer": "Valletta"
+    },
+    {
+      "id": 21,
+      "question": "Jaké je hlavní město Monaka?",
+      "answers": ["Monte Carlo", "Monako", "Nizza"],
+      "correctAnswer": "Monako"
+    },
+    {
+      "id": 22,
+      "question": "Jaké je hlavní město Černé Hory?",
+      "answers": ["Podgorica", "Bělehrad", "Split"],
+      "correctAnswer": "Podgorica"
+    },
+    {
+      "id": 23,
+      "question": "Jaké je hlavní město Nizozemska?",
+      "answers": ["Haag", "Rotterdam", "Amsterdam"],
+      "correctAnswer": "Amsterdam"
+    },
+    {
+      "id": 24,
+      "question": "Jaké je hlavní město Severního Irska?",
+      "answers": ["Belfast", "Cork", "Dublin"],
+      "correctAnswer": "Belfast"
+    },
+    {
+      "id": 25,
+      "question": "Jaké je hlavní město Norska?",
+      "answers": ["Oslo", "Helsinky", "Stockholm"],
+      "correctAnswer": "Oslo"
+    },
+    {
+      "id": 26,
+      "question": "Jaké je hlavní město Polska?",
+      "answers": ["Krakov", "Gdaňsk", "Varšava"],
+      "correctAnswer": "Varšava"
+    },
+    {
+      "id": 27,
+      "question": "Jaké je hlavní město Portugalska?",
+      "answers": ["Porto", "Faro", "Lisabon"],
+      "correctAnswer": "Lisabon"
+    },
+    {
+      "id": 28,
+      "question": "Jaké je hlavní město Rumunska?",
+      "answers": ["Bukurešť", "Plovdiv", "Sofie"],
+      "correctAnswer": "Bukurešť"
+    },
+    {
+      "id": 29,
+      "question": "Jaké je hlavní město Ruska?",
+      "answers": ["Petrohrad", "Soči", "Moskva"],
+      "correctAnswer": "Moskva"
+    },
+    {
+      "id": 30,
+      "question": "Jaké je hlavní město San Marina?",
+      "answers": ["Bologna", "Florencie", "San Marino"],
+      "correctAnswer": "San Marino"
+    },
+    {
+      "id": 31,
+      "question": "Jaké je hlavní město Slovenska?",
+      "answers": ["Košice", "Prešov", "Bratislava"],
+      "correctAnswer": "Bratislava"
+    },
+    {
+      "id": 32,
+      "question": "Jaké je hlavní město Slovinska?",
+      "answers": ["Záhřeb", "Bělehrad", "Ljubljana"],
+      "correctAnswer": "Ljubljana"
+    },
+    {
+      "id": 33,
+      "question": "Jaké je hlavní město Španělska?",
+      "answers": ["Barcelona", "Sevilla", "Madrid"],
+      "correctAnswer": "Madrid"
+    },
+    {
+      "id": 34,
+      "question": "Jaké je hlavní město Švédska?",
+      "answers": ["Oslo", "Helsinky", "Stockholm"],
+      "correctAnswer": "Stockholm"
+    },
+    {
+      "id": 35,
+      "question": "Jaké je hlavní město Švýcarska?",
+      "answers": ["Ženeva", "Curych", "Bern"],
+      "correctAnswer": "Bern"
+    },
+    {
+      "id": 36,
+      "question": "Jaké je hlavní město Turecka?",
+      "answers": ["Istanbul", "Antalya", "Ankara"],
+      "correctAnswer": "Ankara"
+    },
+    {
+      "id": 37,
+      "question": "Jaké je hlavní město Ukrajiny?",
+      "answers": ["Lvov", "Oděsa", "Kyjev"],
+      "correctAnswer": "Kyjev"
+    },
+    {
+      "id": 38,
+      "question": "Jaké je hlavní město Spojeného království?",
+      "answers": ["Birmingham", "Manchester", "Londýn"],
+      "correctAnswer": "Londýn"
+    },
+    {
+      "id": 39,
+      "question": "Jaké je hlavní město Vatikánu?",
+      "answers": ["Florencie", "Vatikán", "Řím"],
+      "correctAnswer": "Vatikán"
+    },
+    {
+      "id": 40,
+      "question": "Jaké je hlavní město Běloruska?",
+      "answers": ["Lvov", "Minsk", "Kyjev"],
+      "correctAnswer": "Minsk"
+    },
+    {
+      "id": 41,
+      "question": "Jaké je hlavní město Bosny a Hercegoviny?",
+      "answers": ["Mostar", "Banja Luka", "Sarajevo"],
+      "correctAnswer": "Sarajevo"
+    },
+    {
+      "id": 42,
+      "question": "Jaké je hlavní město Kosova?",
+      "answers": ["Tirana", "Skopje", "Priština"],
+      "correctAnswer": "Priština"
+    },
+    {
+      "id": 43,
+      "question": "Jaké je hlavní město Moldavska?",
+      "answers": ["Sofie", "Bukurešť", "Kišiněv"],
+      "correctAnswer": "Kišiněv"
+    },
+    {
+      "id": 44,
+      "question": "Jaké je hlavní město Srbska?",
+      "answers": ["Bělehrad", "Podgorica", "Záhřeb"],
+      "correctAnswer": "Bělehrad"
+    }
+  ]
+}

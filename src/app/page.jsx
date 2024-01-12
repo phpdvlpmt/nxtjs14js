@@ -82,6 +82,12 @@ const tests = [
     link: "/q13",
     class: "4",
   },
+  ,
+  {
+    title: "Hlavní města evropských států",
+    link: "/q14",
+    class: "5",
+  },
 ];
 
 const Quiz = () => {
