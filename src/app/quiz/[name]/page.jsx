@@ -1,4 +1,4 @@
-import Quizcmp from "@/components/Quizcmp";
+import Quizcmp from "@/components/Quizcomp";
 import { promises as fs } from "fs";
 import { redirect } from "next/navigation";
 
