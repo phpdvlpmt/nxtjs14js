@@ -1,4 +1,4 @@
-import Quizcmp from "@/components/Quizcomp";
+import Quizcomp from "@/components/Quizcomp";
 import { promises as fs } from "fs";
 import { redirect } from "next/navigation";
 
@@ -14,7 +14,7 @@ const Q = async ({ params }, data) => {
   }
   return (
     <>
-      <Quizcmp quiz={data} />
+      <Quizcomp quiz={data} />
     </>
   );
 };
