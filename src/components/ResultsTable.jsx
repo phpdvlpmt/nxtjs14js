@@ -1,7 +1,8 @@
-import { getServerSession } from "next-auth";
-import { authOptions } from "../utils/auth";
+"use client";
+/* import { getServerSession } from "next-auth";
+import { authOptions } from "../app/utils/auth";
 import { redirect } from "next/navigation";
-import prisma from "../utils/db";
+import prisma from "../app/utils/db"; */
 import {
   Table,
   TableBody,
@@ -12,42 +13,18 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Trash2Icon } from "lucide-react";
-import { deleteAllResult, deleteResult } from "../../../actions";
+import { deleteAllResult, deleteResult } from "../../actions";
 import moment from "moment-timezone";
 import { Button } from "@/components/ui/button";
 
-const getData = async () => {
-  const data = await prisma.resume.findMany({});
+const ResultsTable = (dt) => {
+  const data = dt.dt;
+  const router = useRouter();
 
-  return data;
-};
-const Results = async () => {
-  const session = await getServerSession(authOptions);
-  if (!session || !session.user) {
-    redirect("/api/auth/signin");
-  }
-
-  const data = await getData();
   return (
     <div className="pb-10">
       <Table>
-        <TableCaption className="pb-5 space-y-4">
-          <div>Seznam provedených testů</div>
-          {data.length > 0 && (
-            <div>
-              <form action={deleteAllResult}>
-                <Button
-                  variant="destructive"
-                  type="submit"
-                  className="flex items-center gap-1"
-                >
-                  <Trash2Icon />
-                  <span>Smazat všechny záznamy</span>
-                </Button>
-              </form>
-            </div>
-          )}
-        </TableCaption>
+        <TableCaption className="pb-8">Seznam provedených testů</TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead className="font-bold">Jméno žáka</TableHead>
@@ -91,8 +68,22 @@ const Results = async () => {
           ))}
         </TableBody>
       </Table>
+      {data.length > 0 && (
+        <div>
+          <form action={deleteAllResult}>
+            <Button
+              variant="destructive"
+              type="submit"
+              className="flex items-center"
+            >
+              <Trash2Icon />
+              <span>Smazat všechny záznamy</span>
+            </Button>
+          </form>
+        </div>
+      )}
     </div>
   );
 };
 
-export default Results;
+export default ResultsTable;
