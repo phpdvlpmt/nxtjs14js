@@ -10,82 +10,83 @@ import {
 const tests = [
   {
     title: "Krajská města",
-    link: "/quiz/q",
+    link: "/q",
     class: "4",
   },
   {
     title: "Naše vlast",
-    link: "/quiz/q1",
+    link: "/q1",
     class: "4",
   },
   {
     title: "Mapy",
-    link: "/quiz/q2",
+    link: "/q2",
     class: "4",
   },
   {
     title: "Povrch, vodstvo, počasí a podnebí",
-    link: "/quiz/q3",
+    link: "/q3",
     class: "4",
   },
   {
     title: "Zemědělství",
-    link: "/quiz/q4",
+    link: "/q4",
     class: "4",
   },
   {
     title: "Nerostné suroviny, průmysl",
-    link: "/quiz/q5",
+    link: "/q5",
     class: "4",
-  },{
+  },
+  {
     title: "Služby, peníze, ochrana přírody",
-    link: "/quiz/q6",
+    link: "/q6",
     class: "4",
   },
   {
     title: "Evropa - jeden ze světadílů",
-    link: "/quiz/q60",
+    link: "/q60",
     class: "5",
   },
   {
     title: "Oceány a světadíly; Evropa",
-    link: "/quiz/q7",
+    link: "/q7",
     class: "5",
   },
   {
     title: "Sousední státy České republiky",
-    link: "/quiz/q8",
+    link: "/q8",
     class: "4",
   },
   {
     title: "Opakování č. 1",
-    link: "/quiz/q9",
+    link: "/q9",
     class: "4",
   },
   {
     title: "Opakování č. 2",
-    link: "/quiz/q10",
+    link: "/q10",
     class: "4",
   },
   {
     title: "Opakování č. 3",
-    link: "/quiz/q11",
+    link: "/q11",
     class: "4",
   },
   {
     title: "Opakování č. 4",
-    link: "/quiz/q12",
+    link: "/q12",
     class: "4",
   },
   {
     title: "Závěrečné opakování",
-    link: "/quiz/q13",
+    link: "/q13",
     class: "4",
   },
   ,
   {
     title: "Hlavní města evropských států",
-    link: "/quiz/q14",
+    link: "/q14",
     class: "5",
   },
 ];

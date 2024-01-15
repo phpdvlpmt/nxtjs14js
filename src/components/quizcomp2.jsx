@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Progress } from "@/components/ui/progress";
+import { cn } from "@/lib/utils";
 
 const Quizcomp2 = ({ quiz }) => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -54,7 +55,7 @@ const Quizcomp2 = ({ quiz }) => {
         : {
             ...prev,
             wrongAnswers: prev.wrongAnswers + 1,
-          }
+          },
     );
     if (activeQuestion !== questions.length - 1) {
       setActiveQuestion((prev) => prev + 1);
@@ -87,7 +88,7 @@ const Quizcomp2 = ({ quiz }) => {
       name: name,
 
       correctAnswers: result.correctAnswers,
-    }
+    },
   ) {
     const response = await fetch("/api/send", {
       method: "POST",
@@ -146,20 +147,24 @@ const Quizcomp2 = ({ quiz }) => {
       total: quiz.totalQuestions,
       average: avrg(),
       grade: grade(),
-    }
+    },
   ) => {
     //setShowResult(true);
     //await
     // createResult({title: quiz.title, username: name, total: quiz.totalQustions, score: result.score})
-    const response = await fetch("/api/quiz", {
-      method: "POST",
-      mode: "cors",
+    try {
+      const response = await fetch("/api/quiz", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
 
-      body: JSON.stringify(data),
-    });
+        body: JSON.stringify(data),
+      });
 
-    const json = await response.json();
-    return json;
+      /*  const json = await response.json();
+    return json; */
+    } catch (error) {
+      console.error(error);
+    }
   };
   if (end) {
     //sendEmail()
@@ -198,7 +203,10 @@ const Quizcomp2 = ({ quiz }) => {
           </form>
         </div>
       )}
-      <div className={`${showForm ? "hidden" : "flex"}  flex-col gap-3 lg:gap-4`}>
+      <div
+        className={cn(showForm ? "hidden" : "flex", "flex-col gap-3 lg:gap-4")}
+      >
+        {/* Progress */}
         <div>
           {prg && (
             <Progress value={(q / questions.length) * 100} className="" />
@@ -216,6 +224,7 @@ const Quizcomp2 = ({ quiz }) => {
             </div>
           )}
         </div>
+        {/* Quiz question & answers */}
         <div>
           {!showResult ? (
             <div className="flex  w-full  flex-col gap-3 lg:gap-4 pb-4">
@@ -275,6 +284,7 @@ const Quizcomp2 = ({ quiz }) => {
             </div>
           ) : (
             <div className="flex flex-col gap-5">
+              {/* Results */}
               <h3 className="text-xl font-bold">Výsledky</h3>
               {/*  <h3 className="text-lg font-semibold">
                 Průměr {((result.score / questions.length) * 100).toFixed(2)}%

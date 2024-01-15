@@ -37,7 +37,8 @@ const tests = [
     title: "Nerostné suroviny, průmysl",
     link: "/q5",
     class: "4",
-  },{
+  },
+  {
     title: "Služby, peníze, ochrana přírody",
     link: "/q6",
     class: "4",

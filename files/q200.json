@@ -1,5 +1,5 @@
 {
-    "totalQuestions": 10,
+    "totalQuestions": 2,
     "title": "Hlavní města 2",
     "questions": [
       {
@@ -15,6 +15,13 @@
         "answers": ["Praha", "Bratislava", "Madrid", "Varšava"],
         "correctAnswer": "Bratislava",
         "image": "/vercel.svg"
+      },
+      {
+        "id": 3,
+        "question": "Hlavní město Německa?",
+        "answers": ["Berlín", "Mnichov", "Madrid", "Varšava"],
+        "correctAnswer": "Berlín"
+        
       }
           
     ]
