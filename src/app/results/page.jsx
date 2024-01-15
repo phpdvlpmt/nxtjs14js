@@ -12,8 +12,9 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Trash2Icon } from "lucide-react";
-import { deleteResult } from "../../../actions";
+import { deleteAllResult, deleteResult } from "../../../actions";
 import moment from "moment-timezone";
+import { Button } from "@/components/ui/button";
 
 const getData = async () => {
   const data = await prisma.resume.findMany({});
@@ -74,9 +75,22 @@ const Results = async () => {
           ))}
         </TableBody>
       </Table>
+      {data.length > 0 && (
+        <div>
+          <form action={deleteAllResult}>
+            <Button
+              variant="destructive"
+              type="submit"
+              className="flex items-center"
+            >
+              <Trash2Icon />
+              <span>Smazat všechny záznamy</span>
+            </Button>
+          </form>
+        </div>
+      )}
     </div>
   );
 };
 
 export default Results;
-

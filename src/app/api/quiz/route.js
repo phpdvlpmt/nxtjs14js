@@ -22,9 +22,10 @@ export async function POST(req) {
         grade: parseInt(grade),
       },
     });
+
     if (!result) return Response.json({ message: "error", status: 500 });
-    return Response.json({ message: "success", status: 200, data: result });
     revalidatePath("/results");
+    return Response.json({ message: "success", status: 200, data: result });
   } catch (error) {
     return Response.json({ message: error, status: 500 });
   }
