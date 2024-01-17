@@ -57,7 +57,7 @@ const Results = async () => {
             <TableHead className="font-bold">Špatně</TableHead>
             <TableHead className="font-bold">Průměr</TableHead>
             <TableHead className="font-bold">Známka</TableHead>
-            <TableHead className="font-bold">Datum</TableHead>
+            <TableHead className="font-bold min-w-[120px]">Datum</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
