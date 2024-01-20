@@ -174,15 +174,16 @@ const Quizcomp = ({ quiz }) => {
     //setShowResult(true);
     //await
     // createResult({title: quiz.title, username: name, total: quiz.totalQustions, score: result.score})
-    const response = await fetch("/api/quiz", {
-      method: "POST",
-      mode: "cors",
+    try {
+      const response = await fetch("/api/quiz", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
 
-      body: JSON.stringify(data),
-    });
-
-    const json = await response.json();
-    return json;
+        body: JSON.stringify(data),
+      });
+    } catch (error) {
+      console.error(error);
+    }
   };
   if (end) {
     //sendEmail()
@@ -207,7 +208,7 @@ const Quizcomp = ({ quiz }) => {
           <h2 className="text-lg font-semibold">
             Přihlášení k testu - {quiz.title}
           </h2>
-          <form className="flex flex-col gap-4" onSubmit={onSubmit}>
+          <form className="flex flex-col gap-4 " onSubmit={onSubmit}>
             {/* <input
               className="py-3 px-3 border"
               type="text"

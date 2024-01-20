@@ -121,7 +121,11 @@ const Quiz = () => {
                   <CardDescription className="flex items-center justify-between">
                     <span>{test.class}. ročník</span>
 
-                    {test.new && <Badge variant="destructive">Nový</Badge>}
+                    {test.new && (
+                      <span className="border-transparent bg-destructive text-destructive-foreground shadow hover:bg-destructive/80 inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
+                        Nový
+                      </span>
+                    )}
                   </CardDescription>
                 </CardHeader>
                 {/* <CardContent>
