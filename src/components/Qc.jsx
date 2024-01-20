@@ -204,11 +204,14 @@ const Qc = ({ quiz }) => {
   return (
     <div className="">
       {showForm && (
-        <div className="flex flex-col w-full sm:w-1/3 gap-3 py-2 lg:py-4 ">
+        <div className="flex flex-col  w-full sm:w-1/3 gap-3 py-2 lg:py-4 ">
           <h2 className="text-lg font-semibold">
             Přihlášení k testu - {quiz.title}
           </h2>
-          <form className="flex items-center  gap-2 " onSubmit={onSubmit}>
+          <form
+            className="flex md:flex-col items-start md:items-center  gap-2 "
+            onSubmit={onSubmit}
+          >
             {/* <input
               className="py-3 px-3 border"
               type="text"
@@ -231,7 +234,7 @@ const Qc = ({ quiz }) => {
 
             <button
               type="submit"
-              className="text-sm px-2 py-2 w-auto bg-gray-900 text-white rounded-md"
+              className="md:w-full text-sm px-2 py-2 w-auto bg-gray-900 text-white rounded-md"
             >
               Přihlásit
             </button>
