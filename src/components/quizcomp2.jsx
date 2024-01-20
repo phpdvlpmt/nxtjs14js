@@ -10,7 +10,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const Quizcomp = ({ quiz }) => {
+const Qc = ({ quiz }) => {
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [checked, setChecked] = useState(false);
@@ -204,11 +204,11 @@ const Quizcomp = ({ quiz }) => {
   return (
     <div className="">
       {showForm && (
-        <div className="flex flex-col w-full sm:w-1/3 gap-3 py-2 lg:py-4 ">
+        <div className="flex flex-col  w-full sm:w-1/3 gap-3 py-2 lg:py-4 ">
           <h2 className="text-lg font-semibold">
             Přihlášení k testu - {quiz.title}
           </h2>
-          <form className="flex flex-col gap-4 " onSubmit={onSubmit}>
+          <form className="flex  items-center  gap-2 " onSubmit={onSubmit}>
             {/* <input
               className="py-3 px-3 border"
               type="text"
@@ -216,7 +216,7 @@ const Quizcomp = ({ quiz }) => {
               placeholder="Jméno"
               required
             /> */}
-            <Select name="username" required className="z-40">
+            <Select name="username" required>
               <SelectTrigger className="w-full">
                 <SelectValue placeholder="Vyber své jméno ze seznamu." />
               </SelectTrigger>
@@ -228,8 +228,12 @@ const Quizcomp = ({ quiz }) => {
                 ))}
               </SelectContent>
             </Select>
-            <button type="submit" className="px-3 py-3 bg-gray-900 text-white">
-              Přihlásit k testu
+
+            <button
+              type="submit"
+              className=" text-sm px-2 py-3 w-auto bg-gray-900 text-white rounded-md"
+            >
+              Přihlásit
             </button>
           </form>
         </div>
@@ -263,7 +267,7 @@ const Quizcomp = ({ quiz }) => {
                   disabled={disabled}
                   key={idx}
                   onClick={() => onAnswerSelected(answer, idx)}
-                  className={`text-left p-3 w-full text-lg font-semibold  cursor-pointer ${
+                  className={`text-left p-3 w-full text-lg font-semibold  cursor-pointer  ${
                     selectedAnswerIndex === idx
                       ? " "
                       : " hover bg-gray-100 dark:text-gray-900"
@@ -293,7 +297,7 @@ const Quizcomp = ({ quiz }) => {
                     nextQuestion();
                     q === questions.length - 1;
                   }}
-                  className="bg-gray-800 text-white w-fit px-4 py-2 cursor-pointer text-xl font-semibold"
+                  className="bg-gray-800 text-white w-fit px-4 py-2 cursor-pointer text-xl font-semibold rounded-md"
                 >
                   {activeQuestion === questions.length - 1 ? "Další" : "Další"}
                 </button>
@@ -303,8 +307,8 @@ const Quizcomp = ({ quiz }) => {
                   disabled={q !== questions.length}
                   className={`${
                     q !== questions.length
-                      ? "bg-gray-200 text-gray-800 w-fit px-4 py-2 text-xl font-semibold cursor-not-allowed"
-                      : "px-4 py-2 bg-gray-800 text-white cursor-pointer w-fit text-xl font-semibold"
+                      ? "bg-gray-200 text-gray-800 w-fit px-4 py-2 text-xl font-semibold cursor-not-allowed rounded-md"
+                      : "px-4 py-2 bg-gray-800 text-white cursor-pointer w-fit text-xl font-semibold rounded-md"
                   }`}
                 >
                   {q === questions.length ? "Dokončit" : "Další"}
@@ -353,4 +357,4 @@ const Quizcomp = ({ quiz }) => {
   );
 };
 
-export default Quizcomp;
+export default Qc;

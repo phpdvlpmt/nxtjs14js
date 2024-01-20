@@ -297,7 +297,7 @@ const Qc = ({ quiz }) => {
                     nextQuestion();
                     q === questions.length - 1;
                   }}
-                  className="bg-gray-800 text-white w-fit px-4 py-2 cursor-pointer text-xl font-semibold"
+                  className="bg-gray-800 text-white w-fit px-4 py-2 cursor-pointer text-xl font-semibold rounded-md"
                 >
                   {activeQuestion === questions.length - 1 ? "Další" : "Další"}
                 </button>
@@ -307,8 +307,8 @@ const Qc = ({ quiz }) => {
                   disabled={q !== questions.length}
                   className={`${
                     q !== questions.length
-                      ? "bg-gray-200 text-gray-800 w-fit px-4 py-2 text-xl font-semibold cursor-not-allowed"
-                      : "px-4 py-2 bg-gray-800 text-white cursor-pointer w-fit text-xl font-semibold"
+                      ? "bg-gray-200 text-gray-800 w-fit px-4 py-2 text-xl font-semibold cursor-not-allowed rounded-md"
+                      : "px-4 py-2 bg-gray-800 text-white cursor-pointer w-fit text-xl font-semibold rounded-md"
                   }`}
                 >
                   {q === questions.length ? "Dokončit" : "Další"}
