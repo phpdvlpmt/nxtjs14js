@@ -222,7 +222,7 @@ const Qc = ({ quiz }) => {
               </SelectTrigger>
               <SelectContent>
                 {names.map((n, index) => (
-                  <SelectItem className="z-50" key={index} value={n.name}>
+                  <SelectItem key={index} value={n.name}>
                     {n.name}
                   </SelectItem>
                 ))}
