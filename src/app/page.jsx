@@ -7,6 +7,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+
 const tests = [
   {
     title: "Krajská města",
@@ -92,6 +94,7 @@ const tests = [
     title: "Závěrečné opakování",
     link: "/q15",
     class: "5",
+    new: true,
   },
 ];
 
@@ -115,7 +118,11 @@ const Quiz = () => {
               <Card className="h-full">
                 <CardHeader>
                   <CardTitle>{test.title}</CardTitle>
-                  <CardDescription>{test.class}. ročník</CardDescription>
+                  <CardDescription className="flex items-center justify-between">
+                    <span>{test.class}. ročník</span>
+
+                    {test.new && <Badge variant="destructive">Nový</Badge>}
+                  </CardDescription>
                 </CardHeader>
                 {/* <CardContent>
                   <p>Card Content</p>
