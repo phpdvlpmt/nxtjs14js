@@ -208,10 +208,7 @@ const Qc = ({ quiz }) => {
           <h2 className="text-lg font-semibold">
             Přihlášení k testu - {quiz.title}
           </h2>
-          <form
-            className="flex md:flex-col items-start md:items-center  gap-2 "
-            onSubmit={onSubmit}
-          >
+          <form className="flex  items-center  gap-2 " onSubmit={onSubmit}>
             {/* <input
               className="py-3 px-3 border"
               type="text"
@@ -234,7 +231,7 @@ const Qc = ({ quiz }) => {
 
             <button
               type="submit"
-              className="md:w-full text-sm px-2 py-2 w-auto bg-gray-900 text-white rounded-md"
+              className=" text-sm px-2 py-2 w-auto bg-gray-900 text-white rounded-md"
             >
               Přihlásit
             </button>
