@@ -2,6 +2,13 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Progress } from "@/components/ui/progress";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const Quizcomp = ({ quiz }) => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -27,6 +34,22 @@ const Quizcomp = ({ quiz }) => {
   /* if (showResult) {
     sendEmail()
   } */
+  const names = [
+    { name: "Natálie Tomanová" },
+    { name: "Viktorie Zaňková" },
+    { name: "Boris Sekera" },
+    { name: "Sabina Kňourková" },
+    { name: "Laura Ullmanová" },
+    { name: "Mikuláš Netyk" },
+    { name: "Jindřich Přibík" },
+    { name: "Otto Starý" },
+    { name: "Aneta Šitnerová" },
+    { name: "Adéla Lupínková" },
+    { name: "Sebastián Livora" },
+    { name: "Tadeáš Faust" },
+    { name: "Host" },
+  ];
+
   const onAnswerSelected = (answer, idx) => {
     setDisabled(true);
     setChecked(true);
@@ -54,7 +77,7 @@ const Quizcomp = ({ quiz }) => {
         : {
             ...prev,
             wrongAnswers: prev.wrongAnswers + 1,
-          }
+          },
     );
     if (activeQuestion !== questions.length - 1) {
       setActiveQuestion((prev) => prev + 1);
@@ -87,7 +110,7 @@ const Quizcomp = ({ quiz }) => {
       name: name,
 
       correctAnswers: result.correctAnswers,
-    }
+    },
   ) {
     const response = await fetch("/api/send", {
       method: "POST",
@@ -146,7 +169,7 @@ const Quizcomp = ({ quiz }) => {
       total: quiz.totalQuestions,
       average: avrg(),
       grade: grade(),
-    }
+    },
   ) => {
     //setShowResult(true);
     //await
@@ -185,20 +208,34 @@ const Quizcomp = ({ quiz }) => {
             Přihlášení k testu - {quiz.title}
           </h2>
           <form className="flex flex-col gap-4" onSubmit={onSubmit}>
-            <input
+            {/* <input
               className="py-3 px-3 border"
               type="text"
               name="name"
               placeholder="Jméno"
               required
-            />
-            <button className="px-3 py-3 bg-gray-900 text-white">
+            /> */}
+            <Select name="name" required>
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="Vyber své jméno ze seznamu." />
+              </SelectTrigger>
+              <SelectContent>
+                {names.map((n, index) => (
+                  <SelectItem key={index} value={n.name}>
+                    {n.name}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            <button type="submit" className="px-3 py-3 bg-gray-900 text-white">
               Přihlásit k testu
             </button>
           </form>
         </div>
       )}
-      <div className={`${showForm ? "hidden" : "flex"}  flex-col gap-3 lg:gap-4`}>
+      <div
+        className={`${showForm ? "hidden" : "flex"}  flex-col gap-3 lg:gap-4`}
+      >
         <div>
           {prg && (
             <Progress value={(q / questions.length) * 100} className="" />

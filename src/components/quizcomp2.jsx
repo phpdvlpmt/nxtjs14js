@@ -3,6 +3,13 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Progress } from "@/components/ui/progress";
 import { cn } from "@/lib/utils";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const Quizcomp2 = ({ quiz }) => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -28,6 +35,22 @@ const Quizcomp2 = ({ quiz }) => {
   /* if (showResult) {
     sendEmail()
   } */
+  const names = [
+    { name: "Natálie Tomanová" },
+    { name: "Viktorie Zaňková" },
+    { name: "Boris Sekera" },
+    { name: "Sabina Kňourková" },
+    { name: "Laura Ullmanová" },
+    { name: "Mikuláš Netyk" },
+    { name: "Jindřich Přibík" },
+    { name: "Otto Starý" },
+    { name: "Aneta Šitnerová" },
+    { name: "Adéla Lupínková" },
+    { name: "Sebastián Livora" },
+    { name: "Tadeáš Faust" },
+    { name: "Host" },
+  ];
+
   const onAnswerSelected = (answer, idx) => {
     setDisabled(true);
     setChecked(true);
@@ -103,6 +126,7 @@ const Quizcomp2 = ({ quiz }) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
+
     const name = e.target.name.value;
     setName(name);
     setPrg(true);
@@ -190,14 +214,27 @@ const Quizcomp2 = ({ quiz }) => {
             Přihlášení k testu - {quiz.title}
           </h2>
           <form className="flex flex-col gap-4" onSubmit={onSubmit}>
-            <input
+            {/*  <input
               className="py-3 px-3 border"
               type="text"
               name="name"
               placeholder="Jméno"
               required
-            />
-            <button className="px-3 py-3 bg-gray-900 text-white">
+            /> */}
+            <Select name="name" required>
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="Vyber své jméno ze seznamu." />
+              </SelectTrigger>
+              <SelectContent>
+                {names.map((n, index) => (
+                  <SelectItem key={index} value={n.name}>
+                    {n.name}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+
+            <button type="submit" className="px-3 py-3 bg-gray-900 text-white">
               Přihlásit k testu
             </button>
           </form>
