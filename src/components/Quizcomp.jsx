@@ -215,7 +215,7 @@ const Quizcomp = ({ quiz }) => {
               placeholder="Jméno"
               required
             /> */}
-            <Select name="name" required>
+            <Select name="name" required className="z-40">
               <SelectTrigger className="w-full">
                 <SelectValue placeholder="Vyber své jméno ze seznamu." />
               </SelectTrigger>
