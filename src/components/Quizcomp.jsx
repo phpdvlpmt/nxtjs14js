@@ -29,6 +29,7 @@ const Quizcomp = ({ quiz }) => {
   const [end, setEnd] = useState();
   const [q, setQ] = useState(0);
   const [prg, setPrg] = useState(false);
+  const [frmdisabled, setFrmdisabled] = useState(true);
 
   //   Select and check answer
   /* if (showResult) {
@@ -199,6 +200,9 @@ const Quizcomp = ({ quiz }) => {
 
     setEnd(true);
   };
+  const selectChange = () => {
+    setFrmdisabled(false);
+  };
   /******************************/
 
   return (
@@ -216,7 +220,12 @@ const Quizcomp = ({ quiz }) => {
               placeholder="Jméno"
               required
             /> */}
-            <Select name="name" required className="z-40">
+            <Select
+              name="name"
+              onValueChange={selectChange}
+              required
+              className="z-40"
+            >
               <SelectTrigger className="w-full">
                 <SelectValue placeholder="Vyber své jméno ze seznamu." />
               </SelectTrigger>
@@ -228,7 +237,11 @@ const Quizcomp = ({ quiz }) => {
                 ))}
               </SelectContent>
             </Select>
-            <button type="submit" className="px-3 py-3 bg-gray-900 text-white">
+            <button
+              type="submit"
+              disabled={frmdisabled}
+              className="px-3 py-3 bg-gray-900 text-white"
+            >
               Přihlásit k testu
             </button>
           </form>
