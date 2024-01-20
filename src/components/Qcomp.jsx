@@ -10,7 +10,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const Quizcomp = ({ quiz }) => {
+const Qcomp = ({ quiz }) => {
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [checked, setChecked] = useState(false);
@@ -228,23 +228,18 @@ const Quizcomp = ({ quiz }) => {
                 ))}
               </SelectContent>
             </Select> */}
-
             <select
-              required
-              id="usernames"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              name="username"
+              className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              id="grid-state"
             >
               {names.map((n, index) => (
-                <option
-                  name="username"
-                  className="py-3"
-                  key={index}
-                  value={n.name}
-                >
+                <option key={index} value={n.name}>
                   {n.name}
                 </option>
               ))}
             </select>
+
             <button type="submit" className="px-3 py-3 bg-gray-900 text-white">
               Přihlásit k testu
             </button>
@@ -370,4 +365,4 @@ const Quizcomp = ({ quiz }) => {
   );
 };
 
-export default Quizcomp;
+export default Qcomp;
