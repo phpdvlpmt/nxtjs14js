@@ -2,7 +2,6 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Progress } from "@/components/ui/progress";
-import { cn } from "@/lib/utils";
 import {
   Select,
   SelectContent,
@@ -11,7 +10,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const Quizcomp2 = ({ quiz }) => {
+const Quizcomp = ({ quiz }) => {
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [checked, setChecked] = useState(false);
@@ -26,7 +25,7 @@ const Quizcomp2 = ({ quiz }) => {
   const { question, answers, correctAnswer } = questions[activeQuestion];
   const [disabled, setDisabled] = useState(false);
   const [showForm, setShowForm] = useState(true);
-  const [name, setName] = useState("");
+  const [username, setUsername] = useState("");
   const [end, setEnd] = useState();
   const [q, setQ] = useState(0);
   const [prg, setPrg] = useState(false);
@@ -108,7 +107,7 @@ const Quizcomp2 = ({ quiz }) => {
 
   async function sendEmail(
     data = {
-      name: name,
+      name: username,
 
       correctAnswers: result.correctAnswers,
     },
@@ -126,9 +125,8 @@ const Quizcomp2 = ({ quiz }) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-
-    const name = e.target.name.value;
-    setName(name);
+    const username = e.target.username.value;
+    setUsername(username);
     setPrg(true);
 
     setShowForm(false);
@@ -165,7 +163,7 @@ const Quizcomp2 = ({ quiz }) => {
   const endTest = async (
     data = {
       title: quiz.title,
-      username: name,
+      username: username,
       correctAnswers: result.correctAnswers,
       wrongAnswers: result.wrongAnswers,
       total: quiz.totalQuestions,
@@ -183,9 +181,6 @@ const Quizcomp2 = ({ quiz }) => {
 
         body: JSON.stringify(data),
       });
-
-      /*  const json = await response.json();
-    return json; */
     } catch (error) {
       console.error(error);
     }
@@ -213,15 +208,15 @@ const Quizcomp2 = ({ quiz }) => {
           <h2 className="text-lg font-semibold">
             Přihlášení k testu - {quiz.title}
           </h2>
-          <form className="flex flex-col gap-4" onSubmit={onSubmit}>
-            {/*  <input
+          <form className="flex flex-col gap-4 " onSubmit={onSubmit}>
+            {/* <input
               className="py-3 px-3 border"
               type="text"
               name="name"
               placeholder="Jméno"
               required
             /> */}
-            <Select name="name" required>
+            <Select name="username" required className="z-40">
               <SelectTrigger className="w-full">
                 <SelectValue placeholder="Vyber své jméno ze seznamu." />
               </SelectTrigger>
@@ -233,7 +228,6 @@ const Quizcomp2 = ({ quiz }) => {
                 ))}
               </SelectContent>
             </Select>
-
             <button type="submit" className="px-3 py-3 bg-gray-900 text-white">
               Přihlásit k testu
             </button>
@@ -241,9 +235,8 @@ const Quizcomp2 = ({ quiz }) => {
         </div>
       )}
       <div
-        className={cn(showForm ? "hidden" : "flex", "flex-col gap-3 lg:gap-4")}
+        className={`${showForm ? "hidden" : "flex"}  flex-col gap-3 lg:gap-4`}
       >
-        {/* Progress */}
         <div>
           {prg && (
             <Progress value={(q / questions.length) * 100} className="" />
@@ -253,7 +246,7 @@ const Quizcomp2 = ({ quiz }) => {
         <div className="lg:py-4">
           {!showResult && (
             <div className="flex flex-col gap-2">
-              <h2 className="text-xl font-medium">Jméno: {name}</h2>
+              <h2 className="text-xl font-medium">Jméno: {username}</h2>
               <h2 className="text-xl font-medium">
                 Otázka: {activeQuestion + 1}
                 <span>/{questions.length}</span>
@@ -261,7 +254,6 @@ const Quizcomp2 = ({ quiz }) => {
             </div>
           )}
         </div>
-        {/* Quiz question & answers */}
         <div>
           {!showResult ? (
             <div className="flex  w-full  flex-col gap-3 lg:gap-4 pb-4">
@@ -321,7 +313,6 @@ const Quizcomp2 = ({ quiz }) => {
             </div>
           ) : (
             <div className="flex flex-col gap-5">
-              {/* Results */}
               <h3 className="text-xl font-bold">Výsledky</h3>
               {/*  <h3 className="text-lg font-semibold">
                 Průměr {((result.score / questions.length) * 100).toFixed(2)}%
@@ -362,4 +353,4 @@ const Quizcomp2 = ({ quiz }) => {
   );
 };
 
-export default Quizcomp2;
+export default Quizcomp;

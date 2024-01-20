@@ -25,11 +25,10 @@ const Quizcomp = ({ quiz }) => {
   const { question, answers, correctAnswer } = questions[activeQuestion];
   const [disabled, setDisabled] = useState(false);
   const [showForm, setShowForm] = useState(true);
-  const [name, setName] = useState("");
+  const [username, setUsername] = useState("");
   const [end, setEnd] = useState();
   const [q, setQ] = useState(0);
   const [prg, setPrg] = useState(false);
-  const [frmdisabled, setFrmdisabled] = useState(true);
 
   //   Select and check answer
   /* if (showResult) {
@@ -108,7 +107,7 @@ const Quizcomp = ({ quiz }) => {
 
   async function sendEmail(
     data = {
-      name: name,
+      name: username,
 
       correctAnswers: result.correctAnswers,
     },
@@ -126,8 +125,8 @@ const Quizcomp = ({ quiz }) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    const name = e.target.name.value;
-    setName(name);
+    const username = e.target.username.value;
+    setUsername(username);
     setPrg(true);
 
     setShowForm(false);
@@ -164,7 +163,7 @@ const Quizcomp = ({ quiz }) => {
   const endTest = async (
     data = {
       title: quiz.title,
-      username: name,
+      username: username,
       correctAnswers: result.correctAnswers,
       wrongAnswers: result.wrongAnswers,
       total: quiz.totalQuestions,
@@ -200,9 +199,6 @@ const Quizcomp = ({ quiz }) => {
 
     setEnd(true);
   };
-  const selectChange = () => {
-    setFrmdisabled(false);
-  };
   /******************************/
 
   return (
@@ -220,12 +216,7 @@ const Quizcomp = ({ quiz }) => {
               placeholder="Jméno"
               required
             /> */}
-            <Select
-              name="name"
-              onValueChange={selectChange}
-              required
-              className="z-40"
-            >
+            <Select name="username" required className="z-40">
               <SelectTrigger className="w-full">
                 <SelectValue placeholder="Vyber své jméno ze seznamu." />
               </SelectTrigger>
@@ -237,11 +228,7 @@ const Quizcomp = ({ quiz }) => {
                 ))}
               </SelectContent>
             </Select>
-            <button
-              type="submit"
-              disabled={frmdisabled}
-              className="px-3 py-3 bg-gray-900 text-white"
-            >
+            <button type="submit" className="px-3 py-3 bg-gray-900 text-white">
               Přihlásit k testu
             </button>
           </form>
@@ -259,7 +246,7 @@ const Quizcomp = ({ quiz }) => {
         <div className="lg:py-4">
           {!showResult && (
             <div className="flex flex-col gap-2">
-              <h2 className="text-xl font-medium">Jméno: {name}</h2>
+              <h2 className="text-xl font-medium">Jméno: {username}</h2>
               <h2 className="text-xl font-medium">
                 Otázka: {activeQuestion + 1}
                 <span>/{questions.length}</span>
