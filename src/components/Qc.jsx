@@ -216,13 +216,13 @@ const Qc = ({ quiz }) => {
               placeholder="Jméno"
               required
             /> */}
-            <Select name="username" required className="z-40">
+            <Select name="username" required>
               <SelectTrigger className="w-full">
                 <SelectValue placeholder="Vyber své jméno ze seznamu." />
               </SelectTrigger>
               <SelectContent>
                 {names.map((n, index) => (
-                  <SelectItem key={index} value={n.name}>
+                  <SelectItem className="z-50" key={index} value={n.name}>
                     {n.name}
                   </SelectItem>
                 ))}
