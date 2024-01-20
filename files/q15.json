@@ -1,0 +1,157 @@
+{
+  "totalQuestions": 10,
+  "title": "Závěrečné opakování",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Česká republika sousedí s/se:",
+      "answers": ["dvěma státy", "pěti státy", "čtyřmi státy", "třemi státy"],
+      "correctAnswer": "čtyřmi státy"
+    },
+    {
+      "id": 2,
+      "question": "Česká republika leží:",
+      "answers": [
+        "na severu Evropy",
+        "na západě Evropy",
+        "na jihu Evropy",
+        "uprostřed Evropy"
+      ],
+      "correctAnswer": "uprostřed Evropy"
+    },
+    {
+      "id": 3,
+      "question": "Jedním ze sousedních států České republiky je:",
+      "answers": ["Maďarsko", "Francie", "Německo", "Chorvatsko"],
+      "correctAnswer": "Německo"
+    },
+    {
+      "id": 4,
+      "question": "V České republice žije přibližně:",
+      "answers": [
+        "10 milionů obyvatel",
+        "100 milionu obyvatel",
+        "10 tisíc obyvatel",
+        "100 tisíc obyvatel"
+      ],
+      "correctAnswer": "10 milionů obyvatel"
+    },
+    {
+      "id": 5,
+      "question": "Největším městem České republiky je:",
+      "answers": ["Plzeň", "Ostrava", "Praha", "Brno"],
+      "correctAnswer": "Praha"
+    },
+    {
+      "id": 6,
+      "question": "Chodsko, Valašsko, Slovácko a Haná jsou:",
+      "answers": ["kraje", "města", "národopisné oblasti", "pohoří"],
+      "correctAnswer": "národopisné oblasti"
+    },
+    {
+      "id": 7,
+      "question": "Nejvyšším vrcholem České republiky je:",
+      "answers": ["Plechý", "Praděd", "Sněžka", "Ještěd"],
+      "correctAnswer": "Sněžka"
+    },
+    {
+      "id": 8,
+      "question": "Nejdelší řekou v České republice je:",
+      "answers": ["Morava", "Odra", "Vltava", "Labe"],
+      "correctAnswer": "Vltava"
+    },
+    {
+      "id": 9,
+      "question": "Nejvíc rybníků se nachází:",
+      "answers": [
+        "v jižních Čechách",
+        "na severní Moravě",
+        "v severních Čechách",
+        "v západních Čechách"
+      ],
+      "correctAnswer": "v jižních Čechách"
+    },
+    {
+      "id": 10,
+      "question": "Ve kterém podnebném pásu leží Česká republika?",
+      "answers": ["teplém", "mírném", "studeném", "horském"],
+      "correctAnswer": "mírném"
+    },
+    {
+      "id": 11,
+      "question": "Nejúrodnější půda je:",
+      "answers": ["v nížinách", "na vysočinách", "v Krkonoších", "v Beskydech"],
+      "correctAnswer": "v nížinách"
+    },
+    {
+      "id": 12,
+      "question": "Černé uhlí se těží u:",
+      "answers": ["Prahy", "Kutné Hory", "Karviné", "Hodonína"],
+      "correctAnswer": "Karviné"
+    },
+    {
+      "id": 13,
+      "question": "Kaolin se využívá k výrobě:",
+      "answers": ["skla", "léků", "železa", "porcelánu"],
+      "correctAnswer": "porcelánu"
+    },
+    {
+      "id": 14,
+      "question": "Elektrárny Temelín a Dukovany jsou:",
+      "answers": ["tepelné", "jaderné", "vodní", "větrné"],
+      "correctAnswer": "jaderné"
+    },
+    {
+      "id": 15,
+      "question": "Jedním ze sedmi světadílů je:",
+      "answers": ["Grónsko", "Velká Británie", "Atlantida", "Antarktida"],
+      "correctAnswer": "Antarktida"
+    },
+    {
+      "id": 16,
+      "question": "Největším světadílem je:",
+      "answers": ["Evropa", "Austrálie", "Asie", "Antarktida"],
+      "correctAnswer": "Asie"
+    },
+    {
+      "id": 17,
+      "question": "Největší pohoří světa se nazývá:",
+      "answers": ["Himálaj", "Alpy", "Andy", "Atlas"],
+      "correctAnswer": "Himálaj"
+    },
+    {
+      "id": 18,
+      "question": "Jižní pól se nachází v:",
+      "answers": ["Austrálii", "Antarktidě", "Asii", "Africe"],
+      "correctAnswer": "Antarktidě"
+    },
+    {
+      "id": 19,
+      "question": "Evropa leží na:",
+      "answers": [
+        "severní polokouli",
+        "jižní polokouli",
+        "severní i jižní polokouli",
+        "žádné z nich"
+      ],
+      "correctAnswer": "severní polokouli"
+    },
+    {
+      "id": 20,
+      "question": "Alpy jsou:",
+      "answers": ["souostroví", "ostrov", "pohoří", "nížina"],
+      "correctAnswer": "pohoří"
+    },
+    {
+      "id": 21,
+      "question": "Subtropické podnebí je:",
+      "answers": [
+        "na jihu Evropy",
+        "ve vnitrozemí",
+        "na severu Evropy",
+        "není v Evropě"
+      ],
+      "correctAnswer": "na jihu Evropy"
+    }
+  ]
+}
