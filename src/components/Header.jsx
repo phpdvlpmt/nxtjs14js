@@ -83,7 +83,7 @@ const Header = () => {
     <header className="flex justify-between items-center py-3 border-b border-slate-50 dark:border-slate-800">
       <div>
         <Link className="cursor-pointer" href="/">
-          <BookOpenText  />
+          <BookOpenText />
         </Link>
       </div>
       <nav className="hidden sm:flex">
@@ -109,6 +109,7 @@ const Header = () => {
                 width={30}
                 height={30}
                 className="rounded-full"
+                priority
               />
             </DropdownMenuTrigger>
             <DropdownMenuContent>
@@ -144,7 +145,10 @@ const Header = () => {
                 <div className="flex flex-col items-center justify-center text-base font-medium">
                   <ul className="list-none flex flex-col  gap-4">
                     <li onClick={() => setOpen(false)}>
-                      <Link className="font-normal dark:text-white text-foreground" href="/">
+                      <Link
+                        className="font-normal dark:text-white text-foreground"
+                        href="/"
+                      >
                         <BookOpenText />
                       </Link>
                     </li>
