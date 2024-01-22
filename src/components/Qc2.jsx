@@ -220,7 +220,7 @@ const Qc2 = ({ quiz }) => {
               placeholder="Jméno"
               required
             /> */}
-            <Select name="username" required>
+            <Select name="username" required autoComplete="on">
               <SelectTrigger className="w-full">
                 <SelectValue placeholder="Vyber své jméno ze seznamu." />
               </SelectTrigger>

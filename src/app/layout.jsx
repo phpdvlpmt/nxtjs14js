@@ -7,8 +7,8 @@ import Header from "@/components/Header";
 import { getServerSession } from "next-auth";
 import SessionProvider from "@/components/SessionProvider";
 
-const inter = Inter({ subsets: ["latin"] });
-const openSans = Open_Sans({ subsets: ["latin"] });
+//const inter = Inter({ subsets: ["latin"] });
+//const openSans = Open_Sans({ subsets: ["latin"] });
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -18,7 +18,7 @@ export const metadata = {
   title: "Kvízy",
   description: "Kvízy",
 };
-export const revalidate = 1;
+
 export default async function RootLayout({ children }) {
   const session = await getServerSession();
 
