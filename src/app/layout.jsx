@@ -18,10 +18,10 @@ export const metadata = {
   title: "Kvízy",
   description: "Kvízy",
 };
-export const revalidate = 5
+export const revalidate = 1;
 export default async function RootLayout({ children }) {
   const session = await getServerSession();
-  
+
   return (
     <html lang="cs" suppressHydrationWarning>
       <body

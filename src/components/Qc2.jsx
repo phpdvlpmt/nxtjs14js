@@ -181,6 +181,10 @@ const Qc2 = ({ quiz }) => {
 
         body: JSON.stringify(data),
       });
+      if (response.ok) {
+        const rs = await response.json();
+        console.log(rs.data.id);
+      }
     } catch (error) {
       console.error(error);
     }
