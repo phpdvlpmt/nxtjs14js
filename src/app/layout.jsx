@@ -1,14 +1,10 @@
 import { ThemeProvider } from "@/components/theme-provider";
-import { Inter } from "next/font/google";
-import { Open_Sans } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import { getServerSession } from "next-auth";
 import SessionProvider from "@/components/SessionProvider";
 
-//const inter = Inter({ subsets: ["latin"] });
-//const openSans = Open_Sans({ subsets: ["latin"] });
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
