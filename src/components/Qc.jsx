@@ -141,10 +141,10 @@ const Qc = ({ quiz }) => {
     let avr = avrg();
 
     switch (true) {
-      case avr > 88:
+      case avr > 82:
         return "1"; // code block
         break;
-      case avr < 87 && avr >= 63:
+      case avr < 82 && avr >= 63:
         return "2"; // code block
         break;
       case avr < 63 && avr >= 38:
