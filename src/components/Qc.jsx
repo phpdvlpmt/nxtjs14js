@@ -144,7 +144,7 @@ const Qc = ({ quiz }) => {
       case avr > 88:
         return "1"; // code block
         break;
-      case avr < 88 && avr >= 63:
+      case avr < 87 && avr >= 63:
         return "2"; // code block
         break;
       case avr < 63 && avr >= 38:
