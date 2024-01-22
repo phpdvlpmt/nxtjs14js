@@ -1,4 +1,4 @@
-import Quizcomp2 from "@/components/quizcomp2";
+import Qc2 from "@/components/Qc2";
 import { promises as fs } from "fs";
 import { redirect } from "next/navigation";
 
@@ -14,7 +14,7 @@ const Q = async ({ params }, data) => {
   }
   return (
     <>
-      <Quizcomp2 quiz={data} />
+      <Qc2 quiz={data} />
     </>
   );
 };
