@@ -17,14 +17,27 @@ import { deleteAllResult, deleteResult } from "../../actions";
 import moment from "moment-timezone";
 import { Button } from "@/components/ui/button";
 
-const ResultsTable = (dt) => {
-  const data = dt.dt;
-  const router = useRouter();
-
+const ResultsTable = ({ data }) => {
   return (
     <div className="pb-10">
       <Table>
-        <TableCaption className="pb-8">Seznam provedených testů</TableCaption>
+        <TableCaption className="pb-5 space-y-4">
+          <div>Seznam provedených testů</div>
+          {data.length > 0 && (
+            <div>
+              <form action={deleteAllResult}>
+                <Button
+                  variant="destructive"
+                  type="submit"
+                  className="flex items-center gap-1"
+                >
+                  <Trash2Icon />
+                  <span>Smazat všechny záznamy</span>
+                </Button>
+              </form>
+            </div>
+          )}
+        </TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead className="font-bold">Jméno žáka</TableHead>
@@ -34,7 +47,7 @@ const ResultsTable = (dt) => {
             <TableHead className="font-bold">Špatně</TableHead>
             <TableHead className="font-bold">Průměr</TableHead>
             <TableHead className="font-bold">Známka</TableHead>
-            <TableHead className="font-bold">Datum</TableHead>
+            <TableHead className="font-bold min-w-[120px]">Datum</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -68,20 +81,6 @@ const ResultsTable = (dt) => {
           ))}
         </TableBody>
       </Table>
-      {data.length > 0 && (
-        <div>
-          <form action={deleteAllResult}>
-            <Button
-              variant="destructive"
-              type="submit"
-              className="flex items-center"
-            >
-              <Trash2Icon />
-              <span>Smazat všechny záznamy</span>
-            </Button>
-          </form>
-        </div>
-      )}
     </div>
   );
 };

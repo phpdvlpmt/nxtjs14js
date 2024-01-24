@@ -15,6 +15,7 @@ import { Trash2Icon } from "lucide-react";
 import { deleteAllResult, deleteResult } from "../../../actions";
 import moment from "moment-timezone";
 import { Button } from "@/components/ui/button";
+import ResultsTable from "@/components/ResultsTable";
 
 const getData = async () => {
   const data = await prisma.resume.findMany({});
@@ -29,9 +30,10 @@ const Results = async () => {
   }
 
   const data = await getData();
+
   return (
     <div className="pb-10">
-      <Table>
+      {/* <Table>
         <TableCaption className="pb-5 space-y-4">
           <div>Seznam provedených testů</div>
           {data.length > 0 && (
@@ -58,9 +60,7 @@ const Results = async () => {
             <TableHead className="font-bold">Špatně</TableHead>
             <TableHead className="font-bold">Průměr</TableHead>
             <TableHead className="font-bold">Známka</TableHead>
-            <TableHead className="font-bold min-w-[130px] text-nowrap">
-              Datum
-            </TableHead>
+            <TableHead className="font-bold min-w-[120px]">Datum</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -77,7 +77,7 @@ const Results = async () => {
               </TableCell>
               <TableCell>{item.average}%</TableCell>
               <TableCell>{item.grade}</TableCell>
-              <TableCell className="text-nowrap">
+              <TableCell>
                 {moment
                   .tz(item.createdAt, "Europe/Prague")
                   .format("D. M. YYYY H:mm")}
@@ -93,7 +93,8 @@ const Results = async () => {
             </TableRow>
           ))}
         </TableBody>
-      </Table>
+      </Table> */}
+      <ResultsTable data={data} />
     </div>
   );
 };
