@@ -141,31 +141,30 @@ const Header = () => {
           <SheetContent className="w-full">
             <SheetHeader>
               <SheetTitle>Menu</SheetTitle>
-              <SheetDescription>
-                <div className="flex flex-col items-center justify-center text-base font-medium">
-                  <ul className="list-none flex flex-col  gap-4">
-                    <li onClick={() => setOpen(false)}>
-                      <Link
-                        className="font-normal dark:text-white text-foreground"
-                        href="/"
-                      >
-                        <BookOpenText />
-                      </Link>
-                    </li>
-                    {Links.map((link, index) => (
-                      <li key={index} onClick={() => setOpen(false)}>
-                        <Link
-                          className="font-normal dark:text-white text-foreground"
-                          href={link.link}
-                        >
-                          {link.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </SheetDescription>
+              <SheetDescription></SheetDescription>
             </SheetHeader>
+            <div className="flex flex-col items-center justify-center text-base font-medium">
+              <ul className="list-none flex flex-col  gap-4">
+                <li onClick={() => setOpen(false)}>
+                  <Link
+                    className="font-normal dark:text-white text-foreground"
+                    href="/"
+                  >
+                    <BookOpenText />
+                  </Link>
+                </li>
+                {Links.map((link, index) => (
+                  <li key={index} onClick={() => setOpen(false)}>
+                    <Link
+                      className="font-normal dark:text-white text-foreground"
+                      href={link.link}
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </SheetContent>
         </Sheet>
       </div>

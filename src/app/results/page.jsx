@@ -21,6 +21,7 @@ const getData = async () => {
 
   return data;
 };
+export const revalidate = 1;
 const Results = async () => {
   const session = await getServerSession(authOptions);
   if (!session || !session.user) {
@@ -57,7 +58,9 @@ const Results = async () => {
             <TableHead className="font-bold">Špatně</TableHead>
             <TableHead className="font-bold">Průměr</TableHead>
             <TableHead className="font-bold">Známka</TableHead>
-            <TableHead className="font-bold min-w-[120px]">Datum</TableHead>
+            <TableHead className="font-bold min-w-[130px] text-nowrap">
+              Datum
+            </TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -74,7 +77,7 @@ const Results = async () => {
               </TableCell>
               <TableCell>{item.average}%</TableCell>
               <TableCell>{item.grade}</TableCell>
-              <TableCell>
+              <TableCell className="text-nowrap">
                 {moment
                   .tz(item.createdAt, "Europe/Prague")
                   .format("D. M. YYYY H:mm")}
