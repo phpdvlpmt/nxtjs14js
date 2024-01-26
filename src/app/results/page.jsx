@@ -33,7 +33,7 @@ const Results = async () => {
 
   return (
     <div className="pb-10">
-      <Table>
+      {/* <Table>
         <TableCaption className="pb-5 space-y-4">
           <div>Seznam provedených testů</div>
           {data.length > 0 && (
@@ -93,8 +93,8 @@ const Results = async () => {
             </TableRow>
           ))}
         </TableBody>
-      </Table>
-      {/* <ResultsTable data={data} /> */}
+      </Table> */}
+      <ResultsTable data={data} />
     </div>
   );
 };
