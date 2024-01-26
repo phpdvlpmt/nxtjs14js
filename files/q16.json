@@ -1,0 +1,145 @@
+{
+  "totalQuestions": 19,
+  "title": "Souhrnné opakování učiva",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Česká republika sousedí s:",
+      "answers": ["Rakouskem", "Francií", "Bulharskem", "Belgií"],
+      "correctAnswer": "Rakouskem"
+    },
+    {
+      "id": 2,
+      "question": "Mezi historické země ČR nepatří:",
+      "answers": ["Čechy", "Morava", "Chodsko", "Slezsko"],
+      "correctAnswer": "Chodsko"
+    },
+    {
+      "id": 3,
+      "question": "Obec zastupuje navenek:",
+      "answers": ["hejtman", "starosta", "ředitel", "premiér"],
+      "correctAnswer": "starosta"
+    },
+    {
+      "id": 4,
+      "question": "Na severovýchodě ČR leží:",
+      "answers": [
+        "Plzeňský kraj",
+        "Moravskoslezský kraj",
+        "Liberecký kraj",
+        "Karlovarský kraj"
+      ],
+      "correctAnswer": "Moravskoslezský kraj"
+    },
+    {
+      "id": 5,
+      "question": "Krajské město kraje Vysočina je:",
+      "answers": ["Brno", "Hradec Králové", "České Budějovice", "Jihlava"],
+      "correctAnswer": "Jihlava"
+    },
+    {
+      "id": 6,
+      "question": "Kraj zastupuje navenek:",
+      "answers": ["prezident", "ministr", "hejtman", "předseda vlády"],
+      "correctAnswer": "hejtman"
+    },
+    {
+      "id": 7,
+      "question": "Moc v demokratickém státě je rozdělena na:",
+      "answers": [
+        "zákonodárnou, výkonnou a soudní",
+        "zákonodárnou a výkonnou",
+        "výkonnou a soudní",
+        "zákonodárnou a soudní"
+      ],
+      "correctAnswer": "zákonodárnou, výkonnou a soudní"
+    },
+    {
+      "id": 8,
+      "question": "Státní svátek není:",
+      "answers": ["8. květen", "5. červenec", "28. říjen", "6. leden"],
+      "correctAnswer": "6. leden"
+    },
+    {
+      "id": 9,
+      "question": "Způsob řízení naší země určuje:",
+      "answers": [
+        "Ústava ČR",
+        "Listina základních práv a svobod",
+        "Úmluva o právech dítěte",
+        "morálka"
+      ],
+      "correctAnswer": "Ústava ČR"
+    },
+    {
+      "id": 10,
+      "question": "Vrchním velitelem ozbrojených sil v České republice je:",
+      "answers": [
+        "předseda vlády (premiér)",
+        "prezident České republiky",
+        "ministr vnitra",
+        "primátor hlavního města Prahy"
+      ],
+      "correctAnswer": "prezident České republiky"
+    },
+    {
+      "id": 11,
+      "question": "Krajina s nadmořskou výškou do 300 m se nazývá:",
+      "answers": ["hornatina", "nížina", "vrchovina", "pahorkatina"],
+      "correctAnswer": "nížina"
+    },
+    {
+      "id": 12,
+      "question": "Pohoří Krušné hory leží:",
+      "answers": [
+        "při hranici s Polskem",
+        "při hranici s Rakouskem",
+        "při hranici s Německem",
+        "ve vnitrozemí"
+      ],
+      "correctAnswer": "při hranici s Německem"
+    },
+    {
+      "id": 13,
+      "question": "Milešovka je:",
+      "answers": ["hora", "řeka", "město", "jezero"],
+      "correctAnswer": "hora"
+    },
+    {
+      "id": 14,
+      "question": "Nejvyšší hora na Moravě je:",
+      "answers": ["Sněžka", "Říp", "Radhošť", "Praděd"],
+      "correctAnswer": "Praděd"
+    },
+    {
+      "id": 15,
+      "question": "Berounka je:",
+      "answers": ["přehrada", "rybník", "řeka", "jeskyně"],
+      "correctAnswer": "řeka"
+    },
+    {
+      "id": 16,
+      "question": "V Moravskoslezských Beskydech pramení řeka:",
+      "answers": ["Morava", "Otava", "Bečva", "Dyje"],
+      "correctAnswer": "Bečva"
+    },
+    {
+      "id": 17,
+      "question": "Řeka Jizera protéká městem:",
+      "answers": ["Pardubice", "Mladá Boleslav", "Plzeň", "Olomouc"],
+      "correctAnswer": "Mladá Boleslav"
+    },
+    {
+      "id": 18,
+      "question": "Významný přístav říční dopravy je:",
+      "answers": ["Děčín", "Karlovy Vary", "Ostrava", "Zlín"],
+      "correctAnswer": "Děčín"
+    },
+    {
+      "id": 19,
+      "question": "Mezi kulturní instituce nepatří:",
+      "answers": ["divadla", "galerie", "knihovny", "pekárny"],
+      "correctAnswer": "pekárny"
+    }
+  ]
+}

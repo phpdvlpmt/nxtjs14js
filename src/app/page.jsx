@@ -96,6 +96,12 @@ const tests = [
     class: "5",
     new: true,
   },
+  {
+    title: "Souhrnné opakování učiva",
+    link: "/q16",
+    class: "4",
+    new: true,
+  },
 ];
 
 const Quiz = () => {
