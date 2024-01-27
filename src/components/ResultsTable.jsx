@@ -3,6 +3,7 @@
 import { authOptions } from "../app/utils/auth";
 import { redirect } from "next/navigation";
 import prisma from "../app/utils/db"; */
+import { TrashDelete, TrashDeleteAll } from "./Submitbuttons";
 import {
   Table,
   TableBody,
@@ -26,14 +27,15 @@ const ResultsTable = ({ data }) => {
           {data.length > 0 && (
             <div>
               <form action={deleteAllResult}>
-                <Button
+                {/* <Button
                   variant="destructive"
                   type="submit"
                   className="flex items-center gap-1"
                 >
                   <Trash2Icon />
                   <span>Smazat všechny záznamy</span>
-                </Button>
+                </Button> */}
+                <TrashDeleteAll />
               </form>
             </div>
           )}
@@ -72,9 +74,10 @@ const ResultsTable = ({ data }) => {
               <TableCell>
                 <form action={deleteResult}>
                   <input type="hidden" name="inputId" value={item.id} />
-                  <button type="submit">
+                  {/* <button type="submit">
                     <Trash2Icon />
-                  </button>
+                  </button> */}
+                  <TrashDelete />
                 </form>
               </TableCell>
             </TableRow>
