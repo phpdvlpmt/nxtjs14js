@@ -289,7 +289,7 @@ const Qc2 = ({ quiz }) => {
                   !selectedAnswer &&
                   checked &&
                   correctAnswer === answer &&
-                  " bg-green-400"
+                  " bg-green-400 animate-pulse"
                 }`}
                 >
                   <span>{answer}</span>
