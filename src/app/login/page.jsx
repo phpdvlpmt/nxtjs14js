@@ -62,7 +62,7 @@ const Login = () => {
       Decrease
     </Button>
   </div> */}
-      <Card className="w-1/3">
+      <Card className="w-full  xl:w-1/3 whitespace-nowrap ">
         <CardHeader>
           <CardTitle>Přihlášení</CardTitle>
           <CardDescription></CardDescription>
