@@ -1,11 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MyButton from "@/components/my-button";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { useTesterStore } from "../../../store/store";
-import { useRouter } from "next/navigation";
+//import { useTesterStore } from "../../../stores/store";
+import { usePupilStore } from "../../../stores/store";
+import { useRouter, redirect } from "next/navigation";
+import { add } from "date-fns";
 
 const quiz = {
   totalQuestions: 10,
@@ -31,16 +33,36 @@ const quiz = {
 };
 
 const Training = () => {
-  const { tester } = useTesterStore();
+  //const { tester } = useTesterStore();
+  const { pupil, addPupil } = usePupilStore();
   const [variable, setVariable] = useState("");
+  // const [p, setP] = useState(pupil);
+  //const items = window.sessionStorage.getItem("pupil-storage");
+  /* const storedValue = JSON.parse(
+    window.sessionStorage.getItem("pupil-storage"),
+  ); */
   const router = useRouter();
-  if (!tester) {
+  useEffect(() => {
+    const storedValue = JSON.parse(
+      window.sessionStorage.getItem("pupil-storage"),
+    );
+    if (storedValue?.state.pupil) {
+      console.log(storedValue.state.pupil);
+    } else {
+      redirect("/zustand");
+    }
+  }, []);
+
+  /* if (!pupil) {
     router.push("/zustand");
-  }
+  } else {
+    router.push("/training");
+  } */
+
   return (
     <div className="flex flex-col">
       Variable: {variable}
-      Tester: {tester}
+      Tester: {pupil}
       {/*  <button  */}
       <MyButton onClick={() => setVariable("pokus")} />
       <div>
@@ -53,6 +75,16 @@ const Training = () => {
           </div>
         ))}
       </div>
+      <button
+        onClick={() => {
+          usePupilStore.persist.clearStorage();
+
+          router.push("/");
+          addPupil("");
+        }}
+      >
+        Odlásit
+      </button>
     </div>
   );
 };

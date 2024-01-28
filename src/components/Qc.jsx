@@ -1,7 +1,10 @@
 "use client";
+import { useSelector, useDispatch } from "react-redux";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Progress } from "@/components/ui/progress";
+import { redirect } from "next/navigation";
+import { toast } from "sonner";
 import {
   Select,
   SelectContent,
@@ -11,6 +14,11 @@ import {
 } from "@/components/ui/select";
 
 const Qc = ({ quiz }) => {
+  const isAuth = useSelector((state) => state.authReducer.value.isAuth);
+  if (!isAuth) {
+    redirect("/login");
+  }
+
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [checked, setChecked] = useState(false);
@@ -25,16 +33,17 @@ const Qc = ({ quiz }) => {
   const { question, answers, correctAnswer } = questions[activeQuestion];
   const [disabled, setDisabled] = useState(false);
   const [showForm, setShowForm] = useState(true);
-  const [username, setUsername] = useState("");
+  //const [username, setUsername] = useState("");
   const [end, setEnd] = useState();
   const [q, setQ] = useState(0);
-  const [prg, setPrg] = useState(false);
+  const [prg, setPrg] = useState(true);
+  const username = useSelector((state) => state.authReducer.value.username);
 
   //   Select and check answer
   /* if (showResult) {
     sendEmail()
   } */
-  const names = [
+  /* const names = [
     { name: "Natálie Tomanová" },
     { name: "Viktorie Zaňková" },
     { name: "Boris Sekera" },
@@ -48,7 +57,7 @@ const Qc = ({ quiz }) => {
     { name: "Sebastián Livora" },
     { name: "Tadeáš Faust" },
     { name: "Host" },
-  ];
+  ]; */
 
   const onAnswerSelected = (answer, idx) => {
     setDisabled(true);
@@ -123,14 +132,14 @@ const Qc = ({ quiz }) => {
     return json;
   }
 
-  const onSubmit = (e) => {
+  /* const onSubmit = (e) => {
     e.preventDefault();
     const username = e.target.username.value;
     setUsername(username);
     setPrg(true);
 
     setShowForm(false);
-  };
+  }; */
 
   const avrg = () => {
     const ar = ((result.correctAnswers / questions.length) * 100).toFixed();
@@ -181,6 +190,11 @@ const Qc = ({ quiz }) => {
 
         body: JSON.stringify(data),
       });
+      if (response.ok) {
+        toast(
+          "Test žáka jménem " + username + " byl úspěšně uložen v databázi.",
+        );
+      }
     } catch (error) {
       console.error(error);
     }
@@ -203,19 +217,19 @@ const Qc = ({ quiz }) => {
 
   return (
     <div className="">
-      {showForm && (
+      {/*   {showForm && (
         <div className="flex flex-col  w-full sm:w-1/3 gap-3 py-2 lg:py-4 ">
           <h2 className="text-lg font-semibold">
             Přihlášení k testu - {quiz.title}
           </h2>
           <form className="flex  items-center  gap-2 " onSubmit={onSubmit}>
-            {/* <input
+            <input
               className="py-3 px-3 border"
               type="text"
               name="name"
               placeholder="Jméno"
               required
-            /> */}
+            /> 
             <Select name="username" required autoComplete="off">
               <SelectTrigger className="w-full">
                 <SelectValue placeholder="Vyber své jméno ze seznamu." />
@@ -237,13 +251,11 @@ const Qc = ({ quiz }) => {
             </button>
           </form>
         </div>
-      )}
-      <div
-        className={`${showForm ? "hidden" : "flex"}  flex-col gap-3 lg:gap-4`}
-      >
-        <div>
+      )}*/}
+      <div className=" flex-col gap-3 lg:gap-4">
+        <div className="">
           {prg && (
-            <Progress value={(q / questions.length) * 100} className="" />
+            <Progress value={(q / questions.length) * 100} className="my-6" />
           )}
         </div>
         <h1 className="text-xl font-semibold">Kvíz - {quiz.title}</h1>

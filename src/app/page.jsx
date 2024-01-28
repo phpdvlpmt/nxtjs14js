@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 import {
   Card,
   CardContent,
@@ -8,6 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { redirect } from "next/navigation";
 
 const tests = [
   {
@@ -105,6 +108,10 @@ const tests = [
 ];
 
 const Quiz = () => {
+  const isAuth = useSelector((state) => state.authReducer.value.isAuth);
+  if (!isAuth) {
+    redirect("/login");
+  }
   return (
     <>
       {/* <div className="flex flex-col gap-5 text-xl font-bold">

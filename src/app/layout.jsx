@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { getServerSession } from "next-auth";
 import SessionProvider from "@/components/SessionProvider";
+import { ReduxProvider } from "@/redux/provider";
+import { Toaster } from "@/components/ui/sonner";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -23,14 +25,17 @@ export default async function RootLayout({ children }) {
       <body
         className={`${montserrat.className} selection:bg-orange-500 antialiased min-h-screen`}
       >
-        <SessionProvider session={session}>
-          <ThemeProvider attribute="class" defaultTheme="system">
-            <main className="container min-h-screen flex flex-col flex-1">
-              <Header />
-              {children}
-            </main>
-          </ThemeProvider>
-        </SessionProvider>
+        <ReduxProvider>
+          <SessionProvider session={session}>
+            <ThemeProvider attribute="class" defaultTheme="system">
+              <main className="container min-h-screen flex flex-col flex-1">
+                <Header />
+                {children}
+              </main>
+              <Toaster />
+            </ThemeProvider>
+          </SessionProvider>
+        </ReduxProvider>
       </body>
     </html>
   );

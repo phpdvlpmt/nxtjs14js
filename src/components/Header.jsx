@@ -1,6 +1,14 @@
 "use client";
+import { useSelector, useDispatch } from "react-redux";
+import { logIn, logOut } from "@/redux/features/auth-slice";
+
 import React from "react";
-import { BookOpenText, AlignJustify, FileSymlink } from "lucide-react";
+import {
+  BookOpenText,
+  AlignJustify,
+  FileSymlink,
+  LogOutIcon,
+} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -23,6 +31,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { Button } from "./ui/button";
 
 function AuthButton() {
   const { data: session } = useSession();
@@ -50,6 +59,10 @@ const Links = [
     link: "/results",
   },
   /*  {
+    name: <FileSymlink />,
+    link: "/login",
+  },
+   {
     name: "Shadcn",
     link: "/shadcn",
   },
@@ -76,6 +89,9 @@ const Links = [
 ];
 
 const Header = () => {
+  const username = useSelector((state) => state.authReducer.value.username);
+  const isAuth = useSelector((state) => state.authReducer.value.isAuth);
+  const dispatch = useDispatch();
   const pathname = usePathname();
   const [open, setOpen] = useState();
   const { data: session } = useSession();
@@ -99,6 +115,19 @@ const Header = () => {
       </nav>
 
       <div className="flex items-center gap-5">
+        {isAuth && (
+          <div className="flex items-center gap-3">
+            <h2 className="font-bold"> {username}</h2>
+            <Button
+              variant="ghost"
+              className="flex gap-2"
+              onClick={() => dispatch(logOut())}
+            >
+              <LogOutIcon />
+              Odhlásit
+            </Button>
+          </div>
+        )}
         <ModeToggle />
         {session ? (
           <DropdownMenu>
@@ -131,7 +160,7 @@ const Header = () => {
           </DropdownMenu>
         ) : (
           <div>
-            <button onClick={() => signIn("github")}>Sign in</button>
+            {/* <button onClick={() => signIn("github")}>Sign in</button> */}
           </div>
         )}
         <Sheet open={open} onOpenChange={setOpen}>

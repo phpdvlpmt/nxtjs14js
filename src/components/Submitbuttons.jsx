@@ -48,3 +48,22 @@ export function TrashDeleteAll() {
     </>
   );
 }
+
+export function LoginBtn() {
+  const { pending } = useFormStatus();
+
+  return (
+    <>
+      {pending ? (
+        <Button className="flex gap-3 items-center" disabled>
+          <Loader2 className="h-4 w-4 animate-spin" />
+          <span>Přihlašuji</span>
+        </Button>
+      ) : (
+        <Button type="submit" className="flex gap-3 items-center">
+          <span>Přihlásit</span>
+        </Button>
+      )}
+    </>
+  );
+}

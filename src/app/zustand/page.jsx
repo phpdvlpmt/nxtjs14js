@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { useStore, useBearStore, useTesterStore } from "../../../store/store";
+import { usePupilStore } from "../../../stores/store";
 import {
   Select,
   SelectContent,
@@ -8,6 +8,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { useRouter, redirect } from "next/navigation";
 const Zustand = () => {
   //const { count, inc, dec } = useStore();
   const names = [
@@ -25,23 +26,25 @@ const Zustand = () => {
     { name: "Tadeáš Faust" },
     { name: "Host" },
   ];
-  const { count, inc, dec } = useBearStore();
-  const { tester, addTester } = useTesterStore();
+  /* const { count, inc, dec } = useBearStore(); */
+  const { pupil, addPupil } = usePupilStore();
+  const router = useRouter();
   const onSubmit = (e) => {
     e.preventDefault();
     const username = e.target.username.value;
-    addTester(username);
+    addPupil(username);
+    router.push("/training");
   };
 
   return (
     <div className="flex flex-col space-y-5">
-      <span className="">{count}</span>
+      {/*  <span className="">{count}</span>
       <div className="flex gap-5">
         <Button onClick={inc}>Increase</Button>
         <Button variant="destructive" onClick={dec}>
           Decrease
         </Button>
-      </div>
+      </div> */}
       <form className="flex  items-center  gap-2 " onSubmit={onSubmit}>
         <Select name="username" required autoComplete="off">
           <SelectTrigger className="w-full">
@@ -65,7 +68,7 @@ const Zustand = () => {
       </form>
       <div className="flex gap-4">
         <span className="font-bold">Přihlášen jako:</span>{" "}
-        <span className="">{tester}</span>
+        <span className="">{pupil}</span>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 
-export const useStore = create((set) => ({
+/* export const useStore = create((set) => ({
   count: 1,
   inc: () => set((state) => ({ count: state.count + 1 })),
   dec: () => set((state) => ({ count: state.count - 1 })),
@@ -20,19 +20,19 @@ export const useBearStore = create(
       storage: createJSONStorage(() => sessionStorage), // (optional) by default, 'localStorage' is used
     },
   ),
-);
-export const useTesterStore = create(
+); */
+export const usePupilStore = create(
   persist(
     (set) => ({
-      tester: "",
+      pupil: "",
 
-      addTester: (text) =>
+      addPupil: (text) =>
         set(() => ({
-          tester: text,
+          pupil: text,
         })),
     }),
     {
-      name: "tester-storage", // name of the item in the storage (must be unique)
+      name: "pupil-storage", // name of the item in the storage (must be unique)
       storage: createJSONStorage(() => sessionStorage), // (optional) by default, 'localStorage' is used
     },
   ),
