@@ -49,7 +49,9 @@ const ResultsTable = ({ data }) => {
             <TableHead className="font-bold">Špatně</TableHead>
             <TableHead className="font-bold">Průměr</TableHead>
             <TableHead className="font-bold">Známka</TableHead>
-            <TableHead className="font-bold min-w-[120px]">Datum</TableHead>
+            <TableHead className="font-bold min-w-[120px] whitespace-nowrap">
+              Datum
+            </TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -66,7 +68,7 @@ const ResultsTable = ({ data }) => {
               </TableCell>
               <TableCell>{item.average}%</TableCell>
               <TableCell>{item.grade}</TableCell>
-              <TableCell>
+              <TableCell className="whitespace-nowrap">
                 {moment
                   .tz(item.createdAt, "Europe/Prague")
                   .format("D. M. YYYY H:mm")}
