@@ -62,7 +62,7 @@ const Login = () => {
       Decrease
     </Button>
   </div> */}
-      <Card className="w-96">
+      <Card className="w-1/3">
         <CardHeader>
           <CardTitle>Přihlášení</CardTitle>
           <CardDescription></CardDescription>
