@@ -116,7 +116,7 @@ const Header = () => {
 
       <div className="flex items-center gap-5">
         {isAuth && (
-          <div className="flex items-center gap-3">
+          <div className="hidden sm:flex items-center gap-3 ">
             <h2 className="font-bold"> {username}</h2>
             <Button
               variant="ghost"
@@ -172,7 +172,7 @@ const Header = () => {
               <SheetTitle>Menu</SheetTitle>
               <SheetDescription></SheetDescription>
             </SheetHeader>
-            <div className="flex flex-col items-center justify-center text-base font-medium">
+            <div className="flex flex-col items-center justify-center text-base font-medium gap-4">
               <ul className="list-none flex flex-col  gap-4">
                 <li onClick={() => setOpen(false)}>
                   <Link
@@ -193,6 +193,24 @@ const Header = () => {
                   </li>
                 ))}
               </ul>
+              {isAuth && (
+                <ul className=" flex flex-col items-center gap-4 ">
+                  <li className="font-bold"> {username}</li>
+                  <li>
+                    <Button
+                      variant="ghost"
+                      className="flex gap-2"
+                      onClick={() => {
+                        dispatch(logOut());
+                        setOpen(false);
+                      }}
+                    >
+                      <LogOutIcon />
+                      Odhlásit
+                    </Button>
+                  </li>
+                </ul>
+              )}
             </div>
           </SheetContent>
         </Sheet>

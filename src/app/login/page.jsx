@@ -62,15 +62,23 @@ const Login = () => {
       Decrease
     </Button>
   </div> */}
-      <Card className="w-full  xl:w-1/3 whitespace-nowrap ">
+      <Card className="w-full  xl:w-1/3 whitespace-nowrap">
         <CardHeader>
           <CardTitle>Přihlášení</CardTitle>
           <CardDescription></CardDescription>
         </CardHeader>
-        <CardContent>
-          <form className="flex  items-center  gap-2 " onSubmit={onSubmit}>
-            <Select name="username" required autoComplete="off">
-              <SelectTrigger className="w-full">
+        <CardContent className="w-full">
+          <form
+            className="flex flex-col sm:flex-row  gap-4 "
+            onSubmit={onSubmit}
+          >
+            <Select
+              name="username"
+              required
+              autoComplete="off"
+              className="w-full"
+            >
+              <SelectTrigger className="w-full flex-1">
                 <SelectValue placeholder="Vyber své jméno ze seznamu." />
               </SelectTrigger>
               <SelectContent>
@@ -88,7 +96,9 @@ const Login = () => {
         >
           Přihlásit
         </button> */}
-            <LoginBtn />
+            <div>
+              <LoginBtn />
+            </div>
           </form>
         </CardContent>
         <CardFooter></CardFooter>
