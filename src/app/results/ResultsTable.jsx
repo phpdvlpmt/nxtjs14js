@@ -1,10 +1,6 @@
-import { getServerSession } from "next-auth";
-import { authOptions } from "../utils/auth";
-import { redirect } from "next/navigation";
-import prisma from "../utils/db";
-import { columns } from "./columns";
-import { DataTable } from "./data-table";
+"use client";
 
+import { TrashDelete, TrashDeleteAll } from "@/components/Submitbuttons";
 import {
   Table,
   TableBody,
@@ -18,42 +14,25 @@ import { Trash2Icon } from "lucide-react";
 import { deleteAllResult, deleteResult } from "../../../actions";
 import moment from "moment-timezone";
 import { Button } from "@/components/ui/button";
-import { ResultsTable } from "./ResultsTable";
 
-const getData = async () => {
-  const data = await prisma.resume.findMany({});
-
-  return data;
-};
-export const revalidate = 1;
-const Results = async () => {
-  const session = await getServerSession(authOptions);
-  if (!session || !session.user) {
-    redirect("/api/auth/signin");
-  }
-
-  const data = await getData();
-
+export const ResultsTable = ({ data }) => {
   return (
-    <div className="pb-10 ">
-      <div className="mb-8">
-        <DataTable columns={columns} data={data} />
-      </div>
-
-      {/* <Table>
+    <div className="pb-10">
+      <Table>
         <TableCaption className="pb-5 space-y-4">
           <div>Seznam provedených testů</div>
           {data.length > 0 && (
             <div>
               <form action={deleteAllResult}>
-                <Button
+                {/* <Button
                   variant="destructive"
                   type="submit"
                   className="flex items-center gap-1"
                 >
                   <Trash2Icon />
                   <span>Smazat všechny záznamy</span>
-                </Button>
+                </Button> */}
+                <TrashDeleteAll />
               </form>
             </div>
           )}
@@ -67,7 +46,9 @@ const Results = async () => {
             <TableHead className="font-bold">Špatně</TableHead>
             <TableHead className="font-bold">Průměr</TableHead>
             <TableHead className="font-bold">Známka</TableHead>
-            <TableHead className="font-bold min-w-[120px]">Datum</TableHead>
+            <TableHead className="font-bold min-w-[120px] whitespace-nowrap">
+              Datum
+            </TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -84,7 +65,7 @@ const Results = async () => {
               </TableCell>
               <TableCell>{item.average}%</TableCell>
               <TableCell>{item.grade}</TableCell>
-              <TableCell>
+              <TableCell className="whitespace-nowrap">
                 {moment
                   .tz(item.createdAt, "Europe/Prague")
                   .format("D. M. YYYY H:mm")}
@@ -92,18 +73,16 @@ const Results = async () => {
               <TableCell>
                 <form action={deleteResult}>
                   <input type="hidden" name="inputId" value={item.id} />
-                  <button type="submit">
+                  {/* <button type="submit">
                     <Trash2Icon />
-                  </button>
+                  </button> */}
+                  <TrashDelete />
                 </form>
               </TableCell>
             </TableRow>
           ))}
         </TableBody>
-      </Table> */}
-      <ResultsTable data={data} />
+      </Table>
     </div>
   );
 };
-
-export default Results;
