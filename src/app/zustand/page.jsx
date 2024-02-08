@@ -27,12 +27,12 @@ const Zustand = () => {
     { name: "Host" },
   ];
   /* const { count, inc, dec } = useBearStore(); */
-  const { pupil, addPupil } = usePupilStore();
+  const { pupil, loginPupil } = usePupilStore();
   const router = useRouter();
   const onSubmit = (e) => {
     e.preventDefault();
     const username = e.target.username.value;
-    addPupil(username);
+    loginPupil(username);
     router.push("/training");
   };
 

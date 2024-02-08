@@ -25,17 +25,17 @@ export default async function RootLayout({ children }) {
       <body
         className={`${montserrat.className} selection:bg-orange-500 antialiased min-h-screen`}
       >
-        <ReduxProvider>
-          <SessionProvider session={session}>
-            <ThemeProvider attribute="class" defaultTheme="system">
-              <main className="container min-h-screen flex flex-col flex-1">
-                <Header />
-                {children}
-              </main>
-              <Toaster />
-            </ThemeProvider>
-          </SessionProvider>
-        </ReduxProvider>
+        {/* <ReduxProvider> */}
+        <SessionProvider session={session}>
+          <ThemeProvider attribute="class" defaultTheme="system">
+            <main className="container min-h-screen flex flex-col flex-1">
+              <Header />
+              {children}
+            </main>
+            <Toaster />
+          </ThemeProvider>
+        </SessionProvider>
+        {/* </ReduxProvider> */}
       </body>
     </html>
   );

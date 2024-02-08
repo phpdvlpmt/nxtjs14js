@@ -27,12 +27,12 @@ export const usePupilStore = create(
       pupil: "",
       isAuth: false,
 
-      addPupil: (text) =>
+      loginPupil: (text) =>
         set(() => ({
           pupil: text,
           isAuth: true,
         })),
-      removePupil: (text) =>
+      logoutPupil: (text) =>
         set(() => ({
           pupil: "",
           isAuth: false,

@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import { logIn, logOut } from "@/redux/features/auth-slice";
 import { useDispatch, useSelector } from "react-redux";
+import { usePupilStore } from "../../../stores/store";
 import { toast } from "sonner";
 
 import {
@@ -40,9 +41,10 @@ const names = [
 ];
 
 const Login = () => {
-  const username = useSelector((state) => state.authReducer.value.username);
+  const { isAuth, pupil, loginPupil, logoutPupil } = usePupilStore();
+  /* const username = useSelector((state) => state.authReducer.value.username);
   const isAuth = useSelector((state) => state.authReducer.value.isAuth);
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); */
   if (isAuth) {
     redirect("/");
   }
@@ -51,7 +53,8 @@ const Login = () => {
     const username = e.target.username.value;
     toast.success("Žák " + username + " byl úspěšně přihlášen.");
 
-    dispatch(logIn(username));
+    //dispatch(logIn(username));
+    loginPupil(username);
   };
   return (
     <div className="flex h-full flex-1  flex-col space-y-5 items-center justify-center">

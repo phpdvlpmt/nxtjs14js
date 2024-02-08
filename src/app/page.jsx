@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useSelector } from "react-redux";
+import { usePupilStore } from "../../stores/store";
 import {
   Card,
   CardContent,
@@ -108,7 +109,9 @@ const tests = [
 ];
 
 const Quiz = () => {
-  const isAuth = useSelector((state) => state.authReducer.value.isAuth);
+  //const isAuth = useSelector((state) => state.authReducer.value.isAuth);
+  const { isAuth, pupil, logoutPupil } = usePupilStore();
+  console.log(isAuth);
   if (!isAuth) {
     redirect("/login");
   }

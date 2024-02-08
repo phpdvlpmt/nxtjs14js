@@ -34,7 +34,7 @@ const quiz = {
 
 const Training = () => {
   //const { tester } = useTesterStore();
-  const { isAuth, pupil, removePupil } = usePupilStore();
+  const { isAuth, pupil, logoutPupil } = usePupilStore();
   const [variable, setVariable] = useState("");
   // const [p, setP] = useState(pupil);
   //const items = window.sessionStorage.getItem("pupil-storage");
@@ -86,7 +86,7 @@ const Training = () => {
       </div>
       <button
         onClick={() => {
-          removePupil();
+          logoutPupil();
 
           /*  router.push("/zustand");
           addPupil(""); */
