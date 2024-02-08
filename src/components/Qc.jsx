@@ -17,10 +17,7 @@ import {
 const Qc = ({ quiz }) => {
   //const isAuth = useSelector((state) => state.authReducer.value.isAuth);
   const { isAuth, pupil, logoutPupil } = usePupilStore();
-  if (!isAuth) {
-    redirect("/login");
-  }
-
+  const [mounted, setMounted] = useState(false);
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [checked, setChecked] = useState(false);
@@ -217,7 +214,17 @@ const Qc = ({ quiz }) => {
     setEnd(true);
   };
   /******************************/
-
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  useEffect(() => {
+    if (mounted && !isAuth) {
+      redirect("/login");
+    }
+  });
+  if (!mounted) {
+    return null;
+  }
   return (
     <div className="">
       {/*   {showForm && (

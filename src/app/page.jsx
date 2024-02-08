@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { redirect } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const tests = [
   {
@@ -109,12 +110,22 @@ const tests = [
 ];
 
 const Quiz = () => {
+  const [mounted, setMounted] = useState(false);
   //const isAuth = useSelector((state) => state.authReducer.value.isAuth);
   const { isAuth, pupil, logoutPupil } = usePupilStore();
 
-  if (!isAuth) {
-    redirect("/login");
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  useEffect(() => {
+    if (mounted && !isAuth) {
+      redirect("/login");
+    }
+  });
+  if (!mounted) {
+    return null;
   }
+
   return (
     <>
       {/* <div className="flex flex-col gap-5 text-xl font-bold">
