@@ -194,7 +194,7 @@ const Qc = ({ quiz }) => {
         body: JSON.stringify(data),
       });
       if (response.ok) {
-        toast(
+        toast.success(
           "Test žáka jménem " + username + " byl úspěšně uložen v databázi.",
         );
       }
