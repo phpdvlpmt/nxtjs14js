@@ -25,10 +25,17 @@ export const usePupilStore = create(
   persist(
     (set) => ({
       pupil: "",
+      isAuth: false,
 
       addPupil: (text) =>
         set(() => ({
           pupil: text,
+          isAuth: true,
+        })),
+      removePupil: (text) =>
+        set(() => ({
+          pupil: "",
+          isAuth: false,
         })),
     }),
     {

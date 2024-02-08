@@ -34,15 +34,18 @@ const quiz = {
 
 const Training = () => {
   //const { tester } = useTesterStore();
-  const { pupil, addPupil } = usePupilStore();
+  const { isAuth, pupil, removePupil } = usePupilStore();
   const [variable, setVariable] = useState("");
   // const [p, setP] = useState(pupil);
   //const items = window.sessionStorage.getItem("pupil-storage");
   /* const storedValue = JSON.parse(
     window.sessionStorage.getItem("pupil-storage"),
   ); */
-  const router = useRouter();
-  useEffect(() => {
+  //const router = useRouter();
+  if (!isAuth) {
+    redirect("/zustand");
+  }
+  /*  useEffect(() => {
     const storedValue = JSON.parse(
       window.sessionStorage.getItem("pupil-storage"),
     );
@@ -52,7 +55,7 @@ const Training = () => {
       redirect("/zustand");
     }
   }, []);
-
+ */
   /* if (!pupil) {
     router.push("/zustand");
   } else {
@@ -70,17 +73,23 @@ const Training = () => {
           <div key={q.id}>
             <div>{q.question}</div>
             <div className="relative h-64">
-              <Image src={q.image} alt="flag" fill className="object-contain" />
+              <Image
+                src={q.image}
+                alt="flag"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>{" "}
           </div>
         ))}
       </div>
       <button
         onClick={() => {
-          usePupilStore.persist.clearStorage();
+          removePupil();
 
-          router.push("/");
-          addPupil("");
+          /*  router.push("/zustand");
+          addPupil(""); */
         }}
       >
         Odlásit
