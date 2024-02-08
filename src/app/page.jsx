@@ -111,7 +111,7 @@ const tests = [
 const Quiz = () => {
   //const isAuth = useSelector((state) => state.authReducer.value.isAuth);
   const { isAuth, pupil, logoutPupil } = usePupilStore();
-  console.log(isAuth);
+
   if (!isAuth) {
     redirect("/login");
   }

@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import { Progress } from "@/components/ui/progress";
 import { redirect } from "next/navigation";
 import { toast } from "sonner";
+import { usePupilStore } from "../../stores/store";
 import {
   Select,
   SelectContent,
@@ -14,7 +15,8 @@ import {
 } from "@/components/ui/select";
 
 const Qc = ({ quiz }) => {
-  const isAuth = useSelector((state) => state.authReducer.value.isAuth);
+  //const isAuth = useSelector((state) => state.authReducer.value.isAuth);
+  const { isAuth, pupil, logoutPupil } = usePupilStore();
   if (!isAuth) {
     redirect("/login");
   }
@@ -37,7 +39,8 @@ const Qc = ({ quiz }) => {
   const [end, setEnd] = useState();
   const [q, setQ] = useState(0);
   const [prg, setPrg] = useState(true);
-  const username = useSelector((state) => state.authReducer.value.username);
+  //const username = useSelector((state) => state.authReducer.value.username);
+  const username = usePupilStore().pupil;
 
   //   Select and check answer
   /* if (showResult) {
