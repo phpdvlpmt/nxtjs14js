@@ -49,7 +49,7 @@ const Login = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     const username = e.target.username.value;
-    toast("Žák " + username + " byl úspěšně přihlášen.");
+    toast.success("Žák " + username + " byl úspěšně přihlášen.");
 
     dispatch(logIn(username));
   };
