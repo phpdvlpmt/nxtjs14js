@@ -122,7 +122,7 @@ export function DataTable({ columns, data }) {
           onClick={() => table.previousPage()}
           disabled={!table.getCanPreviousPage()}
         >
-          Pedchozí
+          Předchozí
         </Button>
         <Button
           variant="outline"
