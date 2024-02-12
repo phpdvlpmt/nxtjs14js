@@ -32,7 +32,7 @@ export default async function RootLayout({ children }) {
                 <Header />
                 {children}
               </main>
-              <Toaster />
+              <Toaster richColors />
             </ThemeProvider>
           </SessionProvider>
         </ReduxProvider>
