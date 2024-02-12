@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useSelector } from "react-redux";
 import { usePupilStore } from "../../stores/store";
 import PupilResultsTable from "@/components/PupilResultsTable";
+import { Trophy, Medal } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -25,6 +26,12 @@ import axios from "axios";
 //import sessionStorage from "redux-persist/es/storage/session";
 
 const tests = [
+  {
+    title: "Naše země v pravěku",
+    link: "/q01",
+    class: "4",
+    new: true,
+  },
   {
     title: "Krajská města",
     link: "/q",
@@ -109,13 +116,11 @@ const tests = [
     title: "Závěrečné opakování",
     link: "/q15",
     class: "5",
-    new: true,
   },
   {
     title: "Souhrnné opakování učiva",
     link: "/q16",
     class: "4",
-    new: true,
   },
 ];
 
@@ -148,7 +153,14 @@ const Quiz = () => {
     <>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
-          <AccordionTrigger>Zobrazit výsledky</AccordionTrigger>
+          <AccordionTrigger className="font-bold ">
+            <div className="flex items-center gap-2">
+              <span>
+                <Medal className="w-4 h-4" />
+              </span>
+              <span>Zobrazit výsledky</span>
+            </div>
+          </AccordionTrigger>
           <AccordionContent>
             <PupilResultsTable data={data} />
           </AccordionContent>

@@ -75,7 +75,7 @@ export const columns = [
         .tz(date, "Europe/Prague")
         .format("D. M. YYYY H:mm");
 
-      return <div>{formatted}</div>;
+      return <div className="whitespace-nowrap">{formatted}</div>;
     },
   },
 ];

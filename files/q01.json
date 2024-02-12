@@ -1,0 +1,122 @@
+{
+  "totalQuestions": 14,
+  "title": "Naše země v pravěku",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Z období pravěku byly nalezeny památky:",
+      "answers": [
+        "jen hmotné (zbraně, hroby, ozdoby apod.)",
+        "hmotné i písemné",
+        "mebyly nalezeny žádné památky"
+      ],
+      "correctAnswer": "jen hmotné (zbraně, hroby, ozdoby apod.)"
+    },
+    {
+      "id": 2,
+      "question": "Které pořadí období pravěku je správné?",
+      "answers": [
+        "doba kamenná, doba železná, doba bronzová",
+        "doba kamenná, doba bronzová, doba železná",
+        "doba železná, doba bronzová, doba kamenná"
+      ],
+      "correctAnswer": "doba kamenná, doba bronzová, doba železná"
+    },
+    {
+      "id": 3,
+      "question": "Ve starší době kamenné se lidé živili:",
+      "answers": [
+        "lovem a sběrem kořínků, lesních plodů, semen",
+        "chlebovými plackami, kaší, ovocem",
+        "jen tím, co ukradli jiné tlupě"
+      ],
+      "correctAnswer": "lovem a sběrem kořínků, lesních plodů, semen"
+    },
+    {
+      "id": 4,
+      "question": "Ve starší době kamenné používali pravěcí lidé k lovu:",
+      "answers": [
+        "pouze vlastní ruce",
+        "pěstní klín, oštěpy, kyje, luky a šípy",
+        "meče a pušky"
+      ],
+      "correctAnswer": "pěstní klín, oštěpy, kyje, luky a šípy"
+    },
+    {
+      "id": 5,
+      "question": "Hliněné sošky žen vyrobené pravěkými lidmi ve starší době kamennné se nazývají:",
+      "answers": ["mamuše", "babuše", "venuše"],
+      "correctAnswer": "venuše"
+    },
+    {
+      "id": 6,
+      "question": "První hliněná soška ženy byla u nás nalezena:",
+      "answers": [
+        "v Dolních Věstonicích",
+        "v Horních Heřmanicích",
+        "žádná soška u nás nalezena nebyla"
+      ],
+      "correctAnswer": "v Dolních Věstonicích"
+    },
+    {
+      "id": 7,
+      "question": "Po oteplení naší planety v mladší době kamenné - se způsob života pravěkých lidí:",
+      "answers": [
+        "nezměnil, dál se živili lovem zvěře a sběrem plodin",
+        "změnil, z lovců a sběračů se stali zemědělci a chovatelé dobytka",
+        "částečně se změnil, začali lovit především ovce a kozy"
+      ],
+      "correctAnswer": "změnil, z lovců a sběračů se stali zemědělci a chovatelé dobytka"
+    },
+    {
+      "id": 8,
+      "question": "Hlavní plodina pěstovaná v mladší době kamennné:",
+      "answers": ["obilí", "brambory", "rajčata"],
+      "correctAnswer": "obilí"
+    },
+    {
+      "id": 9,
+      "question": "Které činnosti z pravěku jsou seřazené tak, jak následovaly po sobě?",
+      "answers": [
+        "sběr a lov, výroba hliněných sošek, kypření půdy, setí, tavení kovů",
+        "kypření půdy, tavení kovů, sběr a lov, setí, výroba hliněných sošek",
+        "tavení kovů, výroba hliněných sošek, kypření půdy, setí, sběr a lov"
+      ],
+      "correctAnswer": "sběr a lov, výroba hliněných sošek, kypření půdy, setí, tavení kovů"
+    },
+    {
+      "id": 10,
+      "question": "Který kov se nevyskytuje v přírodě?",
+      "answers": ["železo", "měď", "bronz"],
+      "correctAnswer": "bronz"
+    },
+    {
+      "id": 11,
+      "question": "První obyvatelé naší země známí z písemných záznamů, kteří také uměli razit mince, byli:",
+      "answers": ["Kvaltové", "Keltové", "hobité"],
+      "correctAnswer": "Keltové"
+    },
+    {
+      "id": 12,
+      "question": "Opevněná střediska řemesel a obchodu, postavená na vyvýšených místech, se nazývají:",
+      "answers": ["skladiště", "hradiště", "obchodiště"],
+      "correctAnswer": "hradiště"
+    },
+    {
+      "id": 13,
+      "question": "První mince dokázali razit:",
+      "answers": ["Germáni", "lovci mamutů", "Keltové"],
+      "correctAnswer": "Keltové"
+    },
+    {
+      "id": 14,
+      "question": "Většina událostí pravěku proběhla:",
+      "answers": [
+        "v období našeho letopočtu",
+        "v období před naším letopočtem",
+        "je to přesně napůl"
+      ],
+      "correctAnswer": "v období před naším letopočtem"
+    }
+  ]
+}
