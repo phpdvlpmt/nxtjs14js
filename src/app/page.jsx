@@ -2,6 +2,13 @@
 import Link from "next/link";
 import { useSelector } from "react-redux";
 import { usePupilStore } from "../../stores/store";
+import PupilResultsTable from "@/components/PupilResultsTable";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 import {
   Card,
@@ -14,6 +21,8 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { redirect } from "next/navigation";
 import { useEffect, useState } from "react";
+import axios from "axios";
+//import sessionStorage from "redux-persist/es/storage/session";
 
 const tests = [
   {
@@ -112,23 +121,40 @@ const tests = [
 
 const Quiz = () => {
   const [mounted, setMounted] = useState(false);
-  //const isAuth = useSelector((state) => state.authReducer.value.isAuth);
-  const { isAuth, pupil, logoutPupil } = usePupilStore();
+
+  const isAuth = useSelector((state) => state.authReducer.value.isAuth);
+  const username = useSelector((state) => state.authReducer.value.username);
+  const [data, setData] = useState([]);
+
+  //const { isAuth, pupil, logoutPupil } = usePupilStore();
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
-  useEffect(() => {
+    const fetchPupilResults = async (pupil) => {
+      const res = await axios.get("/api/?name=" + username);
+      return setData(res.data.data);
+    };
+    fetchPupilResults();
+  });
+  /* useEffect(() => {
     if (mounted && !isAuth) {
       redirect("/login");
     }
-  });
-  if (!mounted) {
-    return null;
+  }); */
+  if (!isAuth) {
+    redirect("/login");
   }
 
   return (
     <>
+      <Accordion type="single" collapsible>
+        <AccordionItem value="item-1">
+          <AccordionTrigger>Zobrazit výsledky</AccordionTrigger>
+          <AccordionContent>
+            <PupilResultsTable data={data} />
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+
       {/* <div className="flex flex-col gap-5 text-xl font-bold">
         <Link href="/q1">Naše vlast</Link>
         <Link href="/q2">Mapy</Link>

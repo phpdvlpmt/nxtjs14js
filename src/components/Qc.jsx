@@ -15,8 +15,8 @@ import {
 } from "@/components/ui/select";
 
 const Qc = ({ quiz }) => {
-  //const isAuth = useSelector((state) => state.authReducer.value.isAuth);
-  const { isAuth, pupil, logoutPupil } = usePupilStore();
+  const isAuth = useSelector((state) => state.authReducer.value.isAuth);
+  //const { isAuth, pupil, logoutPupil } = usePupilStore();
   const [mounted, setMounted] = useState(false);
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
@@ -36,8 +36,8 @@ const Qc = ({ quiz }) => {
   const [end, setEnd] = useState();
   const [q, setQ] = useState(0);
   const [prg, setPrg] = useState(true);
-  //const username = useSelector((state) => state.authReducer.value.username);
-  const username = usePupilStore().pupil;
+  const username = useSelector((state) => state.authReducer.value.username);
+  //const username = usePupilStore().pupil;
 
   //   Select and check answer
   /* if (showResult) {
@@ -214,7 +214,7 @@ const Qc = ({ quiz }) => {
     setEnd(true);
   };
   /******************************/
-  useEffect(() => {
+  /* useEffect(() => {
     setMounted(true);
   }, []);
   useEffect(() => {
@@ -224,6 +224,9 @@ const Qc = ({ quiz }) => {
   });
   if (!mounted) {
     return null;
+  } */
+  if (!isAuth) {
+    redirect("/login");
   }
   return (
     <div className="">

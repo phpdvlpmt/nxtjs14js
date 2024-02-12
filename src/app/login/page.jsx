@@ -41,10 +41,10 @@ const names = [
 ];
 
 const Login = () => {
-  const { isAuth, pupil, loginPupil, logoutPupil } = usePupilStore();
-  /* const username = useSelector((state) => state.authReducer.value.username);
+  //const { isAuth, pupil, loginPupil, logoutPupil } = usePupilStore();
+  const username = useSelector((state) => state.authReducer.value.username);
   const isAuth = useSelector((state) => state.authReducer.value.isAuth);
-  const dispatch = useDispatch(); */
+  const dispatch = useDispatch();
   if (isAuth) {
     redirect("/");
   }
@@ -53,8 +53,8 @@ const Login = () => {
     const username = e.target.username.value;
     toast.success("Žák " + username + " byl úspěšně přihlášen.");
 
-    //dispatch(logIn(username));
-    loginPupil(username);
+    dispatch(logIn(username));
+    //loginPupil(username);
   };
   return (
     <div className="flex h-full flex-1  flex-col space-y-5 items-center justify-center">

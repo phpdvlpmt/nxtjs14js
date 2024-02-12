@@ -90,11 +90,11 @@ const Links = [
 ];
 
 const Header = () => {
-  // const username = useSelector((state) => state.authReducer.value.username);
-  //const isAuth = useSelector((state) => state.authReducer.value.isAuth);
-  const { isAuth, pupil, logoutPupil } = usePupilStore();
+  const username = useSelector((state) => state.authReducer.value.username);
+  const isAuth = useSelector((state) => state.authReducer.value.isAuth);
+  //const { isAuth, pupil, logoutPupil } = usePupilStore();
 
-  //const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const pathname = usePathname();
   const [open, setOpen] = useState();
   const { data: session } = useSession();
@@ -120,12 +120,12 @@ const Header = () => {
       <div className="flex items-center gap-5">
         {isAuth && (
           <div className="hidden sm:flex items-center gap-3 ">
-            <h2 className="font-bold"> {pupil}</h2>
+            <h2 className="font-bold"> {username}</h2>
             <Button
               variant="ghost"
               className="flex gap-2"
-              //onClick={() => dispatch(logOut())}
-              onClick={() => logoutPupil()}
+              onClick={() => dispatch(logOut())}
+              //onClick={() => logoutPupil()}
             >
               <LogOutIcon />
               Odhlásit
@@ -199,7 +199,7 @@ const Header = () => {
               </ul>
               {isAuth && (
                 <ul className=" flex flex-col items-center gap-4 ">
-                  <li className="font-bold"> {pupil}</li>
+                  <li className="font-bold"> {username}</li>
                   <li>
                     <Button
                       variant="ghost"
