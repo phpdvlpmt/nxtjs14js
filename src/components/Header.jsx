@@ -205,8 +205,8 @@ const Header = () => {
                       variant="ghost"
                       className="flex gap-2"
                       onClick={() => {
-                        //dispatch(logOut());
-                        logoutPupil();
+                        dispatch(logOut());
+                        //logoutPupil();
                         setOpen(false);
                       }}
                     >
