@@ -23,7 +23,13 @@ const ElBookItem = ({ book }) => {
   };
   return (
     <div className="flex items-center gap-5">
-      <Image src={book.image} width={50} height={80} alt={book.title} />
+      <Image
+        src={book.image}
+        width={50}
+        height={80}
+        alt={book.title}
+        priority
+      />
       <div>
         <h2>{book.title}</h2>
         <div className="flex items-center gap-5">
