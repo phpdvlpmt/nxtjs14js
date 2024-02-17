@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useSelector } from "react-redux";
 import { usePupilStore } from "../../stores/store";
 import PupilResultsTable from "@/components/PupilResultsTable";
-import { Trophy, Medal } from "lucide-react";
+import { Trophy, Medal, BookDown } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -23,6 +23,7 @@ import { Badge } from "@/components/ui/badge";
 import { redirect } from "next/navigation";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import ElBooks from "@/components/ElBooks";
 //import sessionStorage from "redux-persist/es/storage/session";
 
 const tests = [
@@ -156,9 +157,24 @@ const Quiz = () => {
           <AccordionTrigger className="font-bold ">
             <div className="flex items-center gap-2">
               <span>
+                <BookDown className="w-4 h-4" />
+              </span>
+              <span>Chci elektronickou učebnici</span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent>
+            <div>
+              <ElBooks />
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-2">
+          <AccordionTrigger className="font-bold ">
+            <div className="flex items-center gap-2">
+              <span>
                 <Medal className="w-4 h-4" />
               </span>
-              <span>Zobrazit výsledky</span>
+              <span>Výsledky</span>
             </div>
           </AccordionTrigger>
           <AccordionContent>
