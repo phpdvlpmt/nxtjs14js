@@ -13,7 +13,7 @@ const ElBookItem = ({ book }) => {
       .catch(() => toast.error("Chyba kopírování!")); */
     navigator.clipboard
       .writeText(key)
-      .then(() => toast.success("Klíč byl zkopíován do schránky!"))
+      .then(() => toast.success("Klíč byl zkopírován do schránky!"))
       .catch(() => toast.error("Chyba kopírování!"));
     setCopied(true);
 
