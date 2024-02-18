@@ -40,7 +40,7 @@ const ElBooks = () => {
         <span>IUč Manažer na správu interaktivních učebnic</span>
         <a
           href="https://download.novaskoladuha.cz/IUc-Manazer-v7.12.exe"
-          title="stáhout"
+          title="stáhnout"
         >
           <Download className="text-muted-foreground" />
         </a>
