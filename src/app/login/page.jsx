@@ -57,7 +57,7 @@ const Login = () => {
     //loginPupil(username);
   };
   return (
-    <div className="flex h-full flex-1  flex-col space-y-5 items-center justify-center">
+    <div className="flex h-full flex-1  flex-col space-y-5 items-center justify-start py-10">
       {/*  <span className="">{count}</span>
   <div className="flex gap-5">
     <Button onClick={inc}>Increase</Button>

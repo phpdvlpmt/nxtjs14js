@@ -8,6 +8,7 @@ import Image from "next/image";
 import { usePupilStore } from "../../../stores/store";
 import { useRouter, redirect } from "next/navigation";
 import { add } from "date-fns";
+import Link from "next/link";
 
 const quiz = {
   totalQuestions: 10,
@@ -66,6 +67,13 @@ const Training = () => {
     <div className="flex flex-col">
       Variable: {variable}
       Tester: {pupil}
+      <Link
+        href={
+          "https://vneyqzcxougmwcpyueku.supabase.co/storage/v1/object/public/Download/ok.zip?t=2024-02-19T15%3A07%3A02.350Z"
+        }
+      >
+        Stáhnout
+      </Link>
       {/*  <button  */}
       <MyButton onClick={() => setVariable("pokus")} />
       <div>
