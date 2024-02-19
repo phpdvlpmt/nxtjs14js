@@ -55,13 +55,13 @@ export function LoginBtn() {
   return (
     <>
       {pending ? (
-        <Button className="flex gap-3 items-center" disabled>
+        <Button className=" " size="lg" disabled>
           <Loader2 className="h-4 w-4 animate-spin" />
-          <span>Přihlašuji</span>
+          Přihlašuji
         </Button>
       ) : (
-        <Button type="submit" className="flex gap-3 items-center">
-          <span>Přihlásit</span>
+        <Button type="submit" size="lg" className="">
+          Přihlásit
         </Button>
       )}
     </>

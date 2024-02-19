@@ -107,7 +107,7 @@ const Login = () => {
                 >
                   {/* <option selected>Vyber své jméno ze seznamu.</option> */}
                   {names.map((n, index) => (
-                    <option key={index} value={n.name} className="h-10">
+                    <option key={index} value={n.name} className="">
                       {n.name}
                     </option>
                   ))}
