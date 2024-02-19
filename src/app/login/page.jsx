@@ -57,7 +57,7 @@ const Login = () => {
     //loginPupil(username);
   };
   return (
-    <div className="flex h-full flex-1  flex-col space-y-5 items-center justify-start py-2">
+    <div className="flex h-full flex-1  flex-col space-y-5 items-center justify-start py-4">
       {/*  <span className="">{count}</span>
   <div className="flex gap-5">
     <Button onClick={inc}>Increase</Button>
@@ -65,47 +65,40 @@ const Login = () => {
       Decrease
     </Button>
   </div> */}
-      <Card className="w-full  xl:w-1/3 whitespace-nowrap">
+      {/*  <Card className="w-full  xl:w-1/3 whitespace-nowrap">
         <CardHeader>
           <CardTitle>Přihlášení</CardTitle>
           <CardDescription></CardDescription>
         </CardHeader>
         <CardContent className="w-full">
-          <form
-            className="flex flex-col sm:flex-row  gap-4 "
-            onSubmit={onSubmit}
-          >
-            <Select
-              name="username"
-              required
-              autoComplete="off"
-              className="w-full"
-            >
-              <SelectTrigger className="w-full flex-1">
-                <SelectValue placeholder="Vyber své jméno ze seznamu." />
-              </SelectTrigger>
-              <SelectContent>
-                {names.map((n, index) => (
-                  <SelectItem key={index} value={n.name}>
-                    {n.name}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+          
+        </CardContent>
+        <CardFooter></CardFooter>
+      </Card> */}
+      <form className="flex flex-col sm:flex-row  gap-4 " onSubmit={onSubmit}>
+        <Select name="username" required autoComplete="off" className="w-full">
+          <SelectTrigger className="w-full flex-1">
+            <SelectValue placeholder="Vyber své jméno ze seznamu." />
+          </SelectTrigger>
+          <SelectContent>
+            {names.map((n, index) => (
+              <SelectItem key={index} value={n.name}>
+                {n.name}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
 
-            {/* <button
+        {/* <button
           type="submit"
           className=" text-sm px-2 py-2 w-auto bg-gray-900 text-white rounded-md"
         >
           Přihlásit
         </button> */}
-            <div>
-              <LoginBtn />
-            </div>
-          </form>
-        </CardContent>
-        <CardFooter></CardFooter>
-      </Card>
+        <div>
+          <LoginBtn />
+        </div>
+      </form>
     </div>
   );
 };
