@@ -159,7 +159,7 @@ const Quiz = () => {
               <span>
                 <BookDown className="w-4 h-4" />
               </span>
-              <span>Chci elektronickou učebnici</span>
+              <span>Chci elektronickou učebnici </span>
             </div>
           </AccordionTrigger>
           <AccordionContent>

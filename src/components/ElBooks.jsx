@@ -1,6 +1,7 @@
 import { Download } from "lucide-react";
 import React from "react";
 import ElBookItem from "./ElBookItem";
+import Link from "next/link";
 
 const Books = [
   {
@@ -35,9 +36,11 @@ const Books = [
 
 const ElBooks = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-3">
       <div className="flex items-center gap-5">
-        <span>IUč Manažer na správu interaktivních učebnic</span>
+        <span className="font-medium">
+          IUč Manažer na správu interaktivních učebnic
+        </span>
         <a
           href="https://download.novaskoladuha.cz/IUc-Manazer-v7.12.exe"
           title="stáhnout"
@@ -45,7 +48,7 @@ const ElBooks = () => {
           <Download className="text-muted-foreground" />
         </a>
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-3">
         {Books.map((book) => (
           <ElBookItem key={book.id} book={book} />
         ))}
