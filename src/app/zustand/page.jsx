@@ -106,7 +106,7 @@ const Zustand = () => {
           value={names.value}
           defaultValue={selectedOption}
           onChange={setSelectedOption}
-          placeholder="Vyber své jméno ze seznamu."
+          placeholder="Vyber své jméno."
           className="w-80"
           isSearchable={false}
           /* theme={(theme) => ({
