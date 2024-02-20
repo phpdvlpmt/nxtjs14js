@@ -28,6 +28,43 @@ const Zustand = () => {
     { value: "Tadeáš Faust", label: "Tadeáš Faust" },
     { value: "Host", label: "Host" },
   ];
+
+  const customStyles = {
+    control: (base, state) => ({
+      ...base,
+      background: "white",
+      // match with the menu
+      borderRadius: state.isFocused ? "3px 3px 0 0" : 3,
+      // Overwrittes the different states of border
+      borderColor: state.isFocused ? "gray" : "lightgray",
+      // Removes weird border around container
+      boxShadow: state.isFocused ? null : null,
+      "&:hover": {
+        // Overwrittes the different states of border
+        borderColor: state.isFocused ? "gray" : "lightgray",
+      },
+    }),
+    menu: (base) => ({
+      ...base,
+      // override border radius to match the box
+      borderRadius: 0,
+      // kill the gap
+      marginTop: 0,
+    }),
+    menuList: (base) => ({
+      ...base,
+      // kill the white space on first and last option
+      padding: 0,
+    }),
+    option: (base, { isFocused, isHovered, isActive, isSelected }) => ({
+      ...base,
+      backgroundColor: isFocused || isHovered ? "darkgray" : "transparent",
+      color: "black",
+      "&:hover": {
+        backgroundColor: "lightgray",
+      },
+    }),
+  };
   /* const { count, inc, dec } = useBearStore(); */
 
   const { pupil, loginPupil } = usePupilStore();
@@ -61,24 +98,26 @@ const Zustand = () => {
             ))}
           </SelectContent>
         </Select> */}
-        {names.value}
+
         <Select
+          styles={customStyles}
           name="username"
           options={names}
           value={names.value}
           defaultValue={selectedOption}
           onChange={setSelectedOption}
-          placeholder="vyber jméno"
-          className="w-64"
-          theme={(theme) => ({
+          placeholder="Vyber své jméno ze seznamu."
+          className="w-80"
+          isSearchable={false}
+          /* theme={(theme) => ({
             ...theme,
             borderRadius: 0,
             colors: {
               ...theme.colors,
-              primary25: "hotpink",
+              primary25: "lightgray",
               primary: "black",
             },
-          })}
+          })} */
         />
         <button
           type="submit"
