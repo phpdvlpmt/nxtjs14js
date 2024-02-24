@@ -1,0 +1,96 @@
+{
+  "totalQuestions": 13,
+  "title": "Opakování - počátek středověku",
+  "questions": [
+    {
+      "id": 1,
+      "question": "V naší zemi se během 5.-6. století trvale usadili:",
+      "answers": ["Sasové", "Slované", "Keltové"],
+      "correctAnswer": "Slované"
+    },
+    {
+      "id": 2,
+      "question": "Podle pověsti přivedl/a tyto kmeny na naše území:",
+      "answers": ["praotec Adam", "pramáti Libuše", "praotec Čech"],
+      "correctAnswer": "praotec Čech"
+    },
+    {
+      "id": 3,
+      "question": "Noví obyvatelé našich zemí uctívali::",
+      "answers": ["mnoho bohů", "jednoho boha", "lesní skřítky"],
+      "correctAnswer": "mnoho bohů"
+    },
+    {
+      "id": 4,
+      "question": "Živili se:",
+      "answers": [
+        "zemědělstvím a řemesly",
+        "jen lovem zvěře",
+        "přepadáváním kupců"
+      ],
+      "correctAnswer": "zemědělstvím a řemesly"
+    },
+    {
+      "id": 5,
+      "question": "Slovanské kmeny natrvalo úsazené na našem území poprvé sjednotil:",
+      "answers": ["Avar", "Mojmír", "Sámo"],
+      "correctAnswer": "Sámo"
+    },
+    {
+      "id": 6,
+      "question": "První stát, který vznikl na našem území, se nazýval:",
+      "answers": ["Velká Morava", "Velké Čechy", "Sámova říše"],
+      "correctAnswer": "Velká Morava"
+    },
+    {
+      "id": 7,
+      "question": "Rod, který založil na našem území první stát, se jmenoval:",
+      "answers": ["Sámovci", "Moravici", "Mojmírovci"],
+      "correctAnswer": "Mojmírovci"
+    },
+    {
+      "id": 8,
+      "question": "V 9. století se začalo v našich zemích šířit noé náboženství. Bylo to:",
+      "answers": ["pohanství", "barbarství", "křesťanství"],
+      "correctAnswer": "křesťanství"
+    },
+    {
+      "id": 9,
+      "question": "Jak se jmenují bratři, kteří ve Velkomoravské říši sloužili mše ve slovanském jazyce?",
+      "answers": [
+        "Metoděj a Katoděj",
+        "Konstantin a Metoděj",
+        "Konstantin a Dobroděj"
+      ],
+      "correctAnswer": "Konstantin a Metoděj"
+    },
+    {
+      "id": 10,
+      "question": "Nové slovanské písmo, které sestavil jeden z bratrů, se nazývá:",
+      "answers": ["kadidelnice", "slovanice", "hlaholice"],
+      "correctAnswer": "hlaholice"
+    },
+    {
+      "id": 11,
+      "question": "Bohatí lidé Velkomoravské říše bydleli :",
+      "answers": ["hradištích", "chatách", "městech"],
+      "correctAnswer": "hradištích"
+    },
+    {
+      "id": 12,
+      "question": "Zboží si kupci a řemeslníci na Velké Moravě:",
+      "answers": ["kupovali", "vyměňovali", "každý si zadarmo bral, co chtěl"],
+      "correctAnswer": "vyměňovali"
+    },
+    {
+      "id": 13,
+      "question": "Velkomoravská říše:",
+      "answers": [
+        "skutečně existovala, ale rozpadla se",
+        "nerozpadla se, trvala celých 300 let",
+        "není jisté, zda existovala, vyprávějí se oní jen pověsti"
+      ],
+      "correctAnswer": "skutečně existovala, ale rozpadla se"
+    }
+  ]
+}
