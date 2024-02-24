@@ -28,6 +28,12 @@ import ElBooks from "@/components/ElBooks";
 
 const tests = [
   {
+    title: "Opakování - Habsburkové českými králi; baroko",
+    link: "/q02",
+    class: "5",
+    new: true,
+  },
+  {
     title: "Naše země v pravěku",
     link: "/q01",
     class: "4",

@@ -1,0 +1,98 @@
+{
+  "totalQuestions": 10,
+  "title": "Opakování - Habsburkové českými králi; baroko",
+  "questions": [
+    {
+      "id": 1,
+      "question": "V Českých zemích začal novověk:",
+      "answers": [
+        "bitvou na Bílé hoře roku 1620",
+        "roku 1526, kdy skončila vláda Jagellonců a na trůn usedli panovníci z mocného rakouského rodu",
+        "vyhozením královských úředníků z oken Pražské hradu roku 1618"
+      ],
+      "correctAnswer": "roku 1526, kdy skončila vláda Jagellonců a na trůn usedli panovníci z mocného rakouského rodu"
+    },
+    {
+      "id": 2,
+      "question": "Novými českými králi se na začátku novověku stali:",
+      "answers": ["Rumburkové", "Lucemburkové", "Habsburkové"],
+      "correctAnswer": "Habsburkové"
+    },
+    {
+      "id": 3,
+      "question": "Čeští šlechtici se bouřili proti novým panovíkům, protože:",
+      "answers": [
+        "panovníci postupně omezovali jejich výhody a právo rozhodovat o státních záležitostech",
+        "panovníci ani úředníci neuměli česky",
+        "Habsburkové nechtěli žít se svým dvorem v naší zemi"
+      ],
+      "correctAnswer": "panovníci postupně omezovali jejich výhody a právo rozhodovat o státních záležitostech"
+    },
+    {
+      "id": 4,
+      "question": "Bitva mezi vzbouřenými českými šlechtici a královským vojskem se odehrála:",
+      "answers": [
+        "v Rakousku nedaleko Vídně",
+        "na Bílé hoře u Prahy",
+        "žádná bitva se nekonala, obě strany se dohodly, že potrestáni budou pouze vůdci vzbouřenců"
+      ],
+      "correctAnswer": "na Bílé hoře u Prahy"
+    },
+    {
+      "id": 5,
+      "question": "Poprava 27 vůdců povstání se konala  Praze na:",
+      "answers": [
+        "Václavském náměstí",
+        "nádvoří Pražského hradu",
+        "Staroměstském náměstí"
+      ],
+      "correctAnswer": "Staroměstském náměstí"
+    },
+    {
+      "id": 6,
+      "question": "Habsburští panovníci požadovali, aby:",
+      "answers": [
+        "všichni obyvatelé Českých zemí přestoupili na katolické náboženství",
+        "vyznávali náboženství, jaké sami chtějí",
+        "nevěřili v žádného boha, to znamená, aby byli nevěřící"
+      ],
+      "correctAnswer": "všichni obyvatelé Českých zemí přestoupili na katolické náboženství"
+    },
+    {
+      "id": 7,
+      "question": "Nejdříve uspořádejte přeházená písmena Naj Osma Kýmensko. Potom vyberte správnou odpověď:",
+      "answers": [
+        "šlechtic, který vedl povstání proti Habsburkům",
+        "učitel, který provedl velké změny ve způsobu vyučování",
+        "barokní stavitel"
+      ],
+      "correctAnswer": "učitel, který provedl velké změny ve způsobu vyučování"
+    },
+    {
+      "id": 8,
+      "question": "Robota byla:",
+      "answers": [
+        "povinná práce poddaných na polích jejich pána; trvala několik dní v týdnu",
+        "každodenní práce řemeslníků v jejich dílně",
+        "práce ševců, kteří ručně šili boty"
+      ],
+      "correctAnswer": "povinná práce poddaných na polích jejich pána; trvala několik dní v týdnu"
+    },
+    {
+      "id": 9,
+      "question": "Školní docházka na začátku novověku:",
+      "answers": [
+        "byla stejně jako dnes povinná od 6 do 15 let, ale jen pro chlapce",
+        "nebyla povinná, děti do školy chodit mohly, ale nemusely",
+        "byla povinná jen pro děti zámožných měšťanů a šlechticů"
+      ],
+      "correctAnswer": "nebyla povinná, děti do školy chodit mohly, ale nemusely"
+    },
+    {
+      "id": 10,
+      "question": "Znáte už čtyři stavební slohy. Ve kterém slohu se v Českých zemích stavělo v 17. století?",
+      "answers": ["renesančním", "gotickém", "barokním", "románském"],
+      "correctAnswer": "barokním"
+    }
+  ]
+}
