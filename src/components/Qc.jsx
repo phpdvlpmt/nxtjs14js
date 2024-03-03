@@ -13,6 +13,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { shuffle } from "lodash";
 
 const Qc = ({ quiz }) => {
   const isAuth = useSelector((state) => state.authReducer.value.isAuth);
@@ -37,27 +38,14 @@ const Qc = ({ quiz }) => {
   const [q, setQ] = useState(0);
   const [prg, setPrg] = useState(true);
   const username = useSelector((state) => state.authReducer.value.username);
-  //const username = usePupilStore().pupil;
 
-  //   Select and check answer
-  /* if (showResult) {
-    sendEmail()
-  } */
-  /* const names = [
-    { name: "Natálie Tomanová" },
-    { name: "Viktorie Zaňková" },
-    { name: "Boris Sekera" },
-    { name: "Sabina Kňourková" },
-    { name: "Laura Ullmanová" },
-    { name: "Mikuláš Netyk" },
-    { name: "Jindřich Přibík" },
-    { name: "Otto Starý" },
-    { name: "Aneta Šitnerová" },
-    { name: "Adéla Lupínková" },
-    { name: "Sebastián Livora" },
-    { name: "Tadeáš Faust" },
-    { name: "Host" },
-  ]; */
+  const [currentAnswers, setCurrentAnswers] = useState(answers);
+
+  /*****************************/
+  useEffect(() => {
+    // Aktualizovat odpovědi při změně otázky nebo samotné odpovědi
+    setCurrentAnswers(shuffle(answers));
+  }, [activeQuestion, answers]);
 
   const onAnswerSelected = (answer, idx) => {
     setDisabled(true);
@@ -94,11 +82,6 @@ const Qc = ({ quiz }) => {
     } else {
       setQ((prev) => prev + 1);
       setDisabled(true);
-      //setActiveQuestion(0);
-      //setShowResult(true);
-      //setEnd(true);
-
-      //sendEmail()
     }
 
     setChecked(false);
@@ -117,7 +100,6 @@ const Qc = ({ quiz }) => {
   async function sendEmail(
     data = {
       name: username,
-
       correctAnswers: result.correctAnswers,
     },
   ) {
@@ -131,15 +113,6 @@ const Qc = ({ quiz }) => {
     const json = await response.json();
     return json;
   }
-
-  /* const onSubmit = (e) => {
-    e.preventDefault();
-    const username = e.target.username.value;
-    setUsername(username);
-    setPrg(true);
-
-    setShowForm(false);
-  }; */
 
   const avrg = () => {
     const ar = ((result.correctAnswers / questions.length) * 100).toFixed();
@@ -180,9 +153,6 @@ const Qc = ({ quiz }) => {
       grade: grade(),
     },
   ) => {
-    //setShowResult(true);
-    //await
-    // createResult({title: quiz.title, username: name, total: quiz.totalQustions, score: result.score})
     try {
       const response = await fetch("/api/quiz", {
         method: "POST",
@@ -213,58 +183,12 @@ const Qc = ({ quiz }) => {
 
     setEnd(true);
   };
-  /******************************/
-  /* useEffect(() => {
-    setMounted(true);
-  }, []);
-  useEffect(() => {
-    if (mounted && !isAuth) {
-      redirect("/login");
-    }
-  });
-  if (!mounted) {
-    return null;
-  } */
+
   if (!isAuth) {
     redirect("/login");
   }
   return (
     <div className="">
-      {/*   {showForm && (
-        <div className="flex flex-col  w-full sm:w-1/3 gap-3 py-2 lg:py-4 ">
-          <h2 className="text-lg font-semibold">
-            Přihlášení k testu - {quiz.title}
-          </h2>
-          <form className="flex  items-center  gap-2 " onSubmit={onSubmit}>
-            <input
-              className="py-3 px-3 border"
-              type="text"
-              name="name"
-              placeholder="Jméno"
-              required
-            /> 
-            <Select name="username" required autoComplete="off">
-              <SelectTrigger className="w-full">
-                <SelectValue placeholder="Vyber své jméno ze seznamu." />
-              </SelectTrigger>
-              <SelectContent>
-                {names.map((n, index) => (
-                  <SelectItem key={index} value={n.name}>
-                    {n.name}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-
-            <button
-              type="submit"
-              className=" text-sm px-2 py-2 w-auto bg-gray-900 text-white rounded-md"
-            >
-              Přihlásit
-            </button>
-          </form>
-        </div>
-      )}*/}
       <div className=" flex-col gap-3 lg:gap-4">
         <div className="">
           {prg && (
@@ -287,7 +211,7 @@ const Qc = ({ quiz }) => {
           {!showResult ? (
             <div className="flex  w-full  flex-col gap-3 lg:gap-4 pb-4">
               <h3 className="text-2xl font-bold">{question}</h3>
-              {answers.map((answer, idx) => (
+              {currentAnswers.map((answer, idx) => (
                 <button
                   disabled={disabled}
                   key={idx}
@@ -374,9 +298,6 @@ const Qc = ({ quiz }) => {
             </div>
           )}
         </div>
-        {/* {data.questions.map((q, idx )=> (
-        <div key={idx}>{q}</div>
-      ))} */}
       </div>
     </div>
   );
