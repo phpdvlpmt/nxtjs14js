@@ -6,6 +6,7 @@ import { getServerSession } from "next-auth";
 import SessionProvider from "@/components/SessionProvider";
 import { ReduxProvider } from "@/redux/provider";
 import { Toaster } from "@/components/ui/sonner";
+import ConvexClientProvider from "./ConvexClientProvider";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -25,17 +26,19 @@ export default async function RootLayout({ children }) {
       <body
         className={`${montserrat.className} selection:bg-orange-500 antialiased min-h-screen`}
       >
-        <ReduxProvider>
-          <SessionProvider session={session}>
-            <ThemeProvider attribute="class" defaultTheme="system">
-              <main className="container min-h-screen flex flex-col flex-1">
-                <Header />
-                {children}
-              </main>
-              <Toaster richColors />
-            </ThemeProvider>
-          </SessionProvider>
-        </ReduxProvider>
+        <ConvexClientProvider>
+          <ReduxProvider>
+            <SessionProvider session={session}>
+              <ThemeProvider attribute="class" defaultTheme="system">
+                <main className="container min-h-screen flex flex-col flex-1">
+                  <Header />
+                  {children}
+                </main>
+                <Toaster richColors />
+              </ThemeProvider>
+            </SessionProvider>
+          </ReduxProvider>
+        </ConvexClientProvider>
       </body>
     </html>
   );
