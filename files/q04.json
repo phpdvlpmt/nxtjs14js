@@ -1,0 +1,108 @@
+{
+  "totalQuestions": 11,
+  "title": "Opakování - novověk - naše země za vlády králů",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Přiřaďte k Marii Terezii zákon a nařízení, které vydala:",
+      "answers": [
+        "zrušeno nevolnictví v Českých zemích",
+        "povinná školní docházka",
+        "dovoleno vyznávat různá náboženství"
+      ],
+      "correctAnswer": "povinná školní docházka"
+    },
+    {
+      "id": 2,
+      "question": "Přiřaďte k Josefu II. zákon a nařízení, který vydal:",
+      "answers": [
+        "povinná školní docházka",
+        "zrušeno nevolnictví v Českých zemích",
+        "tištění papírových bankovek"
+      ],
+      "correctAnswer": "zrušeno nevolnictví v Českých zemích"
+    },
+    {
+      "id": 3,
+      "question": "Manufaktura:",
+      "answers": [
+        "peněžitá odměna neboli plat dělníků za vykonanou práci",
+        "velká řemeslnická dílna, kde se každá skupina dělníků věnovala určité práci na výrobku",
+        "účet vystavený řemeslníkem, na kterém bylo uvedeno jakou práci vykonal a kolik má zákazník zaplatit"
+      ],
+      "correctAnswer": "velká řemeslnická dílna, kde se každá skupina dělníků věnovala určité práci na výrobku"
+    },
+    {
+      "id": 4,
+      "question": "Úředním jazykem v celé habsburské říší byla z rozhodnutí panovníků:",
+      "answers": [
+        "každý mohl mluvit svým rodným jazykem",
+        "čeština",
+        "němčina"
+      ],
+      "correctAnswer": "němčina"
+    },
+    {
+      "id": 5,
+      "question": "Co bylo v Českých zemích zrušeno dřív?",
+      "answers": ["nevolnictví", "robota", "obojí bylo zrušeno současně"],
+      "correctAnswer": "nevolnictví"
+    },
+    {
+      "id": 6,
+      "question": "Habsburští panovníci vládli neomezeně. To znamená že:",
+      "answers": [
+        "vládli každý den od rána do pozdního včera",
+        "každý z nich vládl až do své smrti, nikdo je nemohl zbavit vlády",
+        "do panování jim nesměl nikdo zasahovat, o všem rozhodoval panovník"
+      ],
+      "correctAnswer": "do panování jim nesměl nikdo zasahovat, o všem rozhodoval panovník"
+    },
+    {
+      "id": 7,
+      "question": "Pražské povstání roku 1848 skončilo:",
+      "answers": [
+        "porážkou vzbouřenců",
+        "porážkou královského vojska",
+        "v Praze žádné povstání nebylo, jen v ostatních zemích habsburské říše"
+      ],
+      "correctAnswer": "porážkou vzbouřenců"
+    },
+    {
+      "id": 8,
+      "question": "Habsburská říše ve 2. polovině 19. století po rozdělení na dvě rovnoprávné části změnila svůj název na:",
+      "answers": ["Česko-Rakousko", "Rakousko-Uhersko", "Československo"],
+      "correctAnswer": "Rakousko-Uhersko"
+    },
+    {
+      "id": 9,
+      "question": "V 19. století přibývá ve městech obyvatel, protože:",
+      "answers": [
+        "se rodilo hodně dětí",
+        "se k nám stěhuje velké množství cizinců",
+        "do měst přichází za prací mnoho lidí z venkova"
+      ],
+      "correctAnswer": "do měst přichází za prací mnoho lidí z venkova"
+    },
+    {
+      "id": 10,
+      "question": "Legie byly:",
+      "answers": [
+        "úzké vojenské kalhoty zastrčené do holínek",
+        "písně zpívané při odjezdu do války",
+        "dobrovolnické vojenské jednotky ve Francii a Rusku"
+      ],
+      "correctAnswer": "dobrovolnické vojenské jednotky ve Francii a Rusku"
+    },
+    {
+      "id": 11,
+      "question": "Po skončení války, kterou Rakousko-Uhersko prohrálo, došlo k této události:",
+      "answers": [
+        "Rakousko-Uhersko se rozdělilo na Rakousko a Uhersko",
+        "čeští politici vyhlásili samostatnost československého státu",
+        "Rakousko-Uhersko jako říše existovalo"
+      ],
+      "correctAnswer": "čeští politici vyhlásili samostatnost československého státu"
+    }
+  ]
+}
