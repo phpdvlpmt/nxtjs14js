@@ -28,6 +28,12 @@ import ElBooks from "@/components/ElBooks";
 
 const tests = [
   {
+    title: "Určujeme století",
+    link: "/q05",
+    class: "4",
+    new: true,
+  },
+  {
     title: "Opakování - novověk - naše země za vlády králů",
     link: "/q04",
     class: "5",
