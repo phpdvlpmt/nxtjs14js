@@ -2,15 +2,27 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import React from "react";
+import React, { useState } from "react";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
-import { Trash, Trash2 } from "lucide-react";
+import { Pencil, Trash, Trash2 } from "lucide-react";
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const Convex = () => {
-  const createThumbnail = useMutation(api.thumnails.createThumbnail);
-  const deleteThumbnail = useMutation(api.thumnails.deleteThumbnail);
-  const thumbnails = useQuery(api.thumnails.getThumbnails);
+  const [open, setOpen] = useState();
+  const createThumbnail = useMutation(api.thumbnails.createThumbnail);
+  const deleteThumbnail = useMutation(api.thumbnails.deleteThumbnail);
+  const updateThumbnail = useMutation(api.thumbnails.updateThumbnail);
+  const thumbnails = useQuery(api.thumbnails.getThumbnails);
   console.log(thumbnails);
   return (
     <div>
@@ -45,6 +57,49 @@ const Convex = () => {
               >
                 <Trash2 />
               </Button>
+              <Dialog open={open} onOpenChange={setOpen}>
+                <DialogTrigger>
+                  <Pencil />
+                </DialogTrigger>
+                <DialogContent>
+                  <DialogHeader>
+                    <DialogTitle>Update</DialogTitle>
+                    <DialogDescription></DialogDescription>
+                  </DialogHeader>
+                  <form
+                    onSubmit={async (e) => {
+                      e.preventDefault();
+                      const form2 = e.target;
+                      const formData = new FormData(form2);
+                      const title = formData.get("title");
+                      const id = formData.get("id");
+                      // TODO: pass to our mutation
+                      await updateThumbnail({
+                        id,
+                        title,
+                      });
+                      form2.reset();
+                    }}
+                    action=""
+                    className="flex flex-col gap-2 w-96"
+                  >
+                    <Input type="hidden" name="id" value={thumb._id} />
+                    <Label>Title</Label>
+                    <Input name="title" placeholder={thumb.title}></Input>
+
+                    <Button onClick={() => setOpen(false)} type="submit">
+                      Update
+                    </Button>
+                  </form>
+                  <DialogFooter className="sm:justify-start">
+                    <DialogClose asChild>
+                      <Button type="button" variant="secondary">
+                        Close
+                      </Button>
+                    </DialogClose>
+                  </DialogFooter>
+                </DialogContent>
+              </Dialog>
             </p>
           ))}
       </div>

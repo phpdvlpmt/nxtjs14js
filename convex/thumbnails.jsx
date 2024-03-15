@@ -25,3 +25,12 @@ export const deleteThumbnail = mutation({
     await ctx.db.delete(args.id);
   },
 });
+
+export const updateThumbnail = mutation({
+  args: { id: v.id("thumbnails"), title: v.string() },
+  handler: async (ctx, args) => {
+    const { id } = args;
+
+    await ctx.db.patch(id, { title: args.title });
+  },
+});
