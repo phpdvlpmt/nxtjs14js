@@ -49,7 +49,7 @@ const Convex = () => {
         {thumbnails &&
           thumbnails?.map((thumb) => (
             <p key={thumb._id} className="flex items-center gap-3">
-              {thumb.title} + {thumb._id}
+              {thumb.title}
               <Button
                 onClick={async () => await deleteThumbnail({ id: thumb._id })}
                 variant="outline"
