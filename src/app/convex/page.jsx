@@ -23,9 +23,11 @@ const Convex = () => {
   const deleteThumbnail = useMutation(api.thumbnails.deleteThumbnail);
   const updateThumbnail = useMutation(api.thumbnails.updateThumbnail);
   const thumbnails = useQuery(api.thumbnails.getThumbnails);
+  const [id, setId] = useState();
+  const [title, setTitle] = useState();
   console.log(thumbnails);
   return (
-    <div>
+    <div className="flex flex-col gap-y-4">
       <form
         onSubmit={async (e) => {
           e.preventDefault();
@@ -45,10 +47,11 @@ const Convex = () => {
         <Input name="title"></Input>
         <Button>Create</Button>
       </form>
-      <div>
+      <div className="flex flex-col gap-3 w-96">
+        {/* /*******************MAP************************ */}
         {thumbnails &&
           thumbnails?.map((thumb) => (
-            <p key={thumb._id} className="flex items-center gap-3">
+            <div key={thumb._id} className="flex items-center gap-3 w-full">
               {thumb.title}
               <Button
                 onClick={async () => await deleteThumbnail({ id: thumb._id })}
@@ -59,7 +62,18 @@ const Convex = () => {
               </Button>
               <Dialog open={open} onOpenChange={setOpen}>
                 <DialogTrigger>
-                  <Pencil />
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="flex self-end"
+                  >
+                    <Pencil
+                      onClick={() => {
+                        setId(thumb._id);
+                        setTitle(thumb.title);
+                      }}
+                    />
+                  </Button>
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader>
@@ -83,11 +97,15 @@ const Convex = () => {
                     action=""
                     className="flex flex-col gap-2 w-96"
                   >
-                    <Input type="hidden" name="id" value={thumb._id} />
+                    <Input type="hidden" name="id" value={id} />
                     <Label>Title</Label>
-                    <Input name="title" placeholder={thumb.title}></Input>
+                    <Input name="title" placeholder={title}></Input>
 
-                    <Button onClick={() => setOpen(false)} type="submit">
+                    <Button
+                      onClick={() => setOpen(false)}
+                      type="submit"
+                      variant="outline"
+                    >
                       Update
                     </Button>
                   </form>
@@ -100,7 +118,7 @@ const Convex = () => {
                   </DialogFooter>
                 </DialogContent>
               </Dialog>
-            </p>
+            </div>
           ))}
       </div>
     </div>
