@@ -1,0 +1,92 @@
+{
+  "totalQuestions": 11,
+  "title": "Opakování - za přemyslovských králů",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Dědičný titul krále získal počátkem 13. století jako první přemyslovský kníže:",
+      "answers": ["Metoděj", "Přemysl Otakar I.", "Přemysl Otakar II."],
+      "correctAnswer": "Přemysl Otakar I."
+    },
+    {
+      "id": 2,
+      "question": "Listina, která dědičnou královskou hodnost potvrzovala, se nazývá:",
+      "answers": [
+        "Zlatá bula česká",
+        "Zlatá dula sicilská",
+        "Zlatá bula sicilská"
+      ],
+      "correctAnswer": "Zlatá bula sicilská"
+    },
+    {
+      "id": 3,
+      "question": "Jak nyzývali kronikáři českého krále Přemysla Otakara II.?:",
+      "answers": [
+        "král železný a dřevěný",
+        "král železný a zlatý",
+        "král stříbrný a zlatý"
+      ],
+      "correctAnswer": "král železný a zlatý"
+    },
+    {
+      "id": 4,
+      "question": "Po knížeti Boleslavu I. dal razit nové mince král Václav II. Tyto mince se nazývají:",
+      "answers": ["pražské groše", "pražské zlaťáky", "pražské cinkoše"],
+      "correctAnswer": "pražské groše"
+    },
+    {
+      "id": 5,
+      "question": "Přemyslovští králové budovali:",
+      "answers": [
+        "hrady a města",
+        "silnice a rybníky",
+        "vodovody a kanalizace"
+      ],
+      "correctAnswer": "hrady a města"
+    },
+    {
+      "id": 6,
+      "question": "Co chránilo středověká města před útočníky?",
+      "answers": ["železné mříže", "kamenné hradby", "elektrické ohradíky"],
+      "correctAnswer": "kamenné hradby"
+    },
+    {
+      "id": 7,
+      "question": "Ve městech Jihlava a Kutná Hora se dolovalo/a:",
+      "answers": ["uhlí", "sůl", "stříbro"],
+      "correctAnswer": "stříbro"
+    },
+    {
+      "id": 8,
+      "question": "Který z panovníků byl králem ve třech zemích, takže měl tři královské koruny?",
+      "answers": ["Přemysl Otakar II.", "Václav II.", "Václav III."],
+      "correctAnswer": "Václav III."
+    },
+    {
+      "id": 9,
+      "question": "Posledním panovníkem z rodu Přemyslovců byl:",
+      "answers": ["Václav III.", "Přemysl Otakar III.", "Přemysl Václav III."],
+      "correctAnswer": "Václav III."
+    },
+    {
+      "id": 10,
+      "question": "Vymřít po meči znamená, že:",
+      "answers": [
+        "člověk byl zabit mečem",
+        "zemřel poslední mužský potomek rodu",
+        "manželé nemají žádné děti"
+      ],
+      "correctAnswer": "zemřel poslední mužský potomek rodu"
+    },
+    {
+      "id": 11,
+      "question": "Která řada posledních Přemyslovců je napsána ve správném pořadí jejich kralování?",
+      "answers": [
+        "Přemysl Otakar I., Přemysl Otakar II., Václav I., Václav II., Václav III.",
+        "Václav I., Václav II., Václav III., Přemysl Otakar I., Přemysl Otakar II.",
+        "Přemysl Otakar I., Václav I., Přemysl Otakar II., Václav II., Václav III."
+      ],
+      "correctAnswer": "Přemysl Otakar I., Václav I., Přemysl Otakar II., Václav II., Václav III."
+    }
+  ]
+}
