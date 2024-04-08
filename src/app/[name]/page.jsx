@@ -15,7 +15,11 @@ const Q = async ({ params }, data) => {
     //redirect("/");
     console.log(data);
   }
-  return <>{/* <Qc quiz={data} /> */}1</>;
+  return (
+    <>
+      <Qc quiz={data} />
+    </>
+  );
 };
 
 export default Q;
