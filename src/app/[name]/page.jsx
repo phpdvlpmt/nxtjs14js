@@ -3,23 +3,20 @@ import { promises as fs } from "fs";
 import { redirect } from "next/navigation";
 import path from "path";
 
-const Q = async ({ params }, data, file) => {
+const Q = async ({ params }, data) => {
   try {
     const file = await fs.readFile(
-      /* process.cwd() + "/src/app/" + params.name + ".json", */
       path.resolve(process.cwd(), "files/" + params.name + ".json"),
       "utf8",
     );
-    //console.log(file);
+
     data = JSON.parse(file);
   } catch (error) {
-    //redirect("/");
+    redirect("/");
   }
   return (
     <>
       <Qc quiz={data} />
-      {console.log(data)}
-      {console.log(path.resolve(process.cwd(), "app"))}
     </>
   );
 };
