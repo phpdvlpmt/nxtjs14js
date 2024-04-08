@@ -25,7 +25,10 @@ const Q = async ({ params }, data) => {
     <>
       {/* <Qc quiz={data} /> */}
       {data.map((d, i) => (
-        <div key={i}>{d.title}</div>
+        <div key={i}>
+          {d.title}
+          ok
+        </div>
       ))}
     </>
   );
