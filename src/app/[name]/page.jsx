@@ -15,7 +15,7 @@ const Q = async ({ params }, data) => {
   return (
     <>
       <Qc quiz={data} />
-      {console.log(data)}
+      {console.log("ok")}
     </>
   );
 };
