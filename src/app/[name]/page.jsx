@@ -8,6 +8,7 @@ const Q = async ({ params }, data, file) => {
       process.cwd() + "/src/app/" + params.name + ".json",
       "utf8",
     );
+    console.log(file);
     data = JSON.parse(file);
   } catch (error) {
     //redirect("/");
