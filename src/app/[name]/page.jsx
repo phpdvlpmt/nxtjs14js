@@ -9,11 +9,13 @@ const Q = async ({ params }, data) => {
       process.cwd() + "/files/" + params.name + ".json",
       "utf8",
     ); */
-    const file = await fs.readFileSync(
+    /* const file = await fs.readFileSync(
       path.resolve("/files/" + params.name + ".json"),
       "utf-8",
-    );
-    data = JSON.parse(file);
+    ); */
+    //data = JSON.parse(file);
+    const file = await fs.readFile(process.cwd() + "/files/q1.json", "utf8");
+    const data = JSON.parse(file);
     console.log(data);
   } catch (error) {
     //redirect("/");
@@ -21,7 +23,7 @@ const Q = async ({ params }, data) => {
   }
   return (
     <>
-      {/* <Qc quiz={data} /> */}3{alert(data)}
+      <Qc quiz={data} />
     </>
   );
 };
