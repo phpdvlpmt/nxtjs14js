@@ -14,7 +14,7 @@ const Q = async ({ params }, data) => {
       "utf-8",
     ); */
     //data = JSON.parse(file);
-    const file = await fs.readFile(process.cwd() + "/files/q1.json", "utf8");
+    const file = await fs.readFile(process.cwd() + "/app/q1.json", "utf8");
     const data = JSON.parse(file);
     console.log(data);
   } catch (error) {
@@ -23,7 +23,7 @@ const Q = async ({ params }, data) => {
   }
   return (
     <>
-      <Qc quiz={data} />
+      {/* <Qc quiz={data} /> */}3{alert(data)}
     </>
   );
 };
