@@ -11,7 +11,7 @@ const Q = async ({ params }, data) => {
     data = JSON.parse(file);
   } catch (error) {
     //redirect("/");
-    console.log(error);
+    console.log(data);
   }
   return (
     <>
