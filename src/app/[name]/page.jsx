@@ -23,7 +23,8 @@ const Q = async ({ params }, data) => {
   }
   return (
     <>
-      <Qc quiz={data} />
+      {/* <Qc quiz={data} /> */}
+      {process.cwd()}
     </>
   );
 };
