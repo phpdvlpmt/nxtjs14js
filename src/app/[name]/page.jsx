@@ -2,7 +2,7 @@ import Qc from "@/components/Qc";
 import { promises as fs } from "fs";
 import { redirect } from "next/navigation";
 
-const Q = async ({ params }, data) => {
+const Q = async ({ params }, data, file) => {
   try {
     const file = await fs.readFile(
       process.cwd() + "/files/" + params.name + ".json",
@@ -14,8 +14,8 @@ const Q = async ({ params }, data) => {
   }
   return (
     <>
-      <Qc quiz={data} />
-      {console.log("ok")}
+      {/*  <Qc quiz={data} /> */}
+      {console.log(data)}
     </>
   );
 };
