@@ -24,6 +24,7 @@ const Q = async ({ params }) => {
   }
   return (
     <>
+      {process.cwd()}
       <Qc quiz={data} />
       {/*  {data.map((d, i) => (
         <div key={i}>{d.title}</div>
