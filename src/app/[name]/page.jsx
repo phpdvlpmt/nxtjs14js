@@ -17,7 +17,7 @@ const Q = async ({ params }, data, file) => {
   }
   return (
     <>
-      {/*  <Qc quiz={data} /> */}
+      <Qc quiz={data} />
       {console.log(data)}
       {console.log(path.resolve(process.cwd(), "app"))}
     </>
