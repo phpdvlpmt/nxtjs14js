@@ -16,7 +16,7 @@ const Q = async ({ params }, data) => {
     //data = JSON.parse(file);
     const file = await fs.readFile(process.cwd() + "/src/app/q1.json", "utf8");
     const data = JSON.parse(file);
-    console.log(data);
+    console.log(process.cwd());
   } catch (error) {
     //redirect("/");
     console.log(data);
