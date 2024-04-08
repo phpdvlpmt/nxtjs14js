@@ -7,7 +7,7 @@ const Q = async ({ params }, data, file) => {
   try {
     const file = await fs.readFile(
       /* process.cwd() + "/src/app/" + params.name + ".json", */
-      path.resolve(process.cwd(), "src/app/q1.json"),
+      path.resolve(process.cwd(), "files/q1.json"),
       "utf8",
     );
     //console.log(file);
