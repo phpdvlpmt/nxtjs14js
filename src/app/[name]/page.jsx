@@ -5,9 +5,13 @@ import path from "path";
 
 const Q = async ({ params }, data) => {
   try {
-    const file = await fs.readFileSync(
+    /* const file = await fs.readFile(
       process.cwd() + "/files/" + params.name + ".json",
       "utf8",
+    ); */
+    const file = await fs.readFileSync(
+      path.resolve("/files/" + params.name + ".json"),
+      "utf-8",
     );
     data = JSON.parse(file);
     console.log(data);
@@ -15,11 +19,7 @@ const Q = async ({ params }, data) => {
     //redirect("/");
     console.log(data);
   }
-  return (
-    <>
-      <Qc quiz={data} />
-    </>
-  );
+  return <>{/* <Qc quiz={data} /> */}2</>;
 };
 
 export default Q;
