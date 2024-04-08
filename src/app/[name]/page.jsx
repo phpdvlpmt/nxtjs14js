@@ -15,7 +15,7 @@ const Q = async ({ params }, data, file) => {
   return (
     <>
       {/*  <Qc quiz={data} /> */}
-      {console.log(data)}
+      {console.log(data)}1
     </>
   );
 };
