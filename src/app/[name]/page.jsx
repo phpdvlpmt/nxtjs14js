@@ -21,7 +21,7 @@ const Q = async ({ params }, data) => {
   }
   return (
     <>
-      {/* <Qc quiz={data} /> */}3{data}
+      {/* <Qc quiz={data} /> */}3{alert(data)}
     </>
   );
 };
