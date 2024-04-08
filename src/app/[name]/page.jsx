@@ -7,7 +7,7 @@ const Q = async ({ params }) => {
   let data;
   try {
     const file = await fs.readFile(
-      process.cwd() + "/files/" + params.name + ".json",
+      process.cwd() + "/app/" + params.name + ".json",
       "utf8",
     );
     /* const file = await fs.readFileSync(
