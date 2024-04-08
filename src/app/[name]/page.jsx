@@ -14,7 +14,7 @@ const Q = async ({ params }) => {
       path.resolve("/files/" + params.name + ".json"),
       "utf-8",
     ); */
-    //data = JSON.parse(file);
+    data = JSON.parse(file);
     /*  const file = await fs.readFile(process.cwd() + "/app/q1.json", "utf8");
     const data = JSON.parse(file);
     console.log(process.cwd()); */
