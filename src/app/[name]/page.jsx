@@ -24,10 +24,10 @@ const Q = async ({ params }) => {
   }
   return (
     <>
-      {/* <Qc quiz={data} /> */}
-      {data.map((d, i) => (
+      <Qc quiz={data} />
+      {/*  {data.map((d, i) => (
         <div key={i}>{d.title}</div>
-      ))}
+      ))} */}
     </>
   );
 };
