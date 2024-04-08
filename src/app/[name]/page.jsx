@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 const Q = async ({ params }, data, file) => {
   try {
     const file = await fs.readFile(
-      process.cwd() + "/files/" + params.name + ".json",
+      process.cwd() + "/src/app/" + params.name + ".json",
       "utf8",
     );
     data = JSON.parse(file);
