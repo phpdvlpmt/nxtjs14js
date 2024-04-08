@@ -24,7 +24,7 @@ const Q = async ({ params }, data) => {
   return (
     <>
       {/* <Qc quiz={data} /> */}
-      {process.cwd() + "/src/app/q1.json"}
+      {data}
     </>
   );
 };
