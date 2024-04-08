@@ -3,7 +3,8 @@ import { promises as fs } from "fs";
 import { redirect } from "next/navigation";
 import path from "path";
 
-const Q = async ({ params }, data) => {
+const Q = async ({ params }) => {
+  let data;
   try {
     /* const file = await fs.readFile(
       process.cwd() + "/files/" + params.name + ".json",
@@ -25,10 +26,7 @@ const Q = async ({ params }, data) => {
     <>
       {/* <Qc quiz={data} /> */}
       {data.map((d, i) => (
-        <div key={i}>
-          {d.title}
-          ok
-        </div>
+        <div key={i}>{d.title}</div>
       ))}
     </>
   );
