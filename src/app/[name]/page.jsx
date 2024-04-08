@@ -9,6 +9,7 @@ const Q = async ({ params }, data) => {
       "utf8",
     );
     data = JSON.parse(file);
+    console.log(data);
   } catch (error) {
     //redirect("/");
     console.log(data);
