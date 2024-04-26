@@ -28,6 +28,12 @@ import ElBooks from "@/components/ElBooks";
 
 const tests = [
   {
+    title: "Opakování - jsme samostatný stát, 2. světová válka",
+    link: "/q07",
+    class: "5",
+    new: true,
+  },
+  {
     title: "Opakování - za přemyslovských králů",
     link: "/q06",
     class: "4",

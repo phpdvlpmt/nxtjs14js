@@ -1,0 +1,108 @@
+{
+  "totalQuestions": 11,
+  "title": "Opakování - jsme samostatný stát, 2. světová válka",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Ve kterém roce a po které události vznikla naše republika?",
+      "answers": [
+        "roku 1914, kdy začala 1. světová válka",
+        "roku 1848, kdy habsburský panovník zrušil poddanství a robotu",
+        "roku 1918 po skončení 1. světové války a rozpadu Rakouska-Uherska"
+      ],
+      "correctAnswer": "roku 1918 po skončení 1. světové války a rozpadu Rakouska-Uherska"
+    },
+    {
+      "id": 2,
+      "question": "Jaký měla naše republika název?",
+      "answers": [
+        "Československá republika",
+        "Česká a Slovenská republika",
+        "Česká republika"
+      ],
+      "correctAnswer": "Československá republika"
+    },
+    {
+      "id": 3,
+      "question": "Prvnín prezidentem naší republiky byl zvolen:",
+      "answers": [
+        "poslední habsburský panovník Karel I, který vládl jen dva roky",
+        "žádného prezidenta jsme nevolili, měli jsme jen vládu a parlament",
+        "profesor Tomáš Garrigue Masaryk"
+      ],
+      "correctAnswer": "profesor Tomáš Garrigue Masaryk"
+    },
+    {
+      "id": 4,
+      "question": "Jak dlouhá byla v naší republice pracoví doba?",
+      "answers": [
+        "desetihodinová",
+        "osmihodinová",
+        "neomezená - každý pracoval, jak dlouho chtěl"
+      ],
+      "correctAnswer": "osmihodinová"
+    },
+    {
+      "id": 5,
+      "question": "Kolik dní v týdnu bylo pracovních? (Stejný počet dní chodily do školy i děti.)",
+      "answers": [
+        "5 - dní - v sobotu a v neděli bylo volno",
+        "6 dní - volná byla jen neděle",
+        "4 dny - volno bylo v sobotu, v neděli a v pondělí"
+      ],
+      "correctAnswer": "6 dní - volná byla jen neděle"
+    },
+    {
+      "id": 6,
+      "question": "Získaly ženy za dva roky po vzniku ČSR právo volit stejně jako muži?",
+      "answers": [
+        "ano, získaly",
+        "ano, ale až od svým čtyřiceti let",
+        "stále ještě nezískaly"
+      ],
+      "correctAnswer": "ano, získaly"
+    },
+    {
+      "id": 7,
+      "question": "Jak na tom bylo naš meziválečné hospodářství?",
+      "answers": [
+        "špatně, trvalo dlouho, než naše výrobky pronikly na světový trh",
+        "patřili jsme k průměru",
+        "velice dobře, byli jsme mezi dvaceti nejvyspělejšími státy světa"
+      ],
+      "correctAnswer": "velice dobře, byli jsme mezi dvaceti nejvyspělejšími státy světa"
+    },
+    {
+      "id": 8,
+      "question": "Kterému sousednímu státu jsme museli ještě před začátkem 2. světové války odevzdat nejen pohraničí, ale celou republiku?",
+      "answers": ["Rakousku", "Maďarsku", "Německu"],
+      "correctAnswer": "Německu"
+    },
+    {
+      "id": 9,
+      "question": "Po obsazení naší republiky Německem se její název změnil na:",
+      "answers": [
+        "protektorát Čechy, Morava a Slovensko",
+        "protektorát Čechy a Morava",
+        "název se nezměnil, stále jsme byli Československo"
+      ],
+      "correctAnswer": "protektorát Čechy a Morava"
+    },
+    {
+      "id": 10,
+      "question": "Které rasy Hitler a nacisté považovali za méněcenné a plánovali je vyhubit?",
+      "answers": [
+        "Židy a Romy",
+        "všechny kromě Němců",
+        "všechny tnavovlasé a tmavooké lidi"
+      ],
+      "correctAnswer": "Židy a Romy"
+    },
+    {
+      "id": 11,
+      "question": "Druhá světová válka skončila v roce:",
+      "answers": ["1943", "1944", "1945"],
+      "correctAnswer": "1945"
+    }
+  ]
+}
