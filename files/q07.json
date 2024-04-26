@@ -24,7 +24,7 @@
     },
     {
       "id": 3,
-      "question": "Prvnín prezidentem naší republiky byl zvolen:",
+      "question": "Prvním prezidentem naší republiky byl zvolen:",
       "answers": [
         "poslední habsburský panovník Karel I, který vládl jen dva roky",
         "žádného prezidenta jsme nevolili, měli jsme jen vládu a parlament",
@@ -34,7 +34,7 @@
     },
     {
       "id": 4,
-      "question": "Jak dlouhá byla v naší republice pracoví doba?",
+      "question": "Jak dlouhá byla v naší republice pracovní doba?",
       "answers": [
         "desetihodinová",
         "osmihodinová",
