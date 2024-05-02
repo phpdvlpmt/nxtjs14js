@@ -6,14 +6,14 @@ import { Button } from "./ui/button";
 
 const ElBookItem = ({ book }) => {
   const [copied, setCopied] = useState(false);
-  const onCopy = (key) => {
+  const onCopy = (title, key) => {
     /* navigator.clipboard
       .writeText(key)
       .then(() => toast.success("Klíč byl zkopíován do schránky!"))
       .catch(() => toast.error("Chyba kopírování!")); */
     navigator.clipboard
       .writeText(key)
-      .then(() => toast.success("Klíč byl zkopírován do schránky."))
+      .then(() => toast.success(`${title} - klíč byl zkopírován do schránky.`))
       .catch(() => toast.error("Chyba kopírování."));
     setCopied(true);
 
@@ -38,7 +38,7 @@ const ElBookItem = ({ book }) => {
           <Button
             size="icon"
             variant="ghost"
-            onClick={() => onCopy(book.k)}
+            onClick={() => onCopy(book.title, book.k)}
             disabled={copied}
             className="h-8 rounded-l-none"
           >
