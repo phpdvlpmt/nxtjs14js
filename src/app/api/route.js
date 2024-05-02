@@ -9,6 +9,9 @@ export async function GET(req) {
       where: {
         username: username,
       },
+      orderBy: {
+        createdAt: "desc",
+      },
     });
 
     return Response.json({ message: "success", status: 200, data: data });

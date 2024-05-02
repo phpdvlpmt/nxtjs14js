@@ -21,7 +21,11 @@ import { Button } from "@/components/ui/button";
 import { ResultsTable } from "./ResultsTable";
 
 const getData = async () => {
-  const data = await prisma.resume.findMany({});
+  const data = await prisma.resume.findMany({
+    orderBy: {
+      createdAt: "desc",
+    },
+  });
 
   return data;
 };
