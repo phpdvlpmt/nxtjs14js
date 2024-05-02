@@ -46,19 +46,19 @@
     },
     {
       "id": 6,
-      "question": "Která stavba byla postavena za panování Karla IV. ?",
+      "question": "Která stavba byla postavena za panování Karla IV.?",
       "answers": ["hradiště", "Chrám sv. Víta", "rotundy"],
       "correctAnswer": "Chrám sv. Víta"
     },
     {
       "id": 7,
-      "question": "Jak se nazývá královská koruna, kterou nechal zhotovit Karel IV. ?",
-      "answers": ["Svatováclvská", "Svatokarlovská", "Svatojánská"],
-      "correctAnswer": "Svatováclvská"
+      "question": "Jak se nazývá královská koruna, kterou nechal zhotovit Karel IV.?",
+      "answers": ["Svatováclavská", "Svatokarlovská", "Svatojánská"],
+      "correctAnswer": "Svatováclavská"
     },
     {
       "id": 8,
-      "question": "Kolik manželek měl Kare IV. ?",
+      "question": "Kolik manželek měl Kare IV.?",
       "answers": ["1", "2", "4"],
       "correctAnswer": "4"
     },
