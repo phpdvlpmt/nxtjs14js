@@ -28,6 +28,12 @@ import ElBooks from "@/components/ElBooks";
 
 const tests = [
   {
+    title: "Opakování - husitské války a události po válce",
+    link: "/q09",
+    class: "4",
+    new: true,
+  },
+  {
     title: "Opakování - Lucemburkové, gotika",
     link: "/q08",
     class: "4",
@@ -43,37 +49,31 @@ const tests = [
     title: "Opakování - za přemyslovských králů",
     link: "/q06",
     class: "4",
-    new: true,
   },
   {
     title: "Určujeme století",
     link: "/q05",
     class: "4",
-    new: true,
   },
   {
     title: "Opakování - novověk - naše země za vlády králů",
     link: "/q04",
     class: "5",
-    new: true,
   },
   {
     title: "Opakování - počátek středověku",
     link: "/q03",
     class: "4",
-    new: true,
   },
   {
     title: "Opakování - Habsburkové českými králi; baroko",
     link: "/q02",
     class: "5",
-    new: true,
   },
   {
     title: "Naše země v pravěku",
     link: "/q01",
     class: "4",
-    new: true,
   },
   {
     title: "Krajská města",

@@ -1,0 +1,88 @@
+{
+  "totalQuestions": 11,
+  "title": "Opakování - husitské války a události po válce",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Poplatky za odpuštění hříchů, které vybírali kněží, se nazývají:",
+      "answers": ["propustky", "odpustky", "úplatky"],
+      "correctAnswer": "odpustky"
+    },
+    {
+      "id": 2,
+      "question": "Kazatel Jan Hus byl za kritiku nepravostí v církvi:",
+      "answers": [
+        "svázán a utopen v řece Rýnu",
+        "popraven",
+        "upálen na hranici"
+      ],
+      "correctAnswer": "upálen na hranici"
+    },
+    {
+      "id": 3,
+      "question": "Státní svátek vyhlášený na památku úmrtí Jana Husa připadá na:",
+      "answers": ["5. červenec", "6. červenec", "7. červenec"],
+      "correctAnswer": "6. červenec"
+    },
+    {
+      "id": 4,
+      "question": "Které tvrzení o husitech je správné?",
+      "answers": [
+        "byli to obyvatelé Husince u Prachatic, kde se narodil Jan Hus",
+        "říkalo se tak lidem, kteří chovali a vykrmovali husy pro královskou tabuli",
+        "říkali si tak ti, kdo souhlasili s názory Jana Husa"
+      ],
+      "correctAnswer": "říkali si tak ti, kdo souhlasili s názory Jana Husa"
+    },
+    {
+      "id": 5,
+      "question": "Kdo skutečně velel husitskému vojsku?",
+      "answers": [
+        "Jan Žižka",
+        "dva Janové - Jan Hus a Jan Žižka",
+        "Zikmund Lucemburský"
+      ],
+      "correctAnswer": "Jan Žižka"
+    },
+    {
+      "id": 6,
+      "question": "Účastníkům vojenských výprav proti husitům, které do Čech poslal papež, se říkalo:",
+      "answers": [
+        "křižáci, protože měli na oděvu kříž jako znamení křesťanské víry",
+        "mřížáci, protože husiti chytali a vsazovali je za mříže (zavírali je do vězení)",
+        "koňáci, protože jezdili a bojovali na koních"
+      ],
+      "correctAnswer": "křižáci, protože měli na oděvu kříž jako znamení křesťanské víry"
+    },
+    {
+      "id": 7,
+      "question": "Posledním českým panovníkem z rodu Lucemburků byl:",
+      "answers": ["Jan", "Ladislav", "Zikmund"],
+      "correctAnswer": "Zikmund"
+    },
+    {
+      "id": 8,
+      "question": "Jediný český panovník, který nepocházel z královského rodu, byl:",
+      "answers": ["Zikmund", "Jiří z Poděbrad", "Jan Žižka"],
+      "correctAnswer": "Jiří z Poděbrad"
+    },
+    {
+      "id": 9,
+      "question": "Který český král se snažil přesvědčit evropské panovníky, aby spolu uzavřeli mírové smlouvy?",
+      "answers": ["Karel IV.", "Prokop Holý", "Jiří z Poděbrad"],
+      "correctAnswer": "Jiří z Poděbrad"
+    },
+    {
+      "id": 10,
+      "question": "Dva panovníci, kteří u nás vládli po husitských válkách, pocházeli z královského rodu:",
+      "answers": ["Jagellonců", "Lucemburků", "Přemyslovců"],
+      "correctAnswer": "Jagellonců"
+    },
+    {
+      "id": 11,
+      "question": "Po českém králi Vladislavu Jagellonském je pojmenován jeden ze sálů na Pražském hradě. Jak se tento sál nazývá?",
+      "answers": ["Jadellonský", "Vladislavský", "Zlatý"],
+      "correctAnswer": "Vladislavský"
+    }
+  ]
+}
