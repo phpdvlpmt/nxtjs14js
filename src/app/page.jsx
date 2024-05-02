@@ -28,6 +28,12 @@ import ElBooks from "@/components/ElBooks";
 
 const tests = [
   {
+    title: "Opakování - Lucemburkové, gotika",
+    link: "/q08",
+    class: "4",
+    new: true,
+  },
+  {
     title: "Opakování - jsme samostatný stát, 2. světová válka",
     link: "/q07",
     class: "5",

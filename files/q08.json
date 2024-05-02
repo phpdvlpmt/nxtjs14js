@@ -1,0 +1,92 @@
+{
+  "totalQuestions": 11,
+  "title": "Opakování - Lucemburkové, gotika",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Proč měl ve 14. století český stát nového krále z cizí země?",
+      "answers": [
+        "Přemyslovci už nechtěli vládnout",
+        "lidé už Přemyslovce za krále nechtěli",
+        "Přemyslovci vymřeli po meči"
+      ],
+      "correctAnswer": "Přemyslovci vymřeli po meči"
+    },
+    {
+      "id": 2,
+      "question": "Jak se jmenovala sestra Václava III., která se provdala za nového českého krále z rodu Lucemburků?",
+      "answers": ["Ludmila", "Eliška", "Anežka"],
+      "correctAnswer": "Eliška"
+    },
+    {
+      "id": 3,
+      "question": "Která řada českých králů patří do panovnického rodu Lucemburků?",
+      "answers": [
+        "Václav III., Václav IV., Václav V.",
+        "Jan Lucemburský, Karel IV., Václav IV, Zikmund",
+        "Karel I., Karel II., Karel III., Karel IV."
+      ],
+      "correctAnswer": "Jan Lucemburský, Karel IV., Václav IV, Zikmund"
+    },
+    {
+      "id": 4,
+      "question": "Přezdívku Otec vlasti dostal český král:",
+      "answers": ["Karel IV.", "Zikmund", "Václav III."],
+      "correctAnswer": "Karel IV."
+    },
+    {
+      "id": 5,
+      "question": "Jak se dnes nazývá univerzita v Praze založená Karlem IV.?",
+      "answers": [
+        "Masarykova univerzita",
+        "Univerzita Karlova",
+        "Univerzita Palackého"
+      ],
+      "correctAnswer": "Univerzita Karlova"
+    },
+    {
+      "id": 6,
+      "question": "Která stavba byla postavena za panování Karla IV. ?",
+      "answers": ["hradiště", "Chrám sv. Víta", "rotundy"],
+      "correctAnswer": "Chrám sv. Víta"
+    },
+    {
+      "id": 7,
+      "question": "Jak se nazývá královská koruna, kterou nechal zhotovit Karel IV. ?",
+      "answers": ["Svatováclvská", "Svatokarlovská", "Svatojánská"],
+      "correctAnswer": "Svatováclvská"
+    },
+    {
+      "id": 8,
+      "question": "Kolik manželek měl Kare IV. ?",
+      "answers": ["1", "2", "4"],
+      "correctAnswer": "4"
+    },
+    {
+      "id": 9,
+      "question": "Která ze tří možností správně vysvětluje význam slova odpustky?",
+      "answers": [
+        "hříšníkům byly prominuty hříchy, pokud za jejich odpuštění zaplatili",
+        "prominutí trestu provinilci, který vykonal uložené prospěšné práce",
+        "propustky, které dostávali královští vojáci, aby mohli navštívit rodinu"
+      ],
+      "correctAnswer": "hříšníkům byly prominuty hříchy, pokud za jejich odpuštění zaplatili"
+    },
+    {
+      "id": 10,
+      "question": "Jak se nazývá nový stavební sloh, který se do našich zemí rozšířil ve 13. století?",
+      "answers": ["románský", "germánský", "gotický"],
+      "correctAnswer": "gotický"
+    },
+    {
+      "id": 11,
+      "question": "Nejvíce měst bylo založeno:",
+      "answers": [
+        "ve 13. a 14. století za vlády Lucemburků",
+        "daleko dří, už za vlády úřemyslovských knížat",
+        "ve středověku ještě nevzniklo žádné město"
+      ],
+      "correctAnswer": "ve 13. a 14. století za vlády Lucemburků"
+    }
+  ]
+}
