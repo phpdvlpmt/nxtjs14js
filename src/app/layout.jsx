@@ -7,6 +7,7 @@ import SessionProvider from "@/components/SessionProvider";
 import { ReduxProvider } from "@/redux/provider";
 import { Toaster } from "@/components/ui/sonner";
 import ConvexClientProvider from "./ConvexClientProvider";
+import { cn } from "@/lib/utils";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -24,7 +25,10 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="cs" suppressHydrationWarning>
       <body
-        className={`${montserrat.className} selection:bg-orange-500 antialiased min-h-screen`}
+        className={cn(
+          "selection:bg-orange-500 antialiased min-h-screen",
+          montserrat.className,
+        )}
       >
         <ConvexClientProvider>
           <ReduxProvider>
