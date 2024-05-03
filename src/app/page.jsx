@@ -1,16 +1,6 @@
 "use client";
 import Link from "next/link";
 import { useSelector } from "react-redux";
-import { usePupilStore } from "../../stores/store";
-import PupilResultsTable from "@/components/PupilResultsTable";
-import { Trophy, Medal, BookDown } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
 import {
   Card,
   CardContent,
@@ -19,176 +9,17 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+
 import { redirect } from "next/navigation";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import ElBooks from "@/components/ElBooks";
+import AccordionSection from "@/components/AccordionSection";
+import QuizSection from "@/components/QuizSection";
 //import sessionStorage from "redux-persist/es/storage/session";
 
-const tests = [
-  {
-    title: "Opakování - naše republika po válce",
-    link: "/q010",
-    class: "5",
-    new: true,
-  },
-  {
-    title: "Opakování - husitské války a události po válce",
-    link: "/q09",
-    class: "4",
-    new: true,
-  },
-  {
-    title: "Opakování - Lucemburkové, gotika",
-    link: "/q08",
-    class: "4",
-    new: true,
-  },
-  {
-    title: "Opakování - jsme samostatný stát, 2. světová válka",
-    link: "/q07",
-    class: "5",
-    new: true,
-  },
-  {
-    title: "Opakování - za přemyslovských králů",
-    link: "/q06",
-    class: "4",
-  },
-  {
-    title: "Určujeme století",
-    link: "/q05",
-    class: "4",
-  },
-  {
-    title: "Opakování - novověk - naše země za vlády králů",
-    link: "/q04",
-    class: "5",
-  },
-  {
-    title: "Opakování - počátek středověku",
-    link: "/q03",
-    class: "4",
-  },
-  {
-    title: "Opakování - Habsburkové českými králi; baroko",
-    link: "/q02",
-    class: "5",
-  },
-  {
-    title: "Naše země v pravěku",
-    link: "/q01",
-    class: "4",
-  },
-  {
-    title: "Krajská města",
-    link: "/q",
-    class: "4",
-  },
-  {
-    title: "Naše vlast",
-    link: "/q1",
-    class: "4",
-  },
-  {
-    title: "Mapy",
-    link: "/q2",
-    class: "4",
-  },
-  {
-    title: "Povrch, vodstvo, počasí a podnebí",
-    link: "/q3",
-    class: "4",
-  },
-  {
-    title: "Zemědělství",
-    link: "/q4",
-    class: "4",
-  },
-  {
-    title: "Nerostné suroviny, průmysl",
-    link: "/q5",
-    class: "4",
-  },
-  {
-    title: "Služby, peníze, ochrana přírody",
-    link: "/q6",
-    class: "4",
-  },
-  {
-    title: "Evropa - jeden ze světadílů",
-    link: "/q60",
-    class: "5",
-  },
-  {
-    title: "Oceány a světadíly; Evropa",
-    link: "/q7",
-    class: "5",
-  },
-  {
-    title: "Sousední státy České republiky",
-    link: "/q8",
-    class: "4",
-  },
-  {
-    title: "Opakování č. 1",
-    link: "/q9",
-    class: "4",
-  },
-  {
-    title: "Opakování č. 2",
-    link: "/q10",
-    class: "4",
-  },
-  {
-    title: "Opakování č. 3",
-    link: "/q11",
-    class: "4",
-  },
-  {
-    title: "Opakování č. 4",
-    link: "/q12",
-    class: "4",
-  },
-  {
-    title: "Závěrečné opakování",
-    link: "/q13",
-    class: "4",
-  },
-  {
-    title: "Hlavní města evropských států",
-    link: "/q14",
-    class: "5",
-  },
-  {
-    title: "Závěrečné opakování",
-    link: "/q15",
-    class: "5",
-  },
-  {
-    title: "Souhrnné opakování učiva",
-    link: "/q16",
-    class: "4",
-  },
-];
-
 const Quiz = () => {
-  const [mounted, setMounted] = useState(false);
-
   const isAuth = useSelector((state) => state.authReducer.value.isAuth);
-  const username = useSelector((state) => state.authReducer.value.username);
-  const [data, setData] = useState([]);
 
   //const { isAuth, pupil, logoutPupil } = usePupilStore();
 
-  useEffect(() => {
-    const fetchPupilResults = async (pupil) => {
-      const res = await axios.get("/api/?name=" + username);
-      return setData(res.data.data);
-    };
-    fetchPupilResults();
-  });
   /* useEffect(() => {
     if (mounted && !isAuth) {
       redirect("/login");
@@ -200,65 +31,8 @@ const Quiz = () => {
 
   return (
     <>
-      <Accordion type="single" collapsible>
-        <AccordionItem value="item-1">
-          <AccordionTrigger className="font-bold ">
-            <div className="flex items-center gap-2">
-              <span>
-                <BookDown className="w-4 h-4" />
-              </span>
-              <span>Chci elektronickou učebnici </span>
-            </div>
-          </AccordionTrigger>
-          <AccordionContent>
-            <div>
-              <ElBooks />
-            </div>
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-2">
-          <AccordionTrigger className="font-bold ">
-            <div className="flex items-center gap-2">
-              <span>
-                <Medal className="w-4 h-4" />
-              </span>
-              <span>Výsledky</span>
-            </div>
-          </AccordionTrigger>
-          <AccordionContent>
-            <PupilResultsTable data={data} />
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 py-5">
-        {tests.map((test, index) => (
-          <div key={index}>
-            <Link href={test.link}>
-              <Card className="h-full">
-                <CardHeader>
-                  <CardTitle>{test.title}</CardTitle>
-                  <CardDescription className="flex items-center justify-between">
-                    <span>{test.class}. ročník</span>
-
-                    {test.new && (
-                      <span className="border-transparent bg-destructive text-destructive-foreground shadow hover:bg-destructive/80 inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
-                        Nový
-                      </span>
-                    )}
-                  </CardDescription>
-                </CardHeader>
-                {/* <CardContent>
-                  <p>Card Content</p>
-                </CardContent>
-                <CardFooter>
-                  <p>Card Footer</p>
-                </CardFooter> */}
-              </Card>
-            </Link>
-          </div>
-        ))}
-      </div>
+      <AccordionSection />
+      <QuizSection />
     </>
   );
 };
