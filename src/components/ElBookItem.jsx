@@ -1,10 +1,12 @@
-import { Check, Copy } from "lucide-react";
+import { Check, Copy, Loader2 } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
 import { toast } from "sonner";
 import { Button } from "./ui/button";
+import { cn } from "@/lib/utils";
 
 const ElBookItem = ({ book }) => {
+  const [loaded, setLoaded] = useState(false);
   const [copied, setCopied] = useState(false);
   const onCopy = (title, key) => {
     /* navigator.clipboard
@@ -29,7 +31,12 @@ const ElBookItem = ({ book }) => {
         height={80}
         alt={book.title}
         priority
+        onLoad={(e) => setLoaded(true)}
+        className={cn(loaded ? "block" : "hidden")}
       />
+      {!loaded && (
+        <Loader2 className="animate-spin w-10 h-12 text-muted-foreground" />
+      )}
       <div>
         <h2>{book.title}</h2>
         <div className="flex items-center gap-5">
