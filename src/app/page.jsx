@@ -13,6 +13,7 @@ import {
 import { redirect } from "next/navigation";
 import AccordionSection from "@/components/AccordionSection";
 import QuizSection from "@/components/QuizSection";
+import CountUpSection from "@/components/CountUpSection";
 //import sessionStorage from "redux-persist/es/storage/session";
 
 const Quiz = () => {
@@ -24,6 +25,7 @@ const Quiz = () => {
 
   return (
     <>
+      <CountUpSection />
       <AccordionSection />
       <QuizSection />
     </>
