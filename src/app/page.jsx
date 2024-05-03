@@ -28,7 +28,7 @@ import ElBooks from "@/components/ElBooks";
 
 const tests = [
   {
-    title: "Opakování - naše republika po válce a sametové revoluci",
+    title: "Opakování - naše republika po válce",
     link: "/q010",
     class: "5",
     new: true,
