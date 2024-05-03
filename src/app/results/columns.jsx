@@ -3,6 +3,8 @@ import moment from "moment-timezone";
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown, MoreHorizontal } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { deleteResult } from "../../../actions";
+import { TrashDelete } from "@/components/Submitbuttons";
 
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
@@ -76,6 +78,23 @@ export const columns = [
         .format("D. M. YYYY H:mm");
 
       return <div className="whitespace-nowrap">{formatted}</div>;
+    },
+  },
+  {
+    accessorKey: "id",
+    header: "",
+    cell: ({ row }) => {
+      const id = row.getValue("id");
+      console.log(id);
+      return (
+        <form action={deleteResult}>
+          <input type="hidden" name="inputId" value={id} />
+          {/* <button type="submit">
+        <Trash2Icon />
+      </button> */}
+          <TrashDelete />
+        </form>
+      );
     },
   },
 ];
