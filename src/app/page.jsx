@@ -27,12 +27,12 @@ import ElBooks from "@/components/ElBooks";
 //import sessionStorage from "redux-persist/es/storage/session";
 
 const tests = [
-  {
+  /*  {
     title: "Opakování - naše republika po válce a sametové revoluci",
     link: "/q010",
     class: "5",
     new: true,
-  },
+  }, */
   {
     title: "Opakování - husitské války a události po válce",
     link: "/q09",
