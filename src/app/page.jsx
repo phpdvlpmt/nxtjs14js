@@ -18,13 +18,6 @@ import QuizSection from "@/components/QuizSection";
 const Quiz = () => {
   const isAuth = useSelector((state) => state.authReducer.value.isAuth);
 
-  //const { isAuth, pupil, logoutPupil } = usePupilStore();
-
-  /* useEffect(() => {
-    if (mounted && !isAuth) {
-      redirect("/login");
-    }
-  }); */
   if (!isAuth) {
     redirect("/login");
   }
