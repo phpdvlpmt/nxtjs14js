@@ -14,6 +14,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { shuffle } from "lodash";
+import { cn } from "@/lib/utils";
 
 const Qc = ({ quiz }) => {
   const isAuth = useSelector((state) => state.authReducer.value.isAuth);
@@ -216,26 +217,22 @@ const Qc = ({ quiz }) => {
                   disabled={disabled}
                   key={idx}
                   onClick={() => onAnswerSelected(answer, idx)}
-                  className={`text-left p-3 w-full text-lg font-semibold  cursor-pointer ${
+                  className={cn(
+                    "text-left p-3 w-full text-lg font-semibold  cursor-pointer",
                     selectedAnswerIndex === idx
                       ? " "
-                      : " hover bg-gray-100 dark:text-gray-900"
-                  } ${
+                      : " hover bg-gray-100 dark:text-gray-900",
                     selectedAnswer &&
-                    selectedAnswerIndex === idx &&
-                    " bg-green-400"
-                  }
-                ${
-                  !selectedAnswer &&
-                  selectedAnswerIndex === idx &&
-                  " bg-red-400"
-                } 
-                ${
-                  !selectedAnswer &&
-                  checked &&
-                  correctAnswer === answer &&
-                  " bg-green-400 animate-pulse"
-                }`}
+                      selectedAnswerIndex === idx &&
+                      " bg-green-400",
+                    !selectedAnswer &&
+                      selectedAnswerIndex === idx &&
+                      " bg-red-400",
+                    !selectedAnswer &&
+                      checked &&
+                      correctAnswer === answer &&
+                      " bg-green-400 animate-pulse",
+                  )}
                 >
                   <span>{answer}</span>
                 </button>
