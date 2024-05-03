@@ -99,7 +99,7 @@ const Convex = () => {
                   >
                     <Input type="hidden" name="id" value={id} />
                     <Label>Title</Label>
-                    <Input name="title" placeholder={title}></Input>
+                    <Input name="title" defaultValue={title}></Input>
 
                     <Button
                       onClick={() => setOpen(false)}
