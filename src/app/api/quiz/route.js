@@ -10,7 +10,6 @@ export async function POST(req) {
   const wrongAnswers = rs.wrongAnswers;
   const average = rs.average;
   const grade = rs.grade;
-  console.log(rs);
 
   try {
     const result = await prisma.resume.create({
