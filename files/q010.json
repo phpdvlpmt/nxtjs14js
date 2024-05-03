@@ -1,0 +1,88 @@
+{
+  "totalQuestions": 11,
+  "title": "Opakování - naše republika po válce a sametové revoluci",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jak se jmenuje muž, který se stal po skončení 2. světové války v roce 1945 prezidentem Československa?",
+      "answers": ["Tomáš Garrigue Masaryk", "Emil Hácha", "Edvard Beneš"],
+      "correctAnswer": "Edvard Beneš"
+    },
+    {
+      "id": 2,
+      "question": "Území naší republiky se po 2. světové válce:",
+      "answers": ["zvětšilo", "zmenšilo", "zůstalo stejné"],
+      "correctAnswer": "zvětšilo"
+    },
+    {
+      "id": 3,
+      "question": "Jak došlo k tomu, že v roce 1948 přestala být naše republika demokratickým státem? Vyber vysvětlení, které jediné není pravdivé.",
+      "answers": [
+        "Volby vyhrála jediná politická strana - komunisté. Ve státě o všem rozhodovali pouze oni.",
+        "Stát sebral (znárodnil) soukromým vlastníkům jejich majetek, občané ztratili mnoho práv.",
+        "Lidé začali podvádět, krást, lhát, závidět si."
+      ],
+      "correctAnswer": "Lidé začali podvádět, krást, lhát, závidět si."
+    },
+    {
+      "id": 4,
+      "question": "Proč do Československa přišli v srpnu 1968 vojáci cizích států?",
+      "answers": [
+        "Aby zabránili změnám, které měly znovu vrátit lidem jejich práva.",
+        "Protože se u nás mělo konat společné cvičení vojsk několika zemí.",
+        "Protože jsme neměli vlastní armádu, takže cizí vojáci měli chránit naše hranice."
+      ],
+      "correctAnswer": "Aby zabránili změnám, které měly znovu vrátit lidem jejich práva."
+    },
+    {
+      "id": 5,
+      "question": "Podzim roku 1989 přinesl konec vlády komunistů a velké změny. Došlo k nim bez boje a násilí. Jak se proto těmto událostem říká?",
+      "answers": ["klidná revoluce", "veselá revoluce", "sametová revoluce"],
+      "correctAnswer": "sametová revoluce"
+    },
+    {
+      "id": 6,
+      "question": "Který muž byl v roce 1989 zvolen prezidentem naší republiky?",
+      "answers": ["Václav Havel", "Václav Klaus", "Antonín Zápotocký"],
+      "correctAnswer": "Václav Havel"
+    },
+    {
+      "id": 7,
+      "question": "Výraz svobodné volby znamená, že:",
+      "answers": [
+        "mohou volit jen ti, kteří neuzavřeli manželství",
+        "člověk si může svobodně vybrat, které z mnoha politických stran dá ve volbách svůj hlas",
+        "mohou volit jen ti, kdo nejsou ve vězení"
+      ],
+      "correctAnswer": "člověk si může svobodně vybrat, které z mnoha politických stran dá ve volbách svůj hlas"
+    },
+    {
+      "id": 8,
+      "question": "Jak se nazývá republika, ve které v současnosti žijeme?",
+      "answers": [
+        "Československá republika",
+        "Českomoravská republika",
+        "Česká republika"
+      ],
+      "correctAnswer": "Česká republika"
+    },
+    {
+      "id": 9,
+      "question": "Ve kterém roce vstoupila Česká republika do EU?",
+      "answers": ["2004", "1999", "1989"],
+      "correctAnswer": "2004"
+    },
+    {
+      "id": 10,
+      "question": "Ve kterém roce vstoupila Česká republika do NATO?",
+      "answers": ["1999", "2004", "1989"],
+      "correctAnswer": "1999"
+    },
+    {
+      "id": 11,
+      "question": "Jak se jmenuje současný prezident České republiky?",
+      "answers": ["Petr Pavel", "Miloš Zeman", "Václav Klaus"],
+      "correctAnswer": "Petr Pavel"
+    }
+  ]
+}
