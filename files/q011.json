@@ -1,0 +1,210 @@
+{
+  "totalQuestions": 26,
+  "title": "Závěrečné opakování",
+  "questions": [
+    {
+      "id": 1,
+      "question": "1 den",
+      "answers": [
+        "doba jednoho oběhu Země kolem Slunce",
+        "doba jednoho oběhu měsíce kolem Země",
+        "doba jednoho otočení Země kolem své osy"
+      ],
+      "correctAnswer": "doba jednoho otočení Země kolem své osy"
+    },
+    {
+      "id": 2,
+      "question": "1 měsíc",
+      "answers": [
+        "doba jednoho oběhu Země kolem Slunce",
+        "doba jednoho oběhu měsíce kolem Země",
+        "doba jednoho otočení Země kolem své osy"
+      ],
+      "correctAnswer": "doba jednoho oběhu měsíce kolem Země"
+    },
+    {
+      "id": 3,
+      "question": "1 rok",
+      "answers": [
+        "doba jednoho oběhu Země kolem Slunce",
+        "doba jednoho oběhu měsíce kolem Země",
+        "doba jednoho otočení Země kolem své osy"
+      ],
+      "correctAnswer": "doba jednoho oběhu Země kolem Slunce"
+    },
+    {
+      "id": 4,
+      "question": "Za počátek našeho letopočtu byl stanoven:",
+      "answers": [
+        "rok objevení prvního předchůdce člověka na Zemi",
+        "rok objevení prvního živočicha na Zemi",
+        "pravděpodobný rok narození Ježíše Krista"
+      ],
+      "correctAnswer": "pravděpodobný rok narození Ježíše Krista"
+    },
+    {
+      "id": 5,
+      "question": "Rok 2012 patří do:",
+      "answers": ["20. století", "21. století", "22. století"],
+      "correctAnswer": "21. století"
+    },
+    {
+      "id": 6,
+      "question": "Nejstarší období dějin se nazývá:",
+      "answers": ["dávnověk", "středověk", "pravěk"],
+      "correctAnswer": "pravěk"
+    },
+    {
+      "id": 7,
+      "question": "Pouze jedno pořadí je správné. Které?",
+      "answers": [
+        "starší doba kamenná, mladší doba kamenná, doba bronzová, doba železná",
+        "mladší doba kamenná, starší doba kamenná, doba železná, doba bronzová",
+        "doba bronzová, mladší doba kamenná, starší doba kamenná, doba železná"
+      ],
+      "correctAnswer": "starší doba kamenná, mladší doba kamenná, doba bronzová, doba železná"
+    },
+    {
+      "id": 8,
+      "question": "V našich zemích začíná středověk:",
+      "answers": [
+        "objevením železa",
+        "příchodem slovanských kmenů",
+        "poznáním ohně"
+      ],
+      "correctAnswer": "příchodem slovanských kmenů"
+    },
+    {
+      "id": 9,
+      "question": "Pouze jedno pořadí podle vzniku je správné. Které?",
+      "answers": [
+        "Sámova říše - Velká Morava - český stát",
+        "český stát - Sámova říše - Velká Morava",
+        "Velká Morava - Sámova říše - český stát"
+      ],
+      "correctAnswer": "Sámova říše - Velká Morava - český stát"
+    },
+    {
+      "id": 10,
+      "question": "Bratři Konstantin a Metoděj přišli na Vekou Moravu, aby:",
+      "answers": [
+        "získávali lidi pro křesťanskou víru",
+        "vedli Slovany v boji proti Avarům",
+        "usmířili rozhádané knížecí rody"
+      ],
+      "correctAnswer": "získávali lidi pro křesťanskou víru"
+    },
+    {
+      "id": 11,
+      "question": "Slovanské kmeny na území Čech v 10. století sjednotil, a český stát tak založil rod:",
+      "answers": ["Slavníkovci", "Boleslavovci", "Přemyslovci"],
+      "correctAnswer": "Přemyslovci"
+    },
+    {
+      "id": 12,
+      "question": "Po své smrti byl prohlášen zs svatého český kníže, který se jmenoval:",
+      "answers": ["Václav", "Bořivoj", "Boleslav"],
+      "correctAnswer": "Václav"
+    },
+    {
+      "id": 13,
+      "question": "Jak se nazývá románský kostel na Řípu?",
+      "answers": ["kaplička", "hradiště", "rotunda"],
+      "correctAnswer": "rotunda"
+    },
+    {
+      "id": 14,
+      "question": "Český kníže Přemysl Otakar I. dostal jako první:",
+      "answers": [
+        "nedobytný hrad",
+        "dědičný královský titul",
+        "vzácnou ručně psanou kroniku"
+      ],
+      "correctAnswer": "dědičný královský titul"
+    },
+    {
+      "id": 15,
+      "question": "Která odpověď není pravdivá? Poslední panovníci z rodu Přemyslovců začali ve 13. století budovat:",
+      "answers": ["města", "hradiště", "hrady"],
+      "correctAnswer": "hradiště"
+    },
+    {
+      "id": 16,
+      "question": "Když v rodě už není žádný syn, ale jen samé dcery, říká se, že rod:",
+      "answers": ["vymřel po čepici", "vymřel po radlici", "vymřel po meči"],
+      "correctAnswer": "vymřel po meči"
+    },
+    {
+      "id": 17,
+      "question": "Poslední přemyslovský král Václav III. byl zavražděn roku 1306. Které je to století?",
+      "answers": ["12. století", "13. století", "14. století"],
+      "correctAnswer": "14. století"
+    },
+    {
+      "id": 18,
+      "question": "Po Přemyslovcích se českými králi stali:",
+      "answers": ["Jagellonci", "Lucemburkové", "Habsburkové"],
+      "correctAnswer": "Lucemburkové"
+    },
+    {
+      "id": 19,
+      "question": "Přezdívku Otec vlasti dostal český král:",
+      "answers": ["Karel IV.", "Zikmund", "Václav III."],
+      "correctAnswer": "Karel IV."
+    },
+    {
+      "id": 20,
+      "question": "Vysoké štíhlé stavby s okny a vchody ve tvaru lomeného oblouku jsou typické pro:",
+      "answers": [
+        "románský sloh",
+        "gotický sloh",
+        "takto ve středověku ještě stavět nedokázali"
+      ],
+      "correctAnswer": "gotický sloh"
+    },
+    {
+      "id": 21,
+      "question": "Nejvíc obyvatel středověkých měst se živilo:",
+      "answers": ["zemědělstvím", "žebráním", "různými řemesly"],
+      "correctAnswer": "různými řemesly"
+    },
+    {
+      "id": 22,
+      "question": "Za kritiku nepravostí v církvi i mezi lidmi byl upálen:",
+      "answers": ["Jan Žižka", "král Václav IV.", "Jan Hus"],
+      "correctAnswer": "Jan Hus"
+    },
+    {
+      "id": 23,
+      "question": "Které tvrzení je z historické hlediska nesmyslné?",
+      "answers": [
+        "husité vyhráli všechny bitvy s křižáky",
+        "husitskému vojsku velel nejdřív Jan Hus, po něm Jan Žižka",
+        "husitské vojsko také bohužel ničilo katolické kostely, drancovalo vesnice"
+      ],
+      "correctAnswer": "husitskému vojsku velel nejdřív Jan Hus, po něm Jan Žižka"
+    },
+    {
+      "id": 24,
+      "question": "Po husitských válkách se stal českým králem Jiří z Poděbrad. Nepravdivé je tvrzení:",
+      "answers": [
+        "pocházel z polského královského rodu",
+        "nenarodil se v královské roině, ale v rodině českého šlechtice",
+        "snažil se o udržení míru v Evropě"
+      ],
+      "correctAnswer": "pocházel z polského královského rodu"
+    },
+    {
+      "id": 25,
+      "question": "Období novověku v českých zemích začalo, když na trůn usedl panovník z rodu:",
+      "answers": ["Jagellonců", "Strassburků", "Habsburků"],
+      "correctAnswer": "Habsburků"
+    },
+    {
+      "id": 26,
+      "question": "V 16. století se objevil nový umělecký sloh:",
+      "answers": ["románský", "romance", "renesance"],
+      "correctAnswer": "renesance"
+    }
+  ]
+}

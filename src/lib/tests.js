@@ -1,5 +1,11 @@
 export const tests = [
   {
+    title: "Závěrečné opakování",
+    link: "/q011",
+    class: "4",
+    new: true,
+  },
+  {
     title: "Opakování - naše republika po válce",
     link: "/q010",
     class: "5",
