@@ -15,8 +15,11 @@ import {
 } from "@/components/ui/select";
 import { shuffle } from "lodash";
 import { cn } from "@/lib/utils";
+import { useMutation } from "convex/react";
+import { api } from "../../convex/_generated/api";
 
 const Qc = ({ quiz }) => {
+  const createTest = useMutation(api.tests.createTest);
   const isAuth = useSelector((state) => state.authReducer.value.isAuth);
   //const { isAuth, pupil, logoutPupil } = usePupilStore();
   const [mounted, setMounted] = useState(false);
@@ -117,7 +120,7 @@ const Qc = ({ quiz }) => {
 
   const avrg = () => {
     const ar = ((result.correctAnswers / questions.length) * 100).toFixed();
-    return ar;
+    return parseInt(ar);
   };
 
   const grade = () => {
@@ -125,19 +128,19 @@ const Qc = ({ quiz }) => {
 
     switch (true) {
       case avr > 82:
-        return "1"; // code block
+        return 1; // code block
         break;
       case avr < 82 && avr >= 63:
-        return "2"; // code block
+        return 2; // code block
         break;
       case avr < 63 && avr >= 38:
-        return "3"; // code block
+        return 3; // code block
         break;
       case avr < 38 && avr >= 13:
-        return "4"; // code block
+        return 4; // code block
         break;
       case avr < 13:
-        return "5"; // code block
+        return 5; // code block
         break;
       default:
         return "???"; // code block
@@ -161,6 +164,18 @@ const Qc = ({ quiz }) => {
 
         body: JSON.stringify(data),
       });
+      //convex
+
+      /*  await createTest({
+        title: quiz.title,
+        username: username,
+        correctAnswers: result.correctAnswers,
+        wrongAnswers: result.wrongAnswers,
+        total: quiz.totalQuestions,
+        average: avrg(),
+        grade: grade(),
+        finish: true,
+      }); */
       if (response.ok) {
         toast.success(
           "Test žáka jménem " + username + " byl úspěšně uložen v databázi.",

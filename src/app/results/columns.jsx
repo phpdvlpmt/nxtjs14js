@@ -85,7 +85,7 @@ export const columns = [
     header: "",
     cell: ({ row }) => {
       const id = row.getValue("id");
-      console.log(id);
+      //console.log(id);
       return (
         <form action={deleteResult}>
           <input type="hidden" name="inputId" value={id} />
