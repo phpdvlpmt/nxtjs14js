@@ -1,5 +1,11 @@
 export const tests = [
   {
+    title: "Letopočty",
+    link: "/q012",
+    class: "5",
+    new: true,
+  },
+  {
     title: "Závěrečné opakování",
     link: "/q011",
     class: "4",

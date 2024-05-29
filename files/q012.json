@@ -1,0 +1,96 @@
+{
+  "totalQuestions": 15,
+  "title": "Letopočty",
+  "questions": [
+    {
+      "id": 1,
+      "question": "začátek vzpoury proti Habsburkům",
+      "answers": ["1618", "1774", "1848"],
+      "correctAnswer": "1618"
+    },
+    {
+      "id": 2,
+      "question": "bitva na Bílé hoře",
+      "answers": ["1620", "1618", "1781"],
+      "correctAnswer": "1620"
+    },
+    {
+      "id": 3,
+      "question": "poprava 27 vůdců povstání:",
+      "answers": ["1620", "1621", "1781"],
+      "correctAnswer": "1621"
+    },
+    {
+      "id": 4,
+      "question": "povinná školní docházka",
+      "answers": ["1774", "1848", "1526"],
+      "correctAnswer": "1774"
+    },
+    {
+      "id": 5,
+      "question": "zrušeno nevolnictví",
+      "answers": ["1781", "1848", "1620"],
+      "correctAnswer": "1781"
+    },
+    {
+      "id": 6,
+      "question": "zrušena robota",
+      "answers": ["1848", "1781", "1774"],
+      "correctAnswer": "1848"
+    },
+    {
+      "id": 7,
+      "question": "1. světová válka",
+      "answers": ["1914 - 1918", "1618 - 1648", "1939 - 1945"],
+      "correctAnswer": "1914 - 1918"
+    },
+    {
+      "id": 8,
+      "question": "vznik ČSR",
+      "answers": ["1918", "1968", "1919"],
+      "correctAnswer": "1918"
+    },
+    {
+      "id": 9,
+      "question": "obsazení ČSR Německem",
+      "answers": ["1939 - 1945", "1948 - 1968", "1968 - 1989"],
+      "correctAnswer": "1939 - 1945"
+    },
+    {
+      "id": 10,
+      "question": "začátek vlády komunistů",
+      "answers": ["1948", "1945", "1989"],
+      "correctAnswer": "1948"
+    },
+    {
+      "id": 11,
+      "question": "nevydařený pokus o návrat k demokracii, obsazení země vojsky SSSR a jiných zemí",
+      "answers": ["1968", "1986", "1989"],
+      "correctAnswer": "1968"
+    },
+    {
+      "id": 12,
+      "question": "sametová revoluce",
+      "answers": ["1989", "1945", "2000"],
+      "correctAnswer": "1989"
+    },
+    {
+      "id": 13,
+      "question": "rozdělení Československa",
+      "answers": ["1993", "1990", "1989"],
+      "correctAnswer": "1993"
+    },
+    {
+      "id": 14,
+      "question": "vstup ČR do NATO",
+      "answers": ["1999", "2004", "2014"],
+      "correctAnswer": "1999"
+    },
+    {
+      "id": 15,
+      "question": "vstup ČR do EU",
+      "answers": ["1999", "2004", "2014"],
+      "correctAnswer": "2004"
+    }
+  ]
+}
