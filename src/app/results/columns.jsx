@@ -45,14 +45,27 @@ export const columns = [
   {
     accessorKey: "correctAnswers",
     header: "Správně",
+    cell: ({ row }) => {
+      const c = row.getValue("correctAnswers");
+      return <div className="text-green-500 font-bold">{c}</div>;
+    },
   },
   {
     accessorKey: "wrongAnswers",
     header: "Špatně",
+    cell: ({ row }) => {
+      const wa = row.getValue("wrongAnswers");
+      return <div className="text-red-500 font-bold">{wa}</div>;
+    },
   },
   {
     accessorKey: "average",
     header: "Průměr",
+    cell: ({ row }) => {
+      const av = row.getValue("average");
+
+      return av + "%";
+    },
   },
   {
     accessorKey: "grade",
