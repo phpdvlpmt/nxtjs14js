@@ -46,7 +46,7 @@ export function DataTable({ columns, data }) {
       <div className="flex items-center gap-3">
         <div className="flex items-center py-4">
           <Input
-            placeholder="Filter podle jména"
+            placeholder="Filtr podle jména"
             value={table.getColumn("username")?.getFilterValue() ?? ""}
             onChange={(event) =>
               table.getColumn("username")?.setFilterValue(event.target.value)
@@ -56,7 +56,7 @@ export function DataTable({ columns, data }) {
         </div>
         <div className="flex items-center py-4">
           <Input
-            placeholder="Filter podle názvu testu"
+            placeholder="Filtr podle názvu testu"
             value={table.getColumn("title")?.getFilterValue() ?? ""}
             onChange={(event) =>
               table.getColumn("title")?.setFilterValue(event.target.value)

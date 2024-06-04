@@ -157,7 +157,7 @@ const Header = () => {
                     })
                   }
                 >
-                  Sign out
+                  Odhlásit
                 </button>
               </DropdownMenuItem>
             </DropdownMenuContent>
