@@ -81,7 +81,7 @@
     {
       "id": 11,
       "question": "Po českém králi Vladislavu Jagellonském je pojmenován jeden ze sálů na Pražském hradě. Jak se tento sál nazývá?",
-      "answers": ["Jadellonský", "Vladislavský", "Zlatý"],
+      "answers": ["Jagellonský", "Vladislavský", "Zlatý"],
       "correctAnswer": "Vladislavský"
     }
   ]

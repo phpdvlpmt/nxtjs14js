@@ -3,13 +3,15 @@ import { revalidatePath } from "next/cache";
 
 export async function POST(req) {
   const rs = await req.json();
-  const username = rs.username;
-  const title = rs.title;
-  const total = rs.total;
-  const correctAnswers = rs.correctAnswers;
-  const wrongAnswers = rs.wrongAnswers;
-  const average = rs.average;
-  const grade = rs.grade;
+  const r = rs.data;
+
+  const username = r.username;
+  const title = r.title;
+  const total = r.total;
+  const correctAnswers = r.correctAnswers;
+  const wrongAnswers = r.wrongAnswers;
+  const average = r.average;
+  const grade = r.grade;
 
   try {
     const result = await prisma.resume.create({
@@ -24,7 +26,7 @@ export async function POST(req) {
       },
     });
 
-    if (!result) return Response.json({ message: "error", status: 500 });
+    /* if (!result) return Response.json({ message: "error", status: 500 }); */
     revalidatePath("/results");
     return Response.json({ message: "success", status: 200, data: result });
   } catch (error) {

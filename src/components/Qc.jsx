@@ -17,6 +17,7 @@ import { shuffle } from "lodash";
 import { cn } from "@/lib/utils";
 import { useMutation } from "convex/react";
 import { api } from "../../convex/_generated/api";
+import axios from "axios";
 
 const Qc = ({ quiz }) => {
   const createTest = useMutation(api.tests.createTest);
@@ -101,7 +102,7 @@ const Qc = ({ quiz }) => {
     });
   };
 
-  async function sendEmail(
+  /* async function sendEmail(
     data = {
       name: username,
       correctAnswers: result.correctAnswers,
@@ -116,7 +117,7 @@ const Qc = ({ quiz }) => {
 
     const json = await response.json();
     return json;
-  }
+  } */
 
   const avrg = () => {
     const ar = ((result.correctAnswers / questions.length) * 100).toFixed();
@@ -158,11 +159,14 @@ const Qc = ({ quiz }) => {
     },
   ) => {
     try {
-      const response = await fetch("/api/quiz", {
+      /*  const response = await fetch("/api/quiz", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
 
         body: JSON.stringify(data),
+      }); */
+      const response = await axios.post("/api/quiz", {
+        data,
       });
       //convex
 
@@ -176,13 +180,19 @@ const Qc = ({ quiz }) => {
         grade: grade(),
         finish: true,
       }); */
-      if (response.ok) {
+      /* console.log(response); */
+      /*   */
+      if (response.data.status === 200) {
         toast.success(
           "Test žáka jménem " + username + " byl úspěšně uložen v databázi.",
         );
       }
+      if (response.data.status === 500) {
+        toast.error("Test se nepodařilo uložit, přístě to určitě vyjde!");
+      }
     } catch (error) {
       console.error(error);
+      toast.error("Test se nepodařilo uložit, přístě to určitě vyjde!");
     }
   };
   if (end) {
