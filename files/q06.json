@@ -47,7 +47,7 @@
     {
       "id": 6,
       "question": "Co chránilo středověká města před útočníky?",
-      "answers": ["železné mříže", "kamenné hradby", "elektrické ohradíky"],
+      "answers": ["železné mříže", "kamenné hradby", "elektrické ohradníky"],
       "correctAnswer": "kamenné hradby"
     },
     {
