@@ -102,7 +102,7 @@
     },
     {
       "id": 12,
-      "question": "Po své smrti byl prohlášen zs svatého český kníže, který se jmenoval:",
+      "question": "Po své smrti byl prohlášen za svatého český kníže, který se jmenoval:",
       "answers": ["Václav", "Bořivoj", "Boleslav"],
       "correctAnswer": "Václav"
     },
@@ -189,7 +189,7 @@
       "question": "Po husitských válkách se stal českým králem Jiří z Poděbrad. Nepravdivé je tvrzení:",
       "answers": [
         "pocházel z polského královského rodu",
-        "nenarodil se v královské roině, ale v rodině českého šlechtice",
+        "nenarodil se v královské rodině, ale v rodině českého šlechtice",
         "snažil se o udržení míru v Evropě"
       ],
       "correctAnswer": "pocházel z polského královského rodu"
