@@ -155,12 +155,10 @@ import { Baby, GraduationCap } from "lucide-react";
 const class4 = tests.filter((test) => {
   return test.class === "4";
 });
-console.log(class4);
 
 const class5 = tests.filter((test) => {
   return test.class === "5";
 });
-console.log(class5);
 
 const QuizSection = () => {
   return (
@@ -168,27 +166,27 @@ const QuizSection = () => {
       <Tabs defaultValue="quizes4" className="w-full mt-4">
         <TabsList>
           <TabsTrigger value="quizes4">
-            <div className="flex items-center gap-3 font-bold">
+            <div className="flex items-center font-bold gap-2">
               <Baby />
-              Testy - 4. ročník
+              4. ročník
             </div>
           </TabsTrigger>
           <TabsTrigger value="quizes5">
-            <div className="flex items-center gap-3 font-bold">
+            <div className="flex items-center  font-bold gap-2">
               <GraduationCap />
-              Testy - 5. ročník
+              5. ročník
             </div>
           </TabsTrigger>
         </TabsList>
         <TabsContent value="quizes4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 py-5 h-[420px] overflow-y-auto scrollbar-thin pr-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 py-5 h-[420px] overflow-y-auto scrollbar-thin pr-2">
             {class4.map((test, index) => (
               <div key={index}>{<Quizes4 test={test} />}</div>
             ))}
           </div>
         </TabsContent>
         <TabsContent value="quizes5">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 py-5 h-[420px] overflow-y-auto scrollbar-thin pr-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 py-5 h-[420px] overflow-y-auto scrollbar-thin pr-2">
             {class5.map((test, index) => (
               <div key={index}>{<Quizes5 test={test} />}</div>
             ))}
