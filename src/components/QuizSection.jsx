@@ -181,14 +181,14 @@ const QuizSection = () => {
           </TabsTrigger>
         </TabsList>
         <TabsContent value="quizes4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 py-5 h-[400px] overflow-y-auto scrollbar-thin pr-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 py-5 h-[420px] overflow-y-auto scrollbar-thin pr-2">
             {class4.map((test, index) => (
               <div key={index}>{<Quizes4 test={test} />}</div>
             ))}
           </div>
         </TabsContent>
         <TabsContent value="quizes5">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 py-5 h-[400px] overflow-y-auto scrollbar-thin pr-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 py-5 h-[420px] overflow-y-auto scrollbar-thin pr-2">
             {class5.map((test, index) => (
               <div key={index}>{<Quizes5 test={test} />}</div>
             ))}
