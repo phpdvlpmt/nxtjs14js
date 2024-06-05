@@ -2,6 +2,10 @@ import Link from "next/link";
 import React from "react";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { tests } from "@/lib/tests";
+import Quizes4 from "./quizes4";
+import Quizes5 from "./quizes5";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { Baby, GraduationCap } from "lucide-react";
 /* const tests = [
   {
     title: "Opakování - naše republika po válce",
@@ -148,31 +152,50 @@ import { tests } from "@/lib/tests";
     class: "4",
   },
 ];*/
+const class4 = tests.filter((test) => {
+  return test.class === "4";
+});
+console.log(class4);
+
+const class5 = tests.filter((test) => {
+  return test.class === "5";
+});
+console.log(class5);
 
 const QuizSection = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 py-5">
-      {tests.map((test, index) => (
-        <div key={index}>
-          <Link href={test.link}>
-            <Card className="h-full">
-              <CardHeader>
-                <CardTitle>{test.title}</CardTitle>
-                <CardDescription className="flex items-center justify-between">
-                  <span>{test.class}. ročník</span>
-
-                  {test.new && (
-                    <span className="border-transparent bg-destructive text-destructive-foreground shadow hover:bg-destructive/80 inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
-                      Nový
-                    </span>
-                  )}
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          </Link>
-        </div>
-      ))}
-    </div>
+    <>
+      <Tabs defaultValue="quizes4" className="w-full mt-4">
+        <TabsList>
+          <TabsTrigger value="quizes4">
+            <div className="flex items-center gap-3 font-bold">
+              <Baby />
+              Testy - 4. ročník
+            </div>
+          </TabsTrigger>
+          <TabsTrigger value="quizes5">
+            <div className="flex items-center gap-3 font-bold">
+              <GraduationCap />
+              Testy - 5. ročník
+            </div>
+          </TabsTrigger>
+        </TabsList>
+        <TabsContent value="quizes4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 py-5 h-[400px] overflow-y-auto scrollbar-thin pr-2">
+            {class4.map((test, index) => (
+              <div key={index}>{<Quizes4 test={test} />}</div>
+            ))}
+          </div>
+        </TabsContent>
+        <TabsContent value="quizes5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 py-5 h-[400px] overflow-y-auto scrollbar-thin pr-2">
+            {class5.map((test, index) => (
+              <div key={index}>{<Quizes5 test={test} />}</div>
+            ))}
+          </div>
+        </TabsContent>
+      </Tabs>
+    </>
   );
 };
 
