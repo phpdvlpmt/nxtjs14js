@@ -7,7 +7,7 @@
       "question": "1 den",
       "answers": [
         "doba jednoho oběhu Země kolem Slunce",
-        "doba jednoho oběhu měsíce kolem Země",
+        "doba jednoho oběhu Měsíce kolem Země",
         "doba jednoho otočení Země kolem své osy"
       ],
       "correctAnswer": "doba jednoho otočení Země kolem své osy"
@@ -20,14 +20,14 @@
         "doba jednoho oběhu Měsíce kolem Země",
         "doba jednoho otočení Země kolem své osy"
       ],
-      "correctAnswer": "doba jednoho oběhu měsíce kolem Země"
+      "correctAnswer": "doba jednoho oběhu Měsíce kolem Země"
     },
     {
       "id": 3,
       "question": "1 rok",
       "answers": [
         "doba jednoho oběhu Země kolem Slunce",
-        "doba jednoho oběhu měsíce kolem Země",
+        "doba jednoho oběhu Měsíce kolem Země",
         "doba jednoho otočení Země kolem své osy"
       ],
       "correctAnswer": "doba jednoho oběhu Země kolem Slunce"
