@@ -1,30 +1,21 @@
 "use client";
 import { useSelector, useDispatch } from "react-redux";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Progress } from "@/components/ui/progress";
 import { redirect } from "next/navigation";
 import { toast } from "sonner";
-import { usePupilStore } from "../../stores/store";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { shuffle } from "lodash";
 import { cn } from "@/lib/utils";
-import { useMutation } from "convex/react";
-import { api } from "../../convex/_generated/api";
+//import { useMutation } from "convex/react";
+//import { api } from "../../convex/_generated/api";
 import axios from "axios";
 import FinalView from "./final-view";
 
 const Qc = ({ quiz }) => {
-  const createTest = useMutation(api.tests.createTest);
+  //const createTest = useMutation(api.tests.createTest);
   const isAuth = useSelector((state) => state.authReducer.value.isAuth);
   //const { isAuth, pupil, logoutPupil } = usePupilStore();
-  const [mounted, setMounted] = useState(false);
+  //const [mounted, setMounted] = useState(false);
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [checked, setChecked] = useState(false);
@@ -38,7 +29,7 @@ const Qc = ({ quiz }) => {
   const { questions } = quiz;
   const { question, answers, correctAnswer } = questions[activeQuestion];
   const [disabled, setDisabled] = useState(false);
-  const [showForm, setShowForm] = useState(true);
+  //const [showForm, setShowForm] = useState(true);
   //const [username, setUsername] = useState("");
   const [end, setEnd] = useState();
   const [q, setQ] = useState(0);
@@ -245,9 +236,8 @@ const Qc = ({ quiz }) => {
                   onClick={() => onAnswerSelected(answer, idx)}
                   className={cn(
                     "text-left p-3 w-full text-lg font-semibold  cursor-pointer",
-                    selectedAnswerIndex === idx
-                      ? " "
-                      : " hover bg-gray-100 dark:text-gray-900",
+                    selectedAnswerIndex != idx &&
+                      "bg-gray-100 dark:text-gray-900",
                     selectedAnswer &&
                       selectedAnswerIndex === idx &&
                       " bg-green-400",
@@ -267,7 +257,7 @@ const Qc = ({ quiz }) => {
                 <button
                   onClick={() => {
                     nextQuestion();
-                    q === questions.length - 1;
+                    //q === questions.length - 1;
                   }}
                   className="bg-gray-800 text-white w-fit px-4 py-2 cursor-pointer text-xl font-semibold rounded-md"
                 >
@@ -277,11 +267,11 @@ const Qc = ({ quiz }) => {
                 <button
                   onClick={nextQuestion && (() => finish())}
                   disabled={q !== questions.length}
-                  className={`${
+                  className={cn(
                     q !== questions.length
                       ? "bg-gray-200 text-gray-800 w-fit px-4 py-2 text-xl font-semibold cursor-not-allowed rounded-md"
-                      : "px-4 py-2 bg-gray-800 text-white cursor-pointer w-fit text-xl font-semibold rounded-md"
-                  }`}
+                      : "px-4 py-2 bg-gray-800 text-white cursor-pointer w-fit text-xl font-semibold rounded-md",
+                  )}
                 >
                   {q === questions.length ? "Dokončit" : "Další"}
                 </button>
