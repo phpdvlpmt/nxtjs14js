@@ -25,10 +25,10 @@ import { redirect } from "next/navigation";
 import { LoginBtn } from "@/components/Submitbuttons";
 
 const names = [
-  { name: "Natálie Tomanová" },
-  { name: "Viktorie Zaňková" },
-  { name: "Boris Sekera" },
-  { name: "Sabina Kňourková" },
+  { name: "Anna Koubová" },
+  { name: "Eliška Lorencová" },
+  { name: "Liliana Šoóšová" },
+  { name: "Kryštof Klečka" },
   { name: "Laura Ullmanová" },
   { name: "Mikuláš Netyk" },
   { name: "Jindřich Přibík" },
