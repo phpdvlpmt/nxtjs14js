@@ -1,0 +1,95 @@
+{
+  "title": "Opakování",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Hlavní město České republiky je ...",
+      "answer": "Praha"
+    },
+    {
+      "id": 2,
+      "question": "Tři historické země České republiky jsou ...",
+      "answer": "Čechy, Morava, Slezsko"
+    },
+    {
+      "id": 3,
+      "question": "Území České republiky je rozděleno do ... krajů. Jsou to ...",
+      "answer": "14; hlavní město Praha, Středočeský kraj, Jihočeský kraj, Plzeňský kraj, Karlovarský kraj, Ústecký kraj, Liberecký kraj, Královéhradecký kraj, Pardubický kraj, Kraj Vysočina, Jihomoravský kraj, Olomoucký kraj, Moravskoslezský kraj, Zlínský kraj "
+    },
+    {
+      "id": 4,
+      "question": "Státními symboly naší vlasti jsou ...",
+      "answer": "velký a malý státní znak, státní barvy, státní vlajka, vlajka prezidenta republiky, státní pečeť a státní hymna"
+    },
+    {
+      "id": 5,
+      "question": "Hlavní světové strany jsou ...",
+      "answer": "sever, jih, východ, západ"
+    },
+    {
+      "id": 6,
+      "question": "Nejvyšší horou České republiky je ...",
+      "answer": "Sněžka"
+    },
+    {
+      "id": 7,
+      "question": "Nížina podél toku Labe se nazývá ...",
+      "answer": "Polabská nížina"
+    },
+    {
+      "id": 8,
+      "question": "Krajem rybníků je ...",
+      "answer": "Jihočeský kraj"
+    },
+    {
+      "id": 9,
+      "question": "Nejdelší řekou České republiky je ...",
+      "answer": "Vltava"
+    },
+    {
+      "id": 10,
+      "question": "Řeka, která pramení v ČR a ústí do Severniho moře, se nazývá ...",
+      "answer": "Labe"
+    },
+    {
+      "id": 11,
+      "question": "Nejteplejší oblasti na území České republiky jsou ...",
+      "answer": "nížiny"
+    },
+    {
+      "id": 12,
+      "question": "Ryby se chovají převážně v kraji ...",
+      "answer": "Jihočeský kraj"
+    },
+    {
+      "id": 13,
+      "question": "Brambory se pěstují zejména v Kraji ...",
+      "answer": "Vysočina"
+    },
+    {
+      "id": 14,
+      "question": "Černé uhlí se na území naší republiky těží u města ...",
+      "answer": "Karviná"
+    },
+    {
+      "id": 15,
+      "question": "Hnědé uhlí se na území České republiky těží u měst ...",
+      "answer": "Sokolov a Most"
+    },
+    {
+      "id": 16,
+      "question": "Na území Moravského a Českého krasu se těží ...",
+      "answer": "vápenec"
+    },
+    {
+      "id": 17,
+      "question": "Chemický průmysl je rozvinutý ve městech ...",
+      "answer": "Ústí nad Labem, Kralupy nad Vltavou, Pardubice, Hradec Králové"
+    },
+    {
+      "id": 18,
+      "question": "Národní parky na území České republiky jsou čtyři ...",
+      "answer": "Krkonošský národní park, Národní park Šumava, Národní park Podyjí, Národní park České Švýcarsko"
+    }
+  ]
+}
