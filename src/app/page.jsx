@@ -24,11 +24,11 @@ const Quiz = () => {
   }
 
   return (
-    <>
+    <div className="py-5">
       <CountUpSection />
       <AccordionSection />
       <QuizSection />
-    </>
+    </div>
   );
 };
 
