@@ -9,6 +9,7 @@ import {
   AlignJustify,
   FileSymlink,
   LogOutIcon,
+  Gamepad2,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -100,9 +101,12 @@ const Header = () => {
   const { data: session } = useSession();
   return (
     <header className="flex justify-between items-center py-3 border-b border-slate-50 dark:border-slate-800">
-      <div>
+      <div className="flex items-center gap-10">
         <Link className="cursor-pointer" href="/">
           <BookOpenText />
+        </Link>
+        <Link className="cursor-pointer" href={"/game"}>
+          <Gamepad2 />
         </Link>
       </div>
       <nav className="hidden sm:flex">
