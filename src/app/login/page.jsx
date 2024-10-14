@@ -26,7 +26,7 @@ import { LoginBtn } from "@/components/Submitbuttons";
 
 const names = [
   { name: "Anna Koubová" },
-  { name: "Eliška Lorencová" },
+  { name: "Eliška Lorenzová" },
   { name: "Liliana Šoóšová" },
   { name: "Kryštof Klečka" },
   { name: "Laura Ullmanová" },
