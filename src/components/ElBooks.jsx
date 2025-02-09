@@ -23,14 +23,14 @@ const Books4 = [
     title: "Vlastivěda 4 - dějepis",
     image:
       "https://novaskoladuha.cz/data/products/177/07831b533e5156f03287302813369fc0-0.jpg",
-    k: "4782-0ISM-0V3A-C042",
+    k: "478G-0ISM-0V3A-C042",
   },
   {
     id: 4,
     title: "Vlastivěda 4 - dějepis, pracovní sešit",
     image:
       "https://novaskoladuha.cz/data/products/178/fbe68dfe6e563eb7d6d74ba88019cc34-0.jpg",
-    k: "4I82-0YSM-0V3A-C042",
+    k: "4I8G-0V3M-0YSA-C402",
   },
 ];
 const Books5 = [
@@ -53,14 +53,14 @@ const Books5 = [
     title: "Vlastivěda 5 - dějepis",
     image:
       "https://novaskoladuha.cz/data/products/282/a29508a7d917229900d21f4759448ac8-0.jpg",
-    k: "0IS2-0V3G-478A-04C2",
+    k: "0V3G-478G-0ISA-4C02",
   },
   {
     id: 4,
     title: "Vlastivěda 5 - dějepis, pracovní sešit",
     image:
       "https://novaskoladuha.cz/data/products/311/90fa80bb756980d926e410af22a29c30-0.jpg",
-    k: "0V32-4I8G-0YSA-4C02",
+    k: "0YSG-0V3G-4I8A-04C2",
   },
 ];
 
