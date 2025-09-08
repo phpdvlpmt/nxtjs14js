@@ -30,14 +30,9 @@ const names = [
   { name: "Liliana Šoóšová" },
   { name: "Kryštof Klečka" },
   { name: "Laura Ullmanová" },
-  { name: "Mikuláš Netyk" },
-  { name: "Jindřich Přibík" },
-  { name: "Otto Starý" },
-  { name: "Aneta Šitnerová" },
-  { name: "Adéla Lupínková" },
-  { name: "Sebastián Livora" },
-  { name: "Tadeáš Faust" },
-  { name: "Host" },
+  { name: "Antonín Zavřel" },
+  { name: "Vincent Plecitý" },
+
 ];
 
 const Login = () => {
