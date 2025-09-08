@@ -9,14 +9,14 @@ const Books4 = [
     title: "Vlastivěda 4 - zeměpis",
     image:
       "https://novaskoladuha.cz/data/products/263/8db33ef0e2d9f6bce76a4605a7005a4f-0.jpg",
-    k: "0OSM-478M-0V3A-0C42",
+    k: "0V3G-478M-0OSA-4C02",
   },
   {
     id: 2,
     title: "Vlastivěda 4 - zeměpis, pracovní sešit",
     image:
       "https://novaskoladuha.cz/data/products/264/3a7be87398f51cd635ad796b9a1b9cee-0.jpg",
-    k: "4O8M-0V3M-0YSA-C402",
+    k: "0V3G-4O8M-0YSA-4C02",
   },
   {
     id: 3,
@@ -39,14 +39,14 @@ const Books5 = [
     title: "Vlastivěda 5 - zeměpis",
     image:
       "https://novaskoladuha.cz/data/products/281/5719df63c4d665ea794beb26e7a51022-0.jpg",
-    k: "478M-0OSG-0V3A-C042",
+    k: "478G-0V3G-0OSA-C402",
   },
   {
     id: 2,
     title: "Vlastivěda 5 - zeměpis, pracovní sešit",
     image:
       "https://novaskoladuha.cz/data/products/310/5c4187555d1e3ecb466f8bfe48775d38-0.jpg",
-    k: "4O8M-0YSG-0V3A-C042",
+    k: "0V3G-0YSG-4O8A-40C2",
   },
   {
     id: 3,
