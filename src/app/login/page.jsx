@@ -29,9 +29,12 @@ const names = [
   { name: "Eliška Lorenzová" },
   { name: "Liliana Šoóšová" },
   { name: "Kryštof Klečka" },
-  { name: "Laura Ullmanová" },
   { name: "Antonín Zavřel" },
   { name: "Vincent Plecitý" },
+  { name: "Viktorie Stará" },
+  { name: "Justýna Štekrtová" },
+  { name: "Sedrik Svoboda" },
+  { name: "Jakub Kňourek" },
 
 ];
 
