@@ -35,6 +35,7 @@ const names = [
   { name: "Justýna Štekrtová" },
   { name: "Sedrik Svoboda" },
   { name: "Jakub Kňourek" },
+  { name: "Jan Novák" },
   { name: "Návštěva" },
 
 ];
